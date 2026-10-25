@@ -1,699 +1,338 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "yoonseul-first-phone",
+  "title": "哥哥只比我大一岁",
+  "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
+  "revision": 1,
   "phone": {
-    "owner": "机主",
+    "owner": "李尹瑟",
     "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
+    "time": "22:17",
+    "battery": 63,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "sage",
+    "theme": "light",
+    "notifications": true
   },
   "installedApps": [
-    "appstore",
-    {
-      "id": "wechat",
-      "name": "微信",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "douyin",
-      "name": "抖音",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    "phone",
-    "messages",
-    "contacts",
-    "photos",
-    {
-      "id": "camera",
-      "name": "相机",
-      "installed": true,
-      "visible": true,
-      "dock": true,
-      "folder": "",
-      "icon": ""
-    },
-    "safari",
-    "notes",
-    "calendar",
-    "mail",
-    "clock",
-    "reminders",
-    "files",
-    "music",
-    "maps",
-    "weather",
-    "wallet",
-    "health",
-    "find",
-    "calculator",
-    "settings",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
-    "instagram",
-    "tiktok",
-    "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
-    "spotify",
-    "netflix",
-    "pinterest",
-    "threads",
-    "kakao"
+    "phone", "messages", "contacts", "photos", "camera", "kakao",
+    "instagram", "notes", "calendar", "music", "maps", "clock",
+    "settings", "calculator", "safari"
   ],
   "contacts": [
-    {
-      "id": "test-contact",
-      "name": "测试联系人",
-      "phone": "",
-      "bio": "这是一条测试内容。"
-    }
+    {"id": "shotaro", "name": "将太郎哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。不要被备注骗了。"},
+    {"id": "yujin", "name": "韩有真", "phone": "010-0817-2006", "avatar": "", "bio": "从初中开始就什么都知道的朋友"},
+    {"id": "mom", "name": "妈妈", "phone": "010-1223-0000", "avatar": "", "bio": "每天都要问我到家没有"},
+    {"id": "alex", "name": "Alex", "phone": "010-0314-2004", "avatar": "", "bio": "大学朋友"}
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "kakao-shotaro-2019",
       "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
+      "title": "将太郎哥哥 · 2019",
+      "participants": ["owner", "shotaro"],
       "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        },
-        {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
-        }
+        {"id": "k19-01", "title": "", "body": "新手机拿到了？", "senderId": "shotaro", "time": "2019-03-02 16:08"},
+        {"id": "k19-02", "title": "", "body": "拿到了！妈妈终于同意了ㅎㅎ", "senderId": "owner", "time": "2019-03-02 16:09"},
+        {"id": "k19-03", "title": "", "body": "先把我置顶。", "senderId": "shotaro", "time": "2019-03-02 16:09"},
+        {"id": "k19-04", "title": "", "body": "为什么？", "senderId": "owner", "time": "2019-03-02 16:10"},
+        {"id": "k19-05", "title": "", "body": "放学找不到路、忘记带伞、跟妈妈吵架，不都是先找我。", "senderId": "shotaro", "time": "2019-03-02 16:11"},
+        {"id": "k19-06", "title": "", "body": "哥哥只比我大一岁。", "senderId": "owner", "time": "2019-03-02 16:12"},
+        {"id": "k19-07", "title": "", "body": "大一天也是哥哥。", "senderId": "shotaro", "time": "2019-03-02 16:12"},
+        {"id": "k19-08", "title": "", "body": "那你要一直负责吗？", "senderId": "owner", "time": "2019-03-02 16:13"},
+        {"id": "k19-09", "title": "", "body": "先负责你安全到家。下楼，我在便利店门口。", "senderId": "shotaro", "time": "2019-03-02 16:14"},
+        {"id": "k19-10", "title": "", "body": "手机密码别再用生日。你这么好猜，迟早会被人打开。", "senderId": "shotaro", "time": "2019-03-02 16:15"}
+      ]
+    },
+    {
+      "id": "kakao-yujin-2019",
+      "app": "kakao",
+      "title": "韩有真",
+      "participants": ["owner", "yujin"],
+      "messages": [
+        {"id": "y19-01", "title": "", "body": "你终于有手机了！号码快发我。", "senderId": "yujin", "time": "2019-03-02 18:31"},
+        {"id": "y19-02", "title": "", "body": "不许给别人看我小时候的照片。", "senderId": "owner", "time": "2019-03-02 18:32"},
+        {"id": "y19-03", "title": "", "body": "你那个哥哥给你设好了吗？联系人第一位也是他吧。", "senderId": "yujin", "time": "2019-03-02 18:33"},
+        {"id": "y19-04", "title": "", "body": "他非要帮我弄。还说密码不能用我的生日。", "senderId": "owner", "time": "2019-03-02 18:34"},
+        {"id": "y19-password", "title": "", "body": "所以你就偷偷改成他的生日？11月25日，1125。你也太好懂了。", "senderId": "yujin", "time": "2019-03-02 18:35"},
+        {"id": "y19-06", "title": "", "body": "不是！只是这个数字顺手！", "senderId": "owner", "time": "2019-03-02 18:35"}
+      ]
+    },
+    {
+      "id": "kakao-shotaro-2022",
+      "app": "kakao",
+      "title": "将太郎哥哥 · 高中",
+      "participants": ["owner", "shotaro"],
+      "messages": [
+        {"id": "k22-01", "title": "", "body": "到家了吗？", "senderId": "shotaro", "time": "2022-09-17 22:48"},
+        {"id": "k22-02", "title": "", "body": "还没有，在河边。", "senderId": "owner", "time": "2022-09-17 22:49"},
+        {"id": "k22-03", "title": "", "body": "位置发我。", "senderId": "shotaro", "time": "2022-09-17 22:49"},
+        {"id": "k22-04", "title": "", "body": "我又没有走丢。", "senderId": "owner", "time": "2022-09-17 22:50"},
+        {"id": "k22-05", "title": "", "body": "你心情不好的时候方向感会一起消失。", "senderId": "shotaro", "time": "2022-09-17 22:51"},
+        {"id": "k22-06", "title": "", "body": "你不是在朋友聚会吗？", "senderId": "owner", "time": "2022-09-17 22:52"},
+        {"id": "k22-07", "title": "", "body": "出来了。抬头。", "senderId": "shotaro", "time": "2022-09-17 22:58"},
+        {"id": "k22-08", "title": "", "body": "……你怎么真的来了。", "senderId": "owner", "time": "2022-09-17 22:59"},
+        {"id": "k22-09", "title": "", "body": "因为某人小时候问过，我是不是会一直负责。", "senderId": "shotaro", "time": "2022-09-17 23:00"},
+        {"id": "k22-10", "title": "", "body": "小时候说的话不算。", "senderId": "owner", "time": "2022-09-17 23:01"},
+        {"id": "k22-11", "title": "", "body": "我没说不算。", "senderId": "shotaro", "time": "2022-09-17 23:01"}
+      ]
+    },
+    {
+      "id": "kakao-yujin-2022",
+      "app": "kakao",
+      "title": "韩有真 · 不许笑",
+      "participants": ["owner", "yujin"],
+      "messages": [
+        {"id": "y22-01", "title": "", "body": "他放着聚会不管跑去接你，你还说是普通哥哥？", "senderId": "yujin", "time": "2022-09-18 00:14"},
+        {"id": "y22-02", "title": "", "body": "本来就是。我们从小一起长大。", "senderId": "owner", "time": "2022-09-18 00:15"},
+        {"id": "y22-03", "title": "", "body": "那你为什么把合照藏进‘不是约会’相册？", "senderId": "yujin", "time": "2022-09-18 00:16"},
+        {"id": "y22-04", "title": "", "body": "因为真的不是约会。", "senderId": "owner", "time": "2022-09-18 00:17"},
+        {"id": "y22-05", "title": "", "body": "好。不是约会，只是凌晨零点你还在看他发的‘到家告诉我’。", "senderId": "yujin", "time": "2022-09-18 00:18"}
+      ]
+    },
+    {
+      "id": "kakao-shotaro-2026",
+      "app": "kakao",
+      "title": "将太郎",
+      "participants": ["owner", "shotaro"],
+      "messages": [
+        {"id": "k26-01", "title": "", "body": "今天几点结束？", "senderId": "shotaro", "time": "2026-10-25 18:02"},
+        {"id": "k26-02", "title": "", "body": "九点左右。你不用来，我和同学一起。", "senderId": "owner", "time": "2026-10-25 18:04"},
+        {"id": "k26-03", "title": "", "body": "Alex？", "senderId": "shotaro", "time": "2026-10-25 18:04"},
+        {"id": "k26-04", "title": "", "body": "还有别人。你问这么清楚干什么？", "senderId": "owner", "time": "2026-10-25 18:05"},
+        {"id": "k26-05", "title": "", "body": "哥哥关心妹妹。", "senderId": "shotaro", "time": "2026-10-25 18:06"},
+        {"id": "k26-06", "title": "", "body": "你现在倒是记得自己是哥哥。", "senderId": "owner", "time": "2026-10-25 18:06"},
+        {"id": "k26-07", "title": "", "body": "我什么时候忘过？", "senderId": "shotaro", "time": "2026-10-25 18:07"},
+        {"id": "k26-08", "title": "", "body": "算了。当我没说。", "senderId": "owner", "time": "2026-10-25 18:08"},
+        {"id": "k26-09", "title": "", "body": "结束了给我电话。我有话跟你说。", "senderId": "shotaro", "time": "2026-10-25 18:10"},
+        {"id": "k26-10", "title": "", "body": "还有，别再叫我哥哥了。今晚开始不想当了。", "senderId": "shotaro", "time": "2026-10-25 18:11"}
+      ]
+    },
+    {
+      "id": "kakao-alex-2026",
+      "app": "kakao",
+      "title": "Alex",
+      "participants": ["owner", "alex"],
+      "messages": [
+        {"id": "a26-01", "title": "", "body": "你的手机是不是落在咖啡店了？", "senderId": "alex", "time": "2026-10-25 21:58"},
+        {"id": "a26-02", "title": "", "body": "我回去找。你先别告诉将太郎，他会念我一晚上。", "senderId": "owner", "time": "2026-10-25 21:59"},
+        {"id": "a26-03", "title": "", "body": "晚了。他已经在问所有人。", "senderId": "alex", "time": "2026-10-25 22:00"}
+      ]
+    },
+    {
+      "id": "messages-mom",
+      "app": "messages",
+      "title": "妈妈",
+      "participants": ["owner", "mom"],
+      "messages": [
+        {"id": "mom-01", "title": "", "body": "新手机是升初中的礼物，要好好保管。", "senderId": "mom", "time": "2019-03-02 15:10"},
+        {"id": "mom-02", "title": "", "body": "知道啦。我一定不会弄丢。", "senderId": "owner", "time": "2019-03-02 15:12"},
+        {"id": "mom-03", "title": "", "body": "让将太郎帮你设置一下，有问题先问他。", "senderId": "mom", "time": "2019-03-02 15:13"},
+        {"id": "mom-04", "title": "", "body": "为什么你们都觉得他很可靠……", "senderId": "owner", "time": "2019-03-02 15:14"}
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "photos": [
-      {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
-      {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
-      {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+      {"id": "photo-first-phone", "title": "第一部手机", "body": "2019.03.02。透明手机壳里夹着两个人小学毕业时的大头贴。照片背面写着：以后联系不到我，就先找将太郎。", "kind": "image", "time": "2019-03-02 15:06", "folder": "新手机"},
+      {"id": "photo-convenience-store", "title": "便利店门口", "body": "2019.03.02。将太郎撑着伞，另一只手拎着草莓牛奶。他不肯看镜头，耳朵却红了。", "kind": "image", "time": "2019-03-02 16:22", "folder": "只有我们", "hidden": true},
+      {"id": "photo-school-gate", "title": "高中开学", "body": "2022.03.03。校门口的合照。将太郎站在她身后，手虚虚护在她肩边，没有真的碰到。", "kind": "image", "time": "2022-03-03 08:17", "folder": "不是约会", "hidden": true},
+      {"id": "photo-riverside", "title": "河边的背影", "body": "2022.09.17 23:14。夜风很大，将太郎把外套披给她。玻璃倒影里，两个人的手几乎碰到一起。", "kind": "image", "time": "2022-09-17 23:14", "folder": "不是约会", "hidden": true},
+      {"id": "photo-university", "title": "大学庆典", "body": "2026.05.16。朋友拍下的照片里，所有人都在看舞台，只有将太郎侧过脸看着尹瑟。", "kind": "image", "time": "2026-05-16 20:40", "folder": "Y&S", "hidden": true},
+      {"id": "photo-lockscreen-note", "title": "Y&S Forever", "body": "一张没发出去的截图。尹瑟在备忘录里打下 Y&S Forever，又全部删掉，只留下这张截图。", "kind": "image", "time": "2026-10-25 01:32", "folder": "Y&S", "hidden": true}
     ],
     "notes": [
-      {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+      {"id": "note-new-phone", "title": "新手机使用规则", "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。", "kind": "note", "time": "2019-03-02 23:41", "folder": "私人笔记", "password": "1125", "hidden": true},
+      {"id": "note-highschool", "title": "不是约会", "body": "他说只是来接我。\n他说小时候答应过会负责。\n他说‘我没说不算’的时候，我居然不敢看他。\n\n韩有真说，如果我需要反复解释这不是约会，那大概已经很像约会了。", "kind": "note", "time": "2022-09-18 01:03", "folder": "私人笔记", "password": "1125", "hidden": true},
+      {"id": "note-unsent", "title": "没有发送", "body": "将太郎：\n\n我知道你只比我大一岁。小时候一直叫你哥哥，是因为所有人都这么叫；后来还叫，是因为只要这样叫，我们就永远有理由留在彼此身边。\n\n可是今天你说不想当哥哥了。\n\n如果你真的问我，我想说：那就不要当了。", "kind": "note", "time": "2026-10-25 21:42", "folder": "草稿", "password": "1125", "hidden": true},
+      {"id": "note-clue", "title": "六年没换的数字", "body": "新手机的第一天，有真就猜中了那个四位数。后来换过三部手机，私人笔记的密码一直没换。", "kind": "note", "time": "2026-10-25 21:45", "folder": "草稿", "hidden": true}
     ],
     "calendar": [
-      {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+      {"id": "calendar-middle-school", "title": "初中入学", "body": "2019.03.04 · 新制服、新书包、第一部手机", "kind": "event", "time": "2019-03-04 08:00"},
+      {"id": "calendar-shotaro-birthday", "title": "将太郎生日", "body": "11月25日 · 每年重复", "kind": "event", "time": "2026-11-25 00:00"},
+      {"id": "calendar-riverside", "title": "河边见", "body": "2026.10.25 22:30 · 和将太郎把话说清楚", "kind": "event", "time": "2026-10-25 22:30", "hidden": true}
     ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+    "phone": [
+      {"id": "call-shotaro-missed", "title": "将太郎", "body": "未接来电 · 3次", "kind": "call", "time": "2026-10-25 22:03", "meta": {"phone": "010-1125-2000"}},
+      {"id": "voicemail-shotaro", "title": "语音信箱 · 将太郎", "body": "尹瑟，看到以后回电话。手机不重要，我只是想知道你有没有安全到家。", "kind": "audio", "time": "2026-10-25 22:06", "folder": "语音信箱"}
     ],
     "instagram": [
-      {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+      {"id": "ig-first-phone", "title": "yoonseul.archive", "body": "人生第一部手机📱 妈妈说不要弄丢。某位哥哥说要把他置顶。", "kind": "post", "time": "2019-03-02 19:04", "likes": 23, "comments": ["有真：某位哥哥是谁呀ㅎㅎ", "尹瑟：闭嘴"]},
+      {"id": "ig-river", "title": "yoonseul.archive", "body": "不是约会。只是有人半夜跑来送外套。", "kind": "post", "time": "2022-09-18 00:07", "likes": 118, "comments": ["有真：好的不是约会", "Alex：此地无银三百两"], "hidden": true},
+      {"id": "ig-story-2026", "title": "yoonseul.archive · 快拍草稿", "body": "有些称呼用了太久，就会让人忘记它本来只是一种借口。", "kind": "post", "time": "2026-10-25 21:51", "folder": "草稿", "meta": {"story": "true"}, "hidden": true}
     ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+    "music": [
+      {"id": "music-childhood", "title": "回家路上", "body": "2019 年春天创建 · 27首歌", "kind": "audio", "folder": "歌单"},
+      {"id": "music-not-date", "title": "不是约会", "body": "2022 年秋天创建 · 封面是模糊的河岸灯光", "kind": "audio", "folder": "歌单", "hidden": true},
+      {"id": "music-confession", "title": "如果今晚说出口", "body": "2026.10.25 创建 · 只有一首歌", "kind": "audio", "folder": "歌单", "hidden": true}
     ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
-      }
-    ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
-      }
+    "maps": [
+      {"id": "map-convenience-store", "title": "小时候的便利店", "body": "收藏地点 · 从家步行4分钟", "kind": "text"},
+      {"id": "map-riverside", "title": "河边长椅", "body": "收藏地点 · 备注：他说‘我没说不算’的地方", "kind": "text", "hidden": true}
     ]
   },
-  "variables": {},
-  "events": [],
-  "tests": []
+  "variables": {
+    "era": "2019",
+    "secretFound": false
+  },
+  "events": [
+    {
+      "id": "welcome",
+      "label": "第一部手机",
+      "type": "start",
+      "actions": [
+        {"type": "notification", "key": "", "value": "KakaoTalk：将太郎哥哥发来一条消息"}
+      ]
+    },
+    {
+      "id": "find-password",
+      "label": "发现六年没换的数字",
+      "type": "event",
+      "event": "read",
+      "target": "y19-password",
+      "actions": [
+        {"type": "unlock", "key": "note-new-phone", "value": true},
+        {"type": "unlock", "key": "photo-convenience-store", "value": true},
+        {"type": "notification", "key": "", "value": "私人笔记：一篇2019年的加密笔记已出现"}
+      ]
+    },
+    {
+      "id": "open-childhood-note",
+      "label": "从初中走到高中",
+      "type": "event",
+      "event": "read",
+      "target": "note-new-phone",
+      "actions": [
+        {"type": "variable", "key": "era", "value": "2022"},
+        {"type": "unlock", "key": "photo-school-gate", "value": true},
+        {"type": "unlock", "key": "photo-riverside", "value": true},
+        {"type": "unlock", "key": "note-highschool", "value": true},
+        {"type": "unlock", "key": "ig-river", "value": true},
+        {"type": "unlock", "key": "music-not-date", "value": true},
+        {"type": "unlock", "key": "map-riverside", "value": true},
+        {"type": "notification", "key": "", "value": "相册：‘不是约会’相册已解锁"}
+      ]
+    },
+    {
+      "id": "open-highschool-note",
+      "label": "读到成年后的草稿",
+      "type": "event",
+      "event": "read",
+      "target": "note-highschool",
+      "actions": [
+        {"type": "variable", "key": "era", "value": "2026"},
+        {"type": "unlock", "key": "photo-university", "value": true},
+        {"type": "unlock", "key": "photo-lockscreen-note", "value": true},
+        {"type": "unlock", "key": "note-unsent", "value": true},
+        {"type": "unlock", "key": "note-clue", "value": true},
+        {"type": "unlock", "key": "calendar-riverside", "value": true},
+        {"type": "unlock", "key": "ig-story-2026", "value": true},
+        {"type": "unlock", "key": "music-confession", "value": true},
+        {"type": "notification", "key": "", "value": "备忘录：发现一封没有发送的信"}
+      ]
+    },
+    {
+      "id": "read-confession",
+      "label": "秘密被发现",
+      "type": "event",
+      "event": "read",
+      "target": "note-unsent",
+      "actions": [
+        {"type": "variable", "key": "secretFound", "value": true},
+        {"type": "time", "key": "", "value": "22:25"}
+      ],
+      "next": ["incoming-call"]
+    },
+    {
+      "id": "incoming-call",
+      "label": "将太郎来电",
+      "type": "delay",
+      "delayMs": 800,
+      "actions": [
+        {"type": "call", "key": "call-shotaro-live", "value": "将太郎"}
+      ]
+    },
+    {
+      "id": "answer-shotaro",
+      "label": "接起电话",
+      "type": "event",
+      "event": "callAnswered",
+      "target": "call-shotaro-live",
+      "next": ["final-choice"]
+    },
+    {
+      "id": "final-choice",
+      "label": "要怎样归还这部手机？",
+      "type": "choice",
+      "next": ["ending-riverside", "ending-protect", "ending-yujin"]
+    },
+    {
+      "id": "ending-riverside",
+      "label": "交给河边等待的将太郎",
+      "type": "ending",
+      "actions": [
+        {"type": "ending", "key": "", "value": "结局·不再叫哥哥：将太郎替尹瑟保守了手机里的秘密，却在她赶到河边时第一次没有应那声‘哥哥’。他说，小时候的承诺仍然算数，只是从今晚起，他想换一种身份继续负责。"}
+      ]
+    },
+    {
+      "id": "ending-protect",
+      "label": "锁好手机，交给失物招领处",
+      "type": "ending",
+      "actions": [
+        {"type": "ending", "key": "", "value": "结局·秘密仍在：尹瑟取回手机后，发现所有内容都停在原处。她按下1125，重新打开那封草稿，终于主动拨出了那通拖了六年的电话。"}
+      ]
+    },
+    {
+      "id": "ending-yujin",
+      "label": "先联系唯一知道秘密的有真",
+      "type": "ending",
+      "actions": [
+        {"type": "ending", "key": "", "value": "结局·被推了一把：有真赶来取走手机，只看了一眼来电姓名就笑了。半小时后，她把尹瑟推进河边的长椅旁：‘六年了，今天不许再说只是哥哥。’"}
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "riverside-ending",
+      "steps": [
+        {"event": "read", "target": "y19-password"},
+        {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 800, "target": ""},
+        {"event": "callAnswered", "target": "call-shotaro-live"},
+        {"choose": "ending-riverside", "target": ""}
+      ],
+      "ending": "结局·不再叫哥哥：将太郎替尹瑟保守了手机里的秘密，却在她赶到河边时第一次没有应那声‘哥哥’。他说，小时候的承诺仍然算数，只是从今晚起，他想换一种身份继续负责。",
+      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+    },
+    {
+      "name": "protect-ending",
+      "steps": [
+        {"event": "read", "target": "y19-password"},
+        {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 800, "target": ""},
+        {"event": "callAnswered", "target": "call-shotaro-live"},
+        {"choose": "ending-protect", "target": ""}
+      ],
+      "ending": "结局·秘密仍在：尹瑟取回手机后，发现所有内容都停在原处。她按下1125，重新打开那封草稿，终于主动拨出了那通拖了六年的电话。",
+      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+    },
+    {
+      "name": "yujin-ending",
+      "steps": [
+        {"event": "read", "target": "y19-password"},
+        {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 800, "target": ""},
+        {"event": "callAnswered", "target": "call-shotaro-live"},
+        {"choose": "ending-yujin", "target": ""}
+      ],
+      "ending": "结局·被推了一把：有真赶来取走手机，只看了一眼来电姓名就笑了。半小时后，她把尹瑟推进河边的长椅旁：‘六年了，今天不许再说只是哥哥。’",
+      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+    }
+  ]
 }
