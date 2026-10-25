@@ -751,6 +751,18 @@ svg {
     #b7bfa9
   );
 }
+.wallpaper-yoonseul-photo {
+  background: #1564d8 url("./assets/yoonseul-shotaro-wallpaper.jpeg") center/cover
+    no-repeat;
+}
+.wallpaper-yoonseul-photo .wallpaper-orb {
+  display: none;
+}
+.wallpaper-yoonseul-photo:not(.in-app) .status-bar,
+.wallpaper-yoonseul-photo .app-name {
+  color: white;
+  text-shadow: 0 1px 3px #0008;
+}
 .wallpaper-orb {
   position: absolute;
   pointer-events: none;
