@@ -3,7 +3,7 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 4,
+  "revision": 5,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
@@ -18,7 +18,7 @@
   "installedApps": [
     "phone", "messages", "contacts", "photos", "camera", "kakao",
     "instagram", "notes", "calendar", "music", "maps", "clock",
-    "settings", "calculator", "safari", "reminders"
+    "settings", "calculator", "safari"
   ],
   "contacts": [
     {"id": "shotaro", "name": "哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。"},
@@ -201,13 +201,6 @@
       {"id": "map-convenience-store", "title": "小时候的便利店", "body": "收藏地点 · 从家步行4分钟", "kind": "text"},
       {"id": "map-riverside", "title": "河边长椅", "body": "收藏地点 · 备注：他说‘我没说不算’的地方", "kind": "text", "hidden": true}
     ],
-    "reminders": [
-      {"id": "guide-start", "title": "失主线索 · 从这里开始", "body": "① 锁屏提示与11月25日有关。\n② 解锁后打开 KakaoTalk。\n③ 找到韩有真在2019年提过的四位数字。\n④ 每发现一段过去，这里都会出现下一条任务。", "kind": "note", "time": "2026-10-25 22:17", "folder": "剧情导航"},
-      {"id": "guide-childhood", "title": "任务一 · 第一部手机", "body": "打开备忘录，进入‘私人笔记’，阅读《新手机使用规则》。需要密码时，使用刚刚在有真聊天里发现的四位数字。", "kind": "note", "time": "2026-10-25 22:18", "folder": "剧情导航", "hidden": true},
-      {"id": "guide-highschool", "title": "任务二 · 这不是约会？", "body": "2019年的笔记会解锁高中时期的内容。继续在备忘录中寻找《不是约会》，也可以先查看相册里刚出现的高中照片。", "kind": "note", "time": "2026-10-25 22:20", "folder": "剧情导航", "hidden": true},
-      {"id": "guide-adult", "title": "任务三 · 没有发送的信", "body": "高中笔记会带你来到2026年。打开备忘录的‘草稿’文件夹，阅读《没有发送》。读完后不要离开手机，来电会推进最终剧情。", "kind": "note", "time": "2026-10-25 22:23", "folder": "剧情导航", "hidden": true},
-      {"id": "guide-final", "title": "最终任务 · 接听来电", "body": "接听将太郎的电话。之后请选择如何归还手机，不同选择会进入不同结局。", "kind": "note", "time": "2026-10-25 22:25", "folder": "剧情导航", "hidden": true}
-    ],
     "safari": [
       {"id": "safari-01", "title": "青梅竹马突然不让叫哥哥是什么意思", "body": "搜索记录 · 2026.10.25 21:14", "kind": "text"},
       {"id": "safari-02", "title": "怎么判断对方吃醋但不承认", "body": "搜索记录 · 2026.10.25 21:17", "kind": "text"},
@@ -249,10 +242,7 @@
       "actions": [
         {"type": "unlock", "key": "note-new-phone", "value": true},
         {"type": "unlock", "key": "photo-convenience-store", "value": true},
-        {"type": "unlock", "key": "album-black-shirt", "value": true},
-        {"type": "unlock", "key": "album-night-shadows", "value": true},
-        {"type": "unlock", "key": "guide-childhood", "value": true},
-        {"type": "notification", "key": "", "value": "提醒事项：任务一‘第一部手机’已出现"}
+        {"type": "notification", "key": "", "value": "备忘录：发现一篇2019年的加密笔记"}
       ]
     },
     {
@@ -262,15 +252,72 @@
       "event": "read",
       "target": "note-new-phone",
       "actions": [
+        {"type": "time", "key": "", "value": "22:19"}
+      ],
+      "next": ["childhood-message"]
+    },
+    {
+      "id": "childhood-message",
+      "label": "哥哥看见了旧笔记",
+      "type": "delay",
+      "delayMs": 650,
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "你又把‘我不算家长’写进备忘录了？第四条删掉。"},
+        {"type": "notification", "key": "", "value": "哥哥：第四条删掉。"}
+      ],
+      "next": ["childhood-reply-choice"]
+    },
+    {
+      "id": "childhood-reply-choice",
+      "label": "回复哥哥",
+      "type": "choice",
+      "next": ["childhood-reply-tease", "childhood-reply-promise", "childhood-reply-caught"]
+    },
+    {
+      "id": "childhood-reply-tease",
+      "label": "才不要，你本来就只比我大一岁。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "才不要，你本来就只比我大一岁。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "大一天也是哥哥。下雨了就站在原地等我。"}
+      ],
+      "next": ["unlock-highschool"]
+    },
+    {
+      "id": "childhood-reply-promise",
+      "label": "那你以后都要来接我。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "那你以后都要来接我。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "你先别到处乱跑，我就一直去。"}
+      ],
+      "next": ["unlock-highschool"]
+    },
+    {
+      "id": "childhood-reply-caught",
+      "label": "你怎么知道我写了什么？",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你怎么知道我写了什么？"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "因为你把备忘录截图发给我了，笨蛋。"}
+      ],
+      "next": ["unlock-highschool"]
+    },
+    {
+      "id": "unlock-highschool",
+      "label": "解锁高中回忆",
+      "type": "event",
+      "actions": [
         {"type": "variable", "key": "era", "value": "2022"},
+        {"type": "unlock", "key": "album-black-shirt", "value": true},
+        {"type": "unlock", "key": "album-night-shadows", "value": true},
         {"type": "unlock", "key": "photo-school-gate", "value": true},
         {"type": "unlock", "key": "photo-riverside", "value": true},
         {"type": "unlock", "key": "note-highschool", "value": true},
         {"type": "unlock", "key": "ig-river", "value": true},
         {"type": "unlock", "key": "music-not-date", "value": true},
         {"type": "unlock", "key": "map-riverside", "value": true},
-        {"type": "unlock", "key": "guide-highschool", "value": true},
-        {"type": "notification", "key": "", "value": "提醒事项：任务二‘这不是约会？’已出现"}
+        {"type": "notification", "key": "", "value": "相册：‘不是约会’出现了新的回忆"}
       ]
     },
     {
@@ -279,6 +326,62 @@
       "type": "event",
       "event": "read",
       "target": "note-highschool",
+      "actions": [
+        {"type": "time", "key": "", "value": "22:22"}
+      ],
+      "next": ["highschool-message"]
+    },
+    {
+      "id": "highschool-message",
+      "label": "哥哥追问河边的话",
+      "type": "delay",
+      "delayMs": 650,
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "到家了吗？刚才在河边的话，我是认真的。"},
+        {"type": "notification", "key": "", "value": "哥哥：刚才在河边的话，我是认真的。"}
+      ],
+      "next": ["highschool-reply-choice"]
+    },
+    {
+      "id": "highschool-reply-choice",
+      "label": "回复哥哥",
+      "type": "choice",
+      "next": ["highschool-reply-forgot", "highschool-reply-responsible", "highschool-reply-age"]
+    },
+    {
+      "id": "highschool-reply-forgot",
+      "label": "什么话？我忘了。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "什么话？我忘了。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那我明天当面再说一遍。"}
+      ],
+      "next": ["unlock-adult"]
+    },
+    {
+      "id": "highschool-reply-responsible",
+      "label": "你现在还负责吗？",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你现在还负责吗？"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "从来没停过。只是你总装作不知道。"}
+      ],
+      "next": ["unlock-adult"]
+    },
+    {
+      "id": "highschool-reply-age",
+      "label": "哥哥只比我大一岁。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "哥哥只比我大一岁。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "所以别再拿年龄当借口。"}
+      ],
+      "next": ["unlock-adult"]
+    },
+    {
+      "id": "unlock-adult",
+      "label": "解锁成年后的秘密",
+      "type": "event",
       "actions": [
         {"type": "variable", "key": "era", "value": "2026"},
         {"type": "unlock", "key": "photo-university", "value": true},
@@ -292,8 +395,7 @@
         {"type": "unlock", "key": "ig-story-2026", "value": true},
         {"type": "unlock", "key": "music-confession", "value": true},
         {"type": "unlock", "key": "clock-03", "value": true},
-        {"type": "unlock", "key": "guide-adult", "value": true},
-        {"type": "notification", "key": "", "value": "提醒事项：任务三‘没有发送的信’已出现"}
+        {"type": "notification", "key": "", "value": "备忘录：发现一封没有发送的信"}
       ]
     },
     {
@@ -304,8 +406,54 @@
       "target": "note-unsent",
       "actions": [
         {"type": "variable", "key": "secretFound", "value": true},
-        {"type": "time", "key": "", "value": "22:25"},
-        {"type": "unlock", "key": "guide-final", "value": true}
+        {"type": "time", "key": "", "value": "22:25"}
+      ],
+      "next": ["final-message"]
+    },
+    {
+      "id": "final-message",
+      "label": "今晚的消息",
+      "type": "delay",
+      "delayMs": 650,
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "手机找到了吗？我在河边。今晚别躲我。"},
+        {"type": "notification", "key": "", "value": "哥哥：我在河边。今晚别躲我。"}
+      ],
+      "next": ["final-reply-choice"]
+    },
+    {
+      "id": "final-reply-choice",
+      "label": "回复哥哥",
+      "type": "choice",
+      "next": ["final-reply-talk", "final-reply-wait", "final-reply-sister"]
+    },
+    {
+      "id": "final-reply-talk",
+      "label": "找到了。我也有话说。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "找到了。我也有话说。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "好，我等你。"}
+      ],
+      "next": ["incoming-call"]
+    },
+    {
+      "id": "final-reply-wait",
+      "label": "你先别走。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你先别走。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "我不会走。"}
+      ],
+      "next": ["incoming-call"]
+    },
+    {
+      "id": "final-reply-sister",
+      "label": "不许再叫我妹妹。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "不许再叫我妹妹。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那你也别再叫我哥哥。"}
       ],
       "next": ["incoming-call"]
     },
@@ -363,8 +511,14 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "childhood-reply-promise", "target": ""},
         {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "highschool-reply-responsible", "target": ""},
         {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "final-reply-talk", "target": ""},
         {"advanceMs": 800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-riverside", "target": ""}
@@ -377,8 +531,14 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "childhood-reply-tease", "target": ""},
         {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "highschool-reply-forgot", "target": ""},
         {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "final-reply-wait", "target": ""},
         {"advanceMs": 800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-protect", "target": ""}
@@ -391,8 +551,14 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "childhood-reply-caught", "target": ""},
         {"event": "read", "target": "note-highschool", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "highschool-reply-age", "target": ""},
         {"event": "read", "target": "note-unsent", "password": "1125"},
+        {"advanceMs": 650, "target": ""},
+        {"choose": "final-reply-sister", "target": ""},
         {"advanceMs": 800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-yujin", "target": ""}

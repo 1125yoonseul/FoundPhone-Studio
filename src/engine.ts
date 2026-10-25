@@ -69,15 +69,22 @@ function apply(a: Action, s: Runtime, w: Work) {
         s.choices.push({ label: String(a.value), target: a.key });
       break;
     case "message":
-      s.messages[a.key] = [
-        ...(s.messages[a.key] ?? []),
+      {
+        const [app, thread = "新消息", direction = "outgoing"] = a.key.split("|");
+        const outgoing = direction !== "incoming";
+        s.messages[app] = [
+        ...(s.messages[app] ?? []),
         makeItem({
-          id: `event-${a.key}-${s.completed.length}-${s.messages[a.key]?.length ?? 0}`,
-          title: "新消息",
-          sender: w.phone.owner,
+          id: `event-${app}-${s.completed.length}-${s.messages[app]?.length ?? 0}`,
+          title: thread,
+          sender: outgoing ? w.phone.owner : thread,
           body: String(a.value),
+          time: `${s.date || w.phone.date} ${s.time || w.phone.time}`,
+          outgoing,
+          read: outgoing,
         }),
       ];
+      }
       break;
   }
 }

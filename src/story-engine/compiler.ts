@@ -246,7 +246,7 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
     n.actions.forEach((a, j) => {
       if (["unlock", "hide"].includes(a.type) && !itemIds.has(a.key))
         fail(`events.${i}.actions.${j}.key`, "不存在的内容");
-      if (a.type === "message" && !installed.has(a.key))
+      if (a.type === "message" && !installed.has(a.key.split("|")[0]))
         fail(`events.${i}.actions.${j}.key`, "消息 App 未安装");
       if (a.type === "choice" && !nodeIds.has(a.key))
         fail(`events.${i}.actions.${j}.key`, "选项节点不存在");
