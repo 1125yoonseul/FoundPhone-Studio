@@ -3,9 +3,10 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 1,
+  "revision": 3,
   "phone": {
     "owner": "李尹瑟",
+    "passcode": "1125",
     "date": "2026-10-25",
     "time": "22:17",
     "battery": 63,
@@ -17,7 +18,7 @@
   "installedApps": [
     "phone", "messages", "contacts", "photos", "camera", "kakao",
     "instagram", "notes", "calendar", "music", "maps", "clock",
-    "settings", "calculator", "safari"
+    "settings", "calculator", "safari", "reminders"
   ],
   "contacts": [
     {"id": "shotaro", "name": "将太郎哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。不要被备注骗了。"},
@@ -120,6 +121,22 @@
       ]
     },
     {
+      "id": "kakao-friends-2026",
+      "app": "kakao",
+      "title": "今晚谁都不准迟到",
+      "participants": ["owner", "yujin", "alex"],
+      "messages": [
+        {"id": "g26-01", "title": "", "body": "九点结束以后去吃宵夜？", "senderId": "yujin", "time": "2026-10-25 17:34"},
+        {"id": "g26-02", "title": "", "body": "我可以，但尹瑟大概又要被某人接走。", "senderId": "alex", "time": "2026-10-25 17:35"},
+        {"id": "g26-03", "title": "", "body": "没有人接我，我自己回去。", "senderId": "owner", "time": "2026-10-25 17:36"},
+        {"id": "g26-04", "title": "", "body": "截图了。等将太郎出现在门口我就发回来。", "senderId": "yujin", "time": "2026-10-25 17:37"},
+        {"id": "g26-05", "title": "", "body": "他今天不会来。我们刚刚还吵架了。", "senderId": "owner", "time": "2026-10-25 17:38"},
+        {"id": "g26-06", "title": "", "body": "你们两个所谓的吵架，通常是他问你到家没有，你故意十分钟不回。", "senderId": "yujin", "time": "2026-10-25 17:39"},
+        {"id": "g26-07", "title": "", "body": "这次不一样。他说今晚有话要讲。", "senderId": "owner", "time": "2026-10-25 17:41"},
+        {"id": "g26-08", "title": "", "body": "那今晚的宵夜可能要改成庆功宴了。", "senderId": "alex", "time": "2026-10-25 17:42"}
+      ]
+    },
+    {
       "id": "messages-mom",
       "app": "messages",
       "title": "妈妈",
@@ -128,7 +145,11 @@
         {"id": "mom-01", "title": "", "body": "新手机是升初中的礼物，要好好保管。", "senderId": "mom", "time": "2019-03-02 15:10"},
         {"id": "mom-02", "title": "", "body": "知道啦。我一定不会弄丢。", "senderId": "owner", "time": "2019-03-02 15:12"},
         {"id": "mom-03", "title": "", "body": "让将太郎帮你设置一下，有问题先问他。", "senderId": "mom", "time": "2019-03-02 15:13"},
-        {"id": "mom-04", "title": "", "body": "为什么你们都觉得他很可靠……", "senderId": "owner", "time": "2019-03-02 15:14"}
+        {"id": "mom-04", "title": "", "body": "为什么你们都觉得他很可靠……", "senderId": "owner", "time": "2019-03-02 15:14"},
+        {"id": "mom-05", "title": "", "body": "今晚回家吗？冰箱里有海带汤。", "senderId": "mom", "time": "2026-10-25 19:26"},
+        {"id": "mom-06", "title": "", "body": "回。活动结束以后就走。", "senderId": "owner", "time": "2026-10-25 19:31"},
+        {"id": "mom-07", "title": "", "body": "将太郎刚问我你有没有到家。你又没回他消息？", "senderId": "mom", "time": "2026-10-25 22:02"},
+        {"id": "mom-08", "title": "", "body": "手机好像落在咖啡店了。我马上去找，不要担心。", "senderId": "owner", "time": "2026-10-25 22:03"}
       ]
     }
   ],
@@ -169,6 +190,31 @@
     "maps": [
       {"id": "map-convenience-store", "title": "小时候的便利店", "body": "收藏地点 · 从家步行4分钟", "kind": "text"},
       {"id": "map-riverside", "title": "河边长椅", "body": "收藏地点 · 备注：他说‘我没说不算’的地方", "kind": "text", "hidden": true}
+    ],
+    "reminders": [
+      {"id": "guide-start", "title": "失主线索 · 从这里开始", "body": "① 锁屏提示与11月25日有关。\n② 解锁后打开 KakaoTalk。\n③ 找到韩有真在2019年提过的四位数字。\n④ 每发现一段过去，这里都会出现下一条任务。", "kind": "note", "time": "2026-10-25 22:17", "folder": "剧情导航"},
+      {"id": "guide-childhood", "title": "任务一 · 第一部手机", "body": "打开备忘录，进入‘私人笔记’，阅读《新手机使用规则》。需要密码时，使用刚刚在有真聊天里发现的四位数字。", "kind": "note", "time": "2026-10-25 22:18", "folder": "剧情导航", "hidden": true},
+      {"id": "guide-highschool", "title": "任务二 · 这不是约会？", "body": "2019年的笔记会解锁高中时期的内容。继续在备忘录中寻找《不是约会》，也可以先查看相册里刚出现的高中照片。", "kind": "note", "time": "2026-10-25 22:20", "folder": "剧情导航", "hidden": true},
+      {"id": "guide-adult", "title": "任务三 · 没有发送的信", "body": "高中笔记会带你来到2026年。打开备忘录的‘草稿’文件夹，阅读《没有发送》。读完后不要离开手机，来电会推进最终剧情。", "kind": "note", "time": "2026-10-25 22:23", "folder": "剧情导航", "hidden": true},
+      {"id": "guide-final", "title": "最终任务 · 接听来电", "body": "接听将太郎的电话。之后请选择如何归还手机，不同选择会进入不同结局。", "kind": "note", "time": "2026-10-25 22:25", "folder": "剧情导航", "hidden": true}
+    ],
+    "safari": [
+      {"id": "safari-01", "title": "青梅竹马突然不让叫哥哥是什么意思", "body": "搜索记录 · 2026.10.25 21:14", "kind": "text"},
+      {"id": "safari-02", "title": "怎么判断对方吃醋但不承认", "body": "搜索记录 · 2026.10.25 21:17", "kind": "text"},
+      {"id": "safari-03", "title": "朋友变成恋人以后还能回到以前吗", "body": "搜索记录 · 2026.10.25 21:23", "kind": "text"},
+      {"id": "safari-04", "title": "河边晚上十点半会不会冷", "body": "搜索记录 · 2026.10.25 21:29", "kind": "text"}
+    ],
+    "clock": [
+      {"id": "clock-01", "title": "07:10", "body": "上课 · 工作日", "kind": "event"},
+      {"id": "clock-02", "title": "08:00", "body": "周末也不要睡到中午", "kind": "event"},
+      {"id": "clock-03", "title": "22:30", "body": "去河边 · 仅今天", "kind": "event", "hidden": true}
+    ],
+    "settings": [
+      {"id": "settings-01", "title": "设备名称", "body": "尹瑟的第4部手机", "kind": "text"},
+      {"id": "settings-02", "title": "紧急联系人", "body": "将太郎哥哥 · 010-1125-2000", "kind": "text"}
+    ],
+    "calculator": [
+      {"id": "calculator-01", "title": "最近一次计算", "body": "2026 - 2019 = 7", "kind": "text"}
     ]
   },
   "variables": {
@@ -181,7 +227,7 @@
       "label": "第一部手机",
       "type": "start",
       "actions": [
-        {"type": "notification", "key": "", "value": "KakaoTalk：将太郎哥哥发来一条消息"}
+        {"type": "notification", "key": "", "value": "有真：你不会到现在还拿11月25日当密码吧？"}
       ]
     },
     {
@@ -193,7 +239,8 @@
       "actions": [
         {"type": "unlock", "key": "note-new-phone", "value": true},
         {"type": "unlock", "key": "photo-convenience-store", "value": true},
-        {"type": "notification", "key": "", "value": "私人笔记：一篇2019年的加密笔记已出现"}
+        {"type": "unlock", "key": "guide-childhood", "value": true},
+        {"type": "notification", "key": "", "value": "提醒事项：任务一‘第一部手机’已出现"}
       ]
     },
     {
@@ -210,7 +257,8 @@
         {"type": "unlock", "key": "ig-river", "value": true},
         {"type": "unlock", "key": "music-not-date", "value": true},
         {"type": "unlock", "key": "map-riverside", "value": true},
-        {"type": "notification", "key": "", "value": "相册：‘不是约会’相册已解锁"}
+        {"type": "unlock", "key": "guide-highschool", "value": true},
+        {"type": "notification", "key": "", "value": "提醒事项：任务二‘这不是约会？’已出现"}
       ]
     },
     {
@@ -228,7 +276,9 @@
         {"type": "unlock", "key": "calendar-riverside", "value": true},
         {"type": "unlock", "key": "ig-story-2026", "value": true},
         {"type": "unlock", "key": "music-confession", "value": true},
-        {"type": "notification", "key": "", "value": "备忘录：发现一封没有发送的信"}
+        {"type": "unlock", "key": "clock-03", "value": true},
+        {"type": "unlock", "key": "guide-adult", "value": true},
+        {"type": "notification", "key": "", "value": "提醒事项：任务三‘没有发送的信’已出现"}
       ]
     },
     {
@@ -239,7 +289,8 @@
       "target": "note-unsent",
       "actions": [
         {"type": "variable", "key": "secretFound", "value": true},
-        {"type": "time", "key": "", "value": "22:25"}
+        {"type": "time", "key": "", "value": "22:25"},
+        {"type": "unlock", "key": "guide-final", "value": true}
       ],
       "next": ["incoming-call"]
     },
