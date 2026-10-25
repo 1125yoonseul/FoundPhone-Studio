@@ -3,7 +3,7 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 5,
+  "revision": 7,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
@@ -18,7 +18,7 @@
   "installedApps": [
     "phone", "messages", "contacts", "photos", "camera", "kakao",
     "instagram", "notes", "calendar", "music", "maps", "clock",
-    "settings", "calculator", "safari"
+    "settings", "calculator", "safari", "forum"
   ],
   "contacts": [
     {"id": "shotaro", "name": "哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。"},
@@ -81,7 +81,7 @@
     {
       "id": "kakao-yujin-2022",
       "app": "kakao",
-      "title": "韩有真 · 不许笑",
+      "title": "韩有真",
       "participants": ["owner", "yujin"],
       "messages": [
         {"id": "y22-01", "title": "", "body": "他放着聚会不管跑去接你，你还说是普通哥哥？", "senderId": "yujin", "time": "2022-09-18 00:14"},
@@ -174,9 +174,17 @@
     ],
     "notes": [
       {"id": "note-new-phone", "title": "新手机使用规则", "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。", "kind": "note", "time": "2019-03-02 23:41", "folder": "私人笔记", "password": "1125", "hidden": true},
+      {"id": "note-middle-first-week", "title": "初中第一周", "body": "周一不要坐错公交。\n周二交学生证照片。\n周三带美术材料。\n周四把有真的漫画还给她。\n周五放学和哥哥去吃辣炒年糕。", "kind": "note", "time": "2019-03-03 21:12", "folder": "日常"},
+      {"id": "note-pocket-money-2019", "title": "三月零花钱", "body": "草莓牛奶 1,400\n自动铅笔 2,000\n手机壳 8,900\n给哥哥买的创可贴 1,000（不要告诉他）", "kind": "note", "time": "2019-03-12 19:07", "folder": "日常"},
       {"id": "note-highschool", "title": "不是约会", "body": "他说只是来接我。\n他说小时候答应过会负责。\n他说‘我没说不算’的时候，我居然不敢看他。\n\n韩有真说，如果我需要反复解释这不是约会，那大概已经很像约会了。", "kind": "note", "time": "2022-09-18 01:03", "folder": "私人笔记", "password": "1125", "hidden": true},
+      {"id": "note-club-festival-2022", "title": "社团节当天", "body": "充电宝、发夹、止痛药、备用T恤。\n有真说结束后要去吃烤肉。\n哥哥的舞台在18:40，嘴上说不去看，还是提前设了闹钟。", "kind": "note", "time": "2022-05-18 07:26", "folder": "高中", "hidden": true},
+      {"id": "note-rain-2022", "title": "不要再忘记带伞", "body": "天气预报明明写了80%。\n最后又和哥哥挤一把伞。\n他右边肩膀全湿了，还说自己没有淋到。", "kind": "note", "time": "2022-07-11 23:09", "folder": "高中", "hidden": true},
+      {"id": "note-exam-2022", "title": "期中以后要做的事", "body": "睡十二小时。\n把桌子整理干净。\n陪有真逛街。\n不要再让哥哥教数学，他讲到最后比我还生气。", "kind": "note", "time": "2022-10-14 00:32", "folder": "高中", "hidden": true},
       {"id": "note-unsent", "title": "没有发送", "body": "将太郎：\n\n我知道你只比我大一岁。小时候一直叫你哥哥，是因为所有人都这么叫；后来还叫，是因为只要这样叫，我们就永远有理由留在彼此身边。\n\n可是今天你说不想当哥哥了。\n\n如果你真的问我，我想说：那就不要当了。", "kind": "note", "time": "2026-10-25 21:42", "folder": "草稿", "password": "1125", "hidden": true},
-      {"id": "note-clue", "title": "六年没换的数字", "body": "新手机的第一天，有真就猜中了那个四位数。后来换过三部手机，私人笔记的密码一直没换。", "kind": "note", "time": "2026-10-25 21:45", "folder": "草稿", "hidden": true}
+      {"id": "note-clue", "title": "六年没换的数字", "body": "新手机的第一天，有真就猜中了那个四位数。后来换过三部手机，私人笔记的密码一直没换。", "kind": "note", "time": "2026-10-25 21:45", "folder": "草稿", "hidden": true},
+      {"id": "note-week-plan-2026", "title": "这周不要再拖延", "body": "计量作业周三前写完。\n打印交换项目材料。\n给妈妈回电话。\n洗衣液快没有了。\n不要半夜两点搜索奇怪的恋爱问题。", "kind": "note", "time": "2026-10-20 02:06", "folder": "日常", "hidden": true},
+      {"id": "note-fridge-2026", "title": "冰箱", "body": "牛奶、鸡蛋、泡菜、桃子气泡水。\n哥哥不吃香菜。\n有真要的草莓酸奶。", "kind": "note", "time": "2026-10-23 17:20", "folder": "日常", "hidden": true},
+      {"id": "note-graduate-school", "title": "以后想去的地方", "body": "日本修士申请时间线。\n语言成绩。\n研究计划书。\n奖学金。\n先不要因为害怕就放弃。", "kind": "note", "time": "2026-10-24 00:48", "folder": "学习", "hidden": true}
     ],
     "calendar": [
       {"id": "calendar-middle-school", "title": "初中入学", "body": "2019.03.04 · 新制服、新书包、第一部手机", "kind": "event", "time": "2019-03-04 08:00"},
@@ -189,8 +197,26 @@
     ],
     "instagram": [
       {"id": "ig-first-phone", "title": "yoonseul.archive", "body": "人生第一部手机📱 妈妈说不要弄丢。某位哥哥说要把他置顶。", "kind": "post", "time": "2019-03-02 19:04", "likes": 23, "comments": ["有真：某位哥哥是谁呀ㅎㅎ", "尹瑟：闭嘴"]},
+      {"id": "ig-yujin-2019", "title": "yujin.zip", "body": "初中第一周存活成功。旁边这位午饭只吃了三口，因为有人在校门口等她。", "kind": "post", "time": "2019-03-08 18:12", "likes": 31, "comments": ["尹瑟：你删掉最后一句", "有真：拒绝"]},
+      {"id": "ig-shotaro-2019", "title": "shotaro.1125", "body": "被迫负责接送小孩的第一周。", "kind": "post", "time": "2019-03-08 19:02", "likes": 46, "comments": ["尹瑟：谁是小孩", "将太郎：谁回复谁就是"]},
       {"id": "ig-river", "title": "yoonseul.archive", "body": "不是约会。只是有人半夜跑来送外套。", "kind": "post", "time": "2022-09-18 00:07", "likes": 118, "comments": ["有真：好的不是约会", "Alex：此地无银三百两"], "hidden": true},
+      {"id": "ig-shotaro-club-2022", "title": "shotaro.1125", "body": "社团节结束。谢谢今天来的人。", "kind": "post", "time": "2022-05-18 22:14", "likes": 624, "comments": ["舞社成员：社长辛苦了", "有真：某个人明明说不来", "尹瑟：不要艾特我"], "hidden": true},
+      {"id": "ig-classmate-2022", "title": "minseo.daily", "body": "今日校园目击：舞社社长表演结束第一件事不是合照，是给人送水。", "kind": "post", "time": "2022-05-18 22:36", "likes": 203, "comments": ["同学A：青梅竹马那位？", "敏书：我什么都没说ㅎㅎ"], "hidden": true},
+      {"id": "ig-yujin-rain-2022", "title": "yujin.zip", "body": "有人共享一把伞，有人负责在后面替他们拍证据。", "kind": "post", "time": "2022-07-11 20:44", "likes": 87, "comments": ["尹瑟：韩有真。", "有真：在"] , "hidden": true},
+      {"id": "ig-shotaro-campus-2026", "title": "shotaro.1125", "body": "忙完以后去吃饭。有人说只等十分钟。", "kind": "post", "time": "2026-05-03 18:40", "likes": 1321, "comments": ["Alex：你已经迟到十二分钟", "有真：她还是会等"] , "hidden": true},
+      {"id": "ig-yujin-cafe-2026", "title": "yujin.zip", "body": "复习五分钟，聊天两小时。大学生活非常充实。", "kind": "post", "time": "2026-10-18 21:33", "likes": 241, "comments": ["尹瑟：照片里的笔记是谁的", "有真：反正不是你的"] , "hidden": true},
+      {"id": "ig-classmate-night-2026", "title": "alex.after9", "body": "今晚活动结束。手机落在店里的同学请尽快回来认领。", "kind": "post", "time": "2026-10-25 22:01", "likes": 76, "comments": ["有真：我知道是谁", "Alex：她本人还不知道"] , "hidden": true},
       {"id": "ig-story-2026", "title": "yoonseul.archive · 快拍草稿", "body": "有些称呼用了太久，就会让人忘记它本来只是一种借口。", "kind": "post", "time": "2026-10-25 21:51", "folder": "草稿", "meta": {"story": "true"}, "hidden": true}
+    ],
+    "forum": [
+      {"id": "forum-lost-card-2019", "title": "有人在一年级走廊捡到学生证吗", "body": "蓝色卡套，里面夹了一张便利店积分卡。找到请放到教务室，谢谢。", "sender": "匿名", "kind": "post", "time": "2019-03-06 16:22", "folder": "失物招领", "meta": {"views": "84", "status": "求助"}, "comments": ["1楼：好像在图书馆门口见过", "楼主：找到了谢谢！"]},
+      {"id": "forum-cafeteria-2019", "title": "今天食堂的炸猪排是不是变小了", "body": "不是错觉吧？我拍了上周和今天的对比。", "sender": "一年级匿名", "kind": "post", "time": "2019-03-14 12:48", "folder": "校园闲聊", "meta": {"views": "311"}, "comments": ["2楼：你居然有上周的照片", "7楼：学术精神"]},
+      {"id": "forum-dance-president-01", "title": "舞社社长是不是每天都在等一个女生放学", "body": "连续三天看到他站在一年级楼下，手里还拿着草莓牛奶。", "sender": "匿名同学A", "kind": "post", "time": "2022-04-21 18:07", "folder": "校园匿名", "meta": {"views": "1842", "status": "热"}, "comments": ["1楼：青梅竹马啦，从小认识", "3楼：青梅竹马更可疑好吗", "8楼：女方叫他哥哥", "12楼：只大一岁也叫哥哥？"] , "hidden": true},
+      {"id": "forum-dance-president-02", "title": "更新：社团节送水那个就是青梅竹马吗", "body": "社长表演完绕过所有人，先把水递给了观众席边上的女生。", "sender": "前排目击者", "kind": "post", "time": "2022-05-18 22:29", "folder": "校园匿名", "meta": {"views": "3260", "status": "热"}, "comments": ["2楼：她还帮他拿外套", "6楼：他们自己说不是恋爱", "9楼：没人在问他们是不是恋爱吧", "15楼：越解释越奇怪"] , "hidden": true},
+      {"id": "forum-dance-president-03", "title": "所以舞社社长和青梅竹马到底在没在一起", "body": "投票：A 已经在一起；B 互相喜欢但都嘴硬；C 真的是兄妹。", "sender": "吃瓜不嫌事大", "kind": "post", "time": "2022-09-18 09:12", "folder": "校园匿名", "meta": {"views": "4971", "status": "投票"}, "comments": ["1楼：B压倒性胜利", "4楼：昨晚有人看到他去河边接她", "10楼：C选项为什么只有两票", "16楼：其中一票不会是本人吧"] , "hidden": true},
+      {"id": "forum-rain-2022", "title": "共享一把伞还说只是哥哥合理吗", "body": "男方自己半边肩膀全湿，伞几乎都偏到女方那边。", "sender": "路过操场", "kind": "post", "time": "2022-07-11 21:02", "folder": "校园匿名", "meta": {"views": "2219"}, "comments": ["3楼：普通哥哥也会吧", "5楼：但他只比她大一岁", "11楼：这对的重点永远是只大一岁"] , "hidden": true},
+      {"id": "forum-campus-2026", "title": "有人认识经金系总在咖啡店靠窗坐的女生吗", "body": "想还她掉在座位下的笔记本，封面写着Y&S。", "sender": "匿名", "kind": "post", "time": "2026-10-12 20:17", "folder": "大学生活", "meta": {"views": "608", "status": "求助"}, "comments": ["1楼：交给店员吧", "4楼：Y&S听起来像情侣缩写"] , "hidden": true},
+      {"id": "forum-phone-2026", "title": "咖啡店捡到一部手机", "body": "蓝色壁纸，锁屏是一个戴绿色帽子的人。失主看到请联系前台。", "sender": "店员", "kind": "post", "time": "2026-10-25 22:04", "folder": "失物招领", "meta": {"views": "92", "status": "置顶"}, "comments": ["1楼：失主朋友已经在找了", "店员：已有人联系前台"] , "hidden": true}
     ],
     "music": [
       {"id": "music-childhood", "title": "回家路上", "body": "2019 年春天创建 · 27首歌", "kind": "audio", "folder": "歌单"},
@@ -230,6 +256,51 @@
       "label": "第一部手机",
       "type": "start",
       "actions": [
+        {"type": "hide", "key": "k22-01", "value": true},
+        {"type": "hide", "key": "k22-02", "value": true},
+        {"type": "hide", "key": "k22-03", "value": true},
+        {"type": "hide", "key": "k22-04", "value": true},
+        {"type": "hide", "key": "k22-05", "value": true},
+        {"type": "hide", "key": "k22-06", "value": true},
+        {"type": "hide", "key": "k22-07", "value": true},
+        {"type": "hide", "key": "k22-08", "value": true},
+        {"type": "hide", "key": "k22-09", "value": true},
+        {"type": "hide", "key": "k22-10", "value": true},
+        {"type": "hide", "key": "k22-11", "value": true},
+        {"type": "hide", "key": "y22-01", "value": true},
+        {"type": "hide", "key": "y22-02", "value": true},
+        {"type": "hide", "key": "y22-03", "value": true},
+        {"type": "hide", "key": "y22-04", "value": true},
+        {"type": "hide", "key": "y22-05", "value": true},
+        {"type": "hide", "key": "k26-01", "value": true},
+        {"type": "hide", "key": "k26-02", "value": true},
+        {"type": "hide", "key": "k26-03", "value": true},
+        {"type": "hide", "key": "k26-04", "value": true},
+        {"type": "hide", "key": "k26-05", "value": true},
+        {"type": "hide", "key": "k26-06", "value": true},
+        {"type": "hide", "key": "k26-07", "value": true},
+        {"type": "hide", "key": "k26-08", "value": true},
+        {"type": "hide", "key": "k26-09", "value": true},
+        {"type": "hide", "key": "k26-10", "value": true},
+        {"type": "hide", "key": "a26-01", "value": true},
+        {"type": "hide", "key": "a26-02", "value": true},
+        {"type": "hide", "key": "a26-03", "value": true},
+        {"type": "hide", "key": "g26-01", "value": true},
+        {"type": "hide", "key": "g26-02", "value": true},
+        {"type": "hide", "key": "g26-03", "value": true},
+        {"type": "hide", "key": "g26-04", "value": true},
+        {"type": "hide", "key": "g26-05", "value": true},
+        {"type": "hide", "key": "g26-06", "value": true},
+        {"type": "hide", "key": "g26-07", "value": true},
+        {"type": "hide", "key": "g26-08", "value": true},
+        {"type": "hide", "key": "mom-05", "value": true},
+        {"type": "hide", "key": "mom-06", "value": true},
+        {"type": "hide", "key": "mom-07", "value": true},
+        {"type": "hide", "key": "mom-08", "value": true},
+        {"type": "hide", "key": "safari-01", "value": true},
+        {"type": "hide", "key": "safari-02", "value": true},
+        {"type": "hide", "key": "safari-03", "value": true},
+        {"type": "hide", "key": "safari-04", "value": true},
         {"type": "notification", "key": "", "value": "有真：你不会到现在还拿11月25日当密码吧？"}
       ]
     },
@@ -253,55 +324,7 @@
       "target": "note-new-phone",
       "actions": [
         {"type": "time", "key": "", "value": "22:19"}
-      ],
-      "next": ["childhood-message"]
-    },
-    {
-      "id": "childhood-message",
-      "label": "哥哥看见了旧笔记",
-      "type": "delay",
-      "delayMs": 650,
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "你又把‘我不算家长’写进备忘录了？第四条删掉。"},
-        {"type": "notification", "key": "", "value": "哥哥：第四条删掉。"}
-      ],
-      "next": ["childhood-reply-choice"]
-    },
-    {
-      "id": "childhood-reply-choice",
-      "label": "回复哥哥",
-      "type": "choice",
-      "next": ["childhood-reply-tease", "childhood-reply-promise", "childhood-reply-caught"]
-    },
-    {
-      "id": "childhood-reply-tease",
-      "label": "才不要，你本来就只比我大一岁。",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "才不要，你本来就只比我大一岁。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "大一天也是哥哥。下雨了就站在原地等我。"}
-      ],
-      "next": ["unlock-highschool"]
-    },
-    {
-      "id": "childhood-reply-promise",
-      "label": "那你以后都要来接我。",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "那你以后都要来接我。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "你先别到处乱跑，我就一直去。"}
-      ],
-      "next": ["unlock-highschool"]
-    },
-    {
-      "id": "childhood-reply-caught",
-      "label": "你怎么知道我写了什么？",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你怎么知道我写了什么？"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "因为你把备忘录截图发给我了，笨蛋。"}
-      ],
-      "next": ["unlock-highschool"]
+      ]
     },
     {
       "id": "unlock-highschool",
@@ -309,15 +332,59 @@
       "type": "event",
       "actions": [
         {"type": "variable", "key": "era", "value": "2022"},
-        {"type": "unlock", "key": "album-black-shirt", "value": true},
-        {"type": "unlock", "key": "album-night-shadows", "value": true},
+        {"type": "unlock", "key": "k22-01", "value": true},
+        {"type": "unlock", "key": "k22-02", "value": true},
+        {"type": "unlock", "key": "k22-03", "value": true},
+        {"type": "unlock", "key": "k22-04", "value": true},
+        {"type": "unlock", "key": "k22-05", "value": true},
+        {"type": "unlock", "key": "k22-06", "value": true},
+        {"type": "unlock", "key": "k22-07", "value": true},
+        {"type": "unlock", "key": "k22-08", "value": true},
+        {"type": "unlock", "key": "k22-09", "value": true},
+        {"type": "unlock", "key": "k22-10", "value": true},
+        {"type": "unlock", "key": "k22-11", "value": true},
+        {"type": "unlock", "key": "y22-01", "value": true},
+        {"type": "unlock", "key": "y22-02", "value": true},
+        {"type": "unlock", "key": "y22-03", "value": true},
+        {"type": "unlock", "key": "y22-04", "value": true},
+        {"type": "unlock", "key": "y22-05", "value": true},
         {"type": "unlock", "key": "photo-school-gate", "value": true},
         {"type": "unlock", "key": "photo-riverside", "value": true},
+        {"type": "notification", "key": "", "value": "KakaoTalk：恢复了2022年的旧聊天"}
+      ]
+    },
+    {
+      "id": "read-childhood-photo",
+      "label": "从便利店照片找到高中记录",
+      "type": "event",
+      "event": "read",
+      "target": "photo-convenience-store",
+      "next": ["unlock-highschool"]
+    },
+    {
+      "id": "read-highschool-chat",
+      "label": "读完河边的旧对话",
+      "type": "event",
+      "event": "read",
+      "target": "k22-11",
+      "actions": [
+        {"type": "unlock", "key": "album-black-shirt", "value": true},
+        {"type": "unlock", "key": "album-night-shadows", "value": true},
         {"type": "unlock", "key": "note-highschool", "value": true},
+        {"type": "unlock", "key": "note-club-festival-2022", "value": true},
+        {"type": "unlock", "key": "note-rain-2022", "value": true},
+        {"type": "unlock", "key": "note-exam-2022", "value": true},
         {"type": "unlock", "key": "ig-river", "value": true},
+        {"type": "unlock", "key": "ig-shotaro-club-2022", "value": true},
+        {"type": "unlock", "key": "ig-classmate-2022", "value": true},
+        {"type": "unlock", "key": "ig-yujin-rain-2022", "value": true},
+        {"type": "unlock", "key": "forum-dance-president-01", "value": true},
+        {"type": "unlock", "key": "forum-dance-president-02", "value": true},
+        {"type": "unlock", "key": "forum-dance-president-03", "value": true},
+        {"type": "unlock", "key": "forum-rain-2022", "value": true},
         {"type": "unlock", "key": "music-not-date", "value": true},
         {"type": "unlock", "key": "map-riverside", "value": true},
-        {"type": "notification", "key": "", "value": "相册：‘不是约会’出现了新的回忆"}
+        {"type": "notification", "key": "", "value": "备忘录：发现一篇2022年的私人笔记"}
       ]
     },
     {
@@ -328,53 +395,6 @@
       "target": "note-highschool",
       "actions": [
         {"type": "time", "key": "", "value": "22:22"}
-      ],
-      "next": ["highschool-message"]
-    },
-    {
-      "id": "highschool-message",
-      "label": "哥哥追问河边的话",
-      "type": "delay",
-      "delayMs": 650,
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "到家了吗？刚才在河边的话，我是认真的。"},
-        {"type": "notification", "key": "", "value": "哥哥：刚才在河边的话，我是认真的。"}
-      ],
-      "next": ["highschool-reply-choice"]
-    },
-    {
-      "id": "highschool-reply-choice",
-      "label": "回复哥哥",
-      "type": "choice",
-      "next": ["highschool-reply-forgot", "highschool-reply-responsible", "highschool-reply-age"]
-    },
-    {
-      "id": "highschool-reply-forgot",
-      "label": "什么话？我忘了。",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "什么话？我忘了。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那我明天当面再说一遍。"}
-      ],
-      "next": ["unlock-adult"]
-    },
-    {
-      "id": "highschool-reply-responsible",
-      "label": "你现在还负责吗？",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你现在还负责吗？"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "从来没停过。只是你总装作不知道。"}
-      ],
-      "next": ["unlock-adult"]
-    },
-    {
-      "id": "highschool-reply-age",
-      "label": "哥哥只比我大一岁。",
-      "type": "event",
-      "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "哥哥只比我大一岁。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "所以别再拿年龄当借口。"}
       ],
       "next": ["unlock-adult"]
     },
@@ -389,6 +409,63 @@
         {"type": "unlock", "key": "album-hanyang-jacket", "value": true},
         {"type": "unlock", "key": "album-pink-hair", "value": true},
         {"type": "unlock", "key": "album-pool", "value": true},
+        {"type": "notification", "key": "", "value": "相册：Y&S 相册出现了新的照片"}
+      ]
+    },
+    {
+      "id": "read-university-photo",
+      "label": "从大学外套回到现在",
+      "type": "event",
+      "event": "read",
+      "target": "album-hanyang-jacket",
+      "actions": [
+        {"type": "unlock", "key": "k26-01", "value": true},
+        {"type": "unlock", "key": "k26-02", "value": true},
+        {"type": "unlock", "key": "k26-03", "value": true},
+        {"type": "unlock", "key": "k26-04", "value": true},
+        {"type": "unlock", "key": "k26-05", "value": true},
+        {"type": "unlock", "key": "k26-06", "value": true},
+        {"type": "unlock", "key": "k26-07", "value": true},
+        {"type": "unlock", "key": "k26-08", "value": true},
+        {"type": "unlock", "key": "k26-09", "value": true},
+        {"type": "unlock", "key": "k26-10", "value": true},
+        {"type": "unlock", "key": "a26-01", "value": true},
+        {"type": "unlock", "key": "a26-02", "value": true},
+        {"type": "unlock", "key": "a26-03", "value": true},
+        {"type": "unlock", "key": "g26-01", "value": true},
+        {"type": "unlock", "key": "g26-02", "value": true},
+        {"type": "unlock", "key": "g26-03", "value": true},
+        {"type": "unlock", "key": "g26-04", "value": true},
+        {"type": "unlock", "key": "g26-05", "value": true},
+        {"type": "unlock", "key": "g26-06", "value": true},
+        {"type": "unlock", "key": "g26-07", "value": true},
+        {"type": "unlock", "key": "g26-08", "value": true},
+        {"type": "unlock", "key": "mom-05", "value": true},
+        {"type": "unlock", "key": "mom-06", "value": true},
+        {"type": "unlock", "key": "mom-07", "value": true},
+        {"type": "unlock", "key": "mom-08", "value": true},
+        {"type": "unlock", "key": "safari-01", "value": true},
+        {"type": "unlock", "key": "safari-02", "value": true},
+        {"type": "unlock", "key": "safari-03", "value": true},
+        {"type": "unlock", "key": "safari-04", "value": true},
+        {"type": "unlock", "key": "note-week-plan-2026", "value": true},
+        {"type": "unlock", "key": "note-fridge-2026", "value": true},
+        {"type": "unlock", "key": "note-graduate-school", "value": true},
+        {"type": "unlock", "key": "ig-shotaro-campus-2026", "value": true},
+        {"type": "unlock", "key": "ig-yujin-cafe-2026", "value": true},
+        {"type": "unlock", "key": "ig-classmate-night-2026", "value": true},
+        {"type": "unlock", "key": "forum-campus-2026", "value": true},
+        {"type": "unlock", "key": "forum-phone-2026", "value": true},
+        {"type": "notification", "key": "", "value": "KakaoTalk：恢复了今晚丢失手机前的消息"}
+      ]
+    },
+    {
+      "id": "read-current-chat",
+      "label": "读到今晚最后一条消息",
+      "type": "event",
+      "event": "read",
+      "target": "k26-10",
+      "actions": [
         {"type": "unlock", "key": "note-unsent", "value": true},
         {"type": "unlock", "key": "note-clue", "value": true},
         {"type": "unlock", "key": "calendar-riverside", "value": true},
@@ -414,10 +491,10 @@
       "id": "final-message",
       "label": "今晚的消息",
       "type": "delay",
-      "delayMs": 650,
+      "delayMs": 2000,
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "手机找到了吗？我在河边。今晚别躲我。"},
-        {"type": "notification", "key": "", "value": "哥哥：我在河边。今晚别躲我。"}
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "手机找到了吗？Alex说你回咖啡店了。先告诉我你平安。"},
+        {"type": "notification", "key": "", "value": "哥哥：先告诉我你平安。"}
       ],
       "next": ["final-reply-choice"]
     },
@@ -435,7 +512,7 @@
         {"type": "message", "key": "kakao|哥哥|outgoing", "value": "找到了。我也有话说。"},
         {"type": "message", "key": "kakao|哥哥|incoming", "value": "好，我等你。"}
       ],
-      "next": ["incoming-call"]
+      "next": ["second-message"]
     },
     {
       "id": "final-reply-wait",
@@ -445,7 +522,7 @@
         {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你先别走。"},
         {"type": "message", "key": "kakao|哥哥|incoming", "value": "我不会走。"}
       ],
-      "next": ["incoming-call"]
+      "next": ["second-message"]
     },
     {
       "id": "final-reply-sister",
@@ -455,13 +532,60 @@
         {"type": "message", "key": "kakao|哥哥|outgoing", "value": "不许再叫我妹妹。"},
         {"type": "message", "key": "kakao|哥哥|incoming", "value": "那你也别再叫我哥哥。"}
       ],
+      "next": ["second-message"]
+    },
+    {
+      "id": "second-message",
+      "label": "哥哥仍在等",
+      "type": "delay",
+      "delayMs": 1600,
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "我在第一次等你的便利店门口。别急，慢慢走。"},
+        {"type": "notification", "key": "", "value": "哥哥：别急，慢慢走。"}
+      ],
+      "next": ["second-reply-choice"]
+    },
+    {
+      "id": "second-reply-choice",
+      "label": "继续回复哥哥",
+      "type": "choice",
+      "next": ["second-reply-find", "second-reply-coming", "second-reply-confirm"]
+    },
+    {
+      "id": "second-reply-find",
+      "label": "你怎么每次都能找到我。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你怎么每次都能找到我。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "因为你每次不安的时候，都会走回同一个地方。"}
+      ],
+      "next": ["incoming-call"]
+    },
+    {
+      "id": "second-reply-coming",
+      "label": "我马上过去。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "我马上过去。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "好。我给你买了草莓牛奶。"}
+      ],
+      "next": ["incoming-call"]
+    },
+    {
+      "id": "second-reply-confirm",
+      "label": "等一下，我有件事想确认。",
+      "type": "event",
+      "actions": [
+        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "等一下，我有件事想确认。"},
+        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那就当面问。今晚我不会躲。"}
+      ],
       "next": ["incoming-call"]
     },
     {
       "id": "incoming-call",
       "label": "将太郎来电",
       "type": "delay",
-      "delayMs": 800,
+      "delayMs": 1800,
       "actions": [
         {"type": "call", "key": "call-shotaro-live", "value": "哥哥"}
       ]
@@ -511,15 +635,17 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "childhood-reply-promise", "target": ""},
+        {"event": "read", "target": "photo-convenience-store"},
+        {"event": "read", "target": "k22-11"},
         {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "highschool-reply-responsible", "target": ""},
+        {"event": "read", "target": "album-hanyang-jacket"},
+        {"event": "read", "target": "k26-10"},
         {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
+        {"advanceMs": 2000, "target": ""},
         {"choose": "final-reply-talk", "target": ""},
-        {"advanceMs": 800, "target": ""},
+        {"advanceMs": 1600, "target": ""},
+        {"choose": "second-reply-coming", "target": ""},
+        {"advanceMs": 1800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-riverside", "target": ""}
       ],
@@ -531,15 +657,17 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "childhood-reply-tease", "target": ""},
+        {"event": "read", "target": "photo-convenience-store"},
+        {"event": "read", "target": "k22-11"},
         {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "highschool-reply-forgot", "target": ""},
+        {"event": "read", "target": "album-hanyang-jacket"},
+        {"event": "read", "target": "k26-10"},
         {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
+        {"advanceMs": 2000, "target": ""},
         {"choose": "final-reply-wait", "target": ""},
-        {"advanceMs": 800, "target": ""},
+        {"advanceMs": 1600, "target": ""},
+        {"choose": "second-reply-find", "target": ""},
+        {"advanceMs": 1800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-protect", "target": ""}
       ],
@@ -551,15 +679,17 @@
       "steps": [
         {"event": "read", "target": "y19-password"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "childhood-reply-caught", "target": ""},
+        {"event": "read", "target": "photo-convenience-store"},
+        {"event": "read", "target": "k22-11"},
         {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
-        {"choose": "highschool-reply-age", "target": ""},
+        {"event": "read", "target": "album-hanyang-jacket"},
+        {"event": "read", "target": "k26-10"},
         {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 650, "target": ""},
+        {"advanceMs": 2000, "target": ""},
         {"choose": "final-reply-sister", "target": ""},
-        {"advanceMs": 800, "target": ""},
+        {"advanceMs": 1600, "target": ""},
+        {"choose": "second-reply-confirm", "target": ""},
+        {"advanceMs": 1800, "target": ""},
         {"event": "callAnswered", "target": "call-shotaro-live"},
         {"choose": "ending-yujin", "target": ""}
       ],

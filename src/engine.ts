@@ -39,6 +39,7 @@ function apply(a: Action, s: Runtime, w: Work) {
       break;
     case "unlock":
       if (!s.unlocked.includes(a.key)) s.unlocked.push(a.key);
+      s.hidden = s.hidden.filter((id) => id !== a.key);
       break;
     case "hide":
       if (!s.hidden.includes(a.key)) s.hidden.push(a.key);
