@@ -4,6 +4,22 @@ import { Phone } from "../Phone";
 import { validateWork, type Work } from "../schema";
 import "../styles.css";
 import "./player.css";
+
+if ("serviceWorker" in navigator) {
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshing) return;
+    refreshing = true;
+    location.reload();
+  });
+  window.addEventListener("load", () => {
+    void navigator.serviceWorker
+      .register("./sw.js", { scope: "./", updateViaCache: "none" })
+      .then((registration) => registration.update())
+      .catch(() => undefined);
+  });
+}
+
 function StoryPlayer() {
   const [work, setWork] = useState<Work | null>(null),
     [error, setError] = useState("");

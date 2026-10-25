@@ -3,7 +3,7 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
@@ -173,7 +173,7 @@
       {"id": "photo-lockscreen-note", "title": "Y&S Forever", "body": "一张没发出去的截图。尹瑟在备忘录里打下 Y&S Forever，又全部删掉，只留下这张截图。", "kind": "image", "time": "2026-10-25 01:32", "folder": "Y&S", "hidden": true}
     ],
     "notes": [
-      {"id": "note-new-phone", "title": "新手机使用规则", "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。", "kind": "note", "time": "2019-03-02 23:41", "folder": "私人笔记", "password": "1125", "hidden": true},
+      {"id": "note-new-phone", "title": "第一部手机使用规则", "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。", "kind": "note", "time": "2019-03-02 23:41", "folder": "私人笔记", "password": "1125", "hidden": true},
       {"id": "note-middle-first-week", "title": "初中第一周", "body": "周一不要坐错公交。\n周二交学生证照片。\n周三带美术材料。\n周四把有真的漫画还给她。\n周五放学和哥哥去吃辣炒年糕。", "kind": "note", "time": "2019-03-03 21:12", "folder": "日常"},
       {"id": "note-pocket-money-2019", "title": "三月零花钱", "body": "草莓牛奶 1,400\n自动铅笔 2,000\n手机壳 8,900\n给哥哥买的创可贴 1,000（不要告诉他）", "kind": "note", "time": "2019-03-12 19:07", "folder": "日常"},
       {"id": "note-highschool", "title": "不是约会", "body": "他说只是来接我。\n他说小时候答应过会负责。\n他说‘我没说不算’的时候，我居然不敢看他。\n\n韩有真说，如果我需要反复解释这不是约会，那大概已经很像约会了。", "kind": "note", "time": "2022-09-18 01:03", "folder": "私人笔记", "password": "1125", "hidden": true},
@@ -306,10 +306,10 @@
     },
     {
       "id": "find-password",
-      "label": "发现六年没换的数字",
+      "label": "用六年没换的数字解锁手机",
       "type": "event",
-      "event": "read",
-      "target": "y19-password",
+      "event": "password",
+      "target": "1125",
       "actions": [
         {"type": "unlock", "key": "note-new-phone", "value": true},
         {"type": "unlock", "key": "photo-convenience-store", "value": true},
@@ -633,7 +633,7 @@
     {
       "name": "riverside-ending",
       "steps": [
-        {"event": "read", "target": "y19-password"},
+        {"event": "password", "target": "1125"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
         {"event": "read", "target": "photo-convenience-store"},
         {"event": "read", "target": "k22-11"},
@@ -655,7 +655,7 @@
     {
       "name": "protect-ending",
       "steps": [
-        {"event": "read", "target": "y19-password"},
+        {"event": "password", "target": "1125"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
         {"event": "read", "target": "photo-convenience-store"},
         {"event": "read", "target": "k22-11"},
@@ -677,7 +677,7 @@
     {
       "name": "yujin-ending",
       "steps": [
-        {"event": "read", "target": "y19-password"},
+        {"event": "password", "target": "1125"},
         {"event": "read", "target": "note-new-phone", "password": "1125"},
         {"event": "read", "target": "photo-convenience-store"},
         {"event": "read", "target": "k22-11"},
