@@ -3,7 +3,7 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
@@ -21,7 +21,7 @@
     "settings", "calculator", "safari", "reminders"
   ],
   "contacts": [
-    {"id": "shotaro", "name": "将太郎哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。不要被备注骗了。"},
+    {"id": "shotaro", "name": "哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。"},
     {"id": "yujin", "name": "韩有真", "phone": "010-0817-2006", "avatar": "", "bio": "从初中开始就什么都知道的朋友"},
     {"id": "mom", "name": "妈妈", "phone": "010-1223-0000", "avatar": "", "bio": "每天都要问我到家没有"},
     {"id": "alex", "name": "Alex", "phone": "010-0314-2004", "avatar": "", "bio": "大学朋友"}
@@ -30,7 +30,7 @@
     {
       "id": "kakao-shotaro-2019",
       "app": "kakao",
-      "title": "将太郎哥哥 · 2019",
+      "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
         {"id": "k19-01", "title": "", "body": "新手机拿到了？", "senderId": "shotaro", "time": "2019-03-02 16:08"},
@@ -62,7 +62,7 @@
     {
       "id": "kakao-shotaro-2022",
       "app": "kakao",
-      "title": "将太郎哥哥 · 高中",
+      "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
         {"id": "k22-01", "title": "", "body": "到家了吗？", "senderId": "shotaro", "time": "2022-09-17 22:48"},
@@ -94,7 +94,7 @@
     {
       "id": "kakao-shotaro-2026",
       "app": "kakao",
-      "title": "将太郎",
+      "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
         {"id": "k26-01", "title": "", "body": "今天几点结束？", "senderId": "shotaro", "time": "2026-10-25 18:02"},
@@ -156,9 +156,19 @@
   "content": {
     "photos": [
       {"id": "photo-first-phone", "title": "第一部手机", "body": "2019.03.02。透明手机壳里夹着两个人小学毕业时的大头贴。照片背面写着：以后联系不到我，就先找将太郎。", "kind": "image", "time": "2019-03-02 15:06", "folder": "新手机"},
+      {"id": "album-spring-hanok", "title": "春天第一次出门", "body": "拿到新手机以后拍的第一张风景。哥哥说构图歪了，却还是让我把它留到现在。", "kind": "image", "media": "story-images/spring-hanok.jpeg", "time": "2019-03-09 14:26", "folder": "新手机"},
+      {"id": "album-beauty-search", "title": "给有真看的截图", "body": "本来只想问她哪一盘高光好看，最后聊了整整一晚。", "kind": "image", "media": "story-images/beauty-search.jpeg", "time": "2026-04-20 20:41", "folder": "截图"},
+      {"id": "album-math-notes", "title": "将太郎的作业", "body": "他说只是借我检查格式，结果连草稿都整理得像打印出来的一样。", "kind": "image", "media": "story-images/math-notes.jpeg", "time": "2026-04-08 23:16", "folder": "校园"},
+      {"id": "album-econ-lecture", "title": "又没听懂的经济学", "body": "拍下来准备回家重看。右下角还有我偷偷写的：今晚问哥哥。", "kind": "image", "media": "story-images/econ-lecture.jpeg", "time": "2026-04-12 11:37", "folder": "校园"},
+      {"id": "album-cafe-meal", "title": "下课后的晚饭", "body": "一个人点了两人份。哥哥迟到十二分钟，还说是我点太早。", "kind": "image", "media": "story-images/cafe-meal.jpeg", "time": "2026-05-03 18:52", "folder": "日常"},
       {"id": "photo-convenience-store", "title": "便利店门口", "body": "2019.03.02。将太郎撑着伞，另一只手拎着草莓牛奶。他不肯看镜头，耳朵却红了。", "kind": "image", "time": "2019-03-02 16:22", "folder": "只有我们", "hidden": true},
+      {"id": "album-black-shirt", "title": "哥哥发来的照片", "body": "他说新衣服不太适合自己，问完意见又不肯换。照片被我保存了两次。", "kind": "image", "media": "story-images/shotaro-black-shirt.jpeg", "time": "2022-04-19 21:08", "folder": "只有我们", "hidden": true},
+      {"id": "album-night-shadows", "title": "回家路上的影子", "body": "没有拍脸，也没有牵手。可影子靠得太近，还是被我藏进了‘不是约会’。", "kind": "image", "media": "story-images/night-shadows.jpeg", "time": "2022-09-17 23:26", "folder": "不是约会", "hidden": true},
       {"id": "photo-school-gate", "title": "高中开学", "body": "2022.03.03。校门口的合照。将太郎站在她身后，手虚虚护在她肩边，没有真的碰到。", "kind": "image", "time": "2022-03-03 08:17", "folder": "不是约会", "hidden": true},
       {"id": "photo-riverside", "title": "河边的背影", "body": "2022.09.17 23:14。夜风很大，将太郎把外套披给她。玻璃倒影里，两个人的手几乎碰到一起。", "kind": "image", "time": "2022-09-17 23:14", "folder": "不是约会", "hidden": true},
+      {"id": "album-hanyang-jacket", "title": "汉阳外套", "body": "他说只是顺路替我取衣服。后来我才发现，他提前一周问好了尺码。", "kind": "image", "media": "story-images/hanyang-jacket.jpeg", "time": "2026-03-04 16:02", "folder": "Y&S", "hidden": true},
+      {"id": "album-pink-hair", "title": "便利店偶遇", "body": "他染了新发色却装作没事，手里还拿着我喜欢的小玩偶。", "kind": "image", "media": "story-images/shotaro-pink-hair.jpeg", "time": "2026-06-11 22:14", "folder": "Y&S", "hidden": true},
+      {"id": "album-pool", "title": "夏天的泳池", "body": "他伸手让我下水。我说先拍一张，结果这张照片在隐藏相册里放了四个月。", "kind": "image", "media": "story-images/shotaro-pool.jpeg", "time": "2026-07-27 15:48", "folder": "Y&S", "hidden": true},
       {"id": "photo-university", "title": "大学庆典", "body": "2026.05.16。朋友拍下的照片里，所有人都在看舞台，只有将太郎侧过脸看着尹瑟。", "kind": "image", "time": "2026-05-16 20:40", "folder": "Y&S", "hidden": true},
       {"id": "photo-lockscreen-note", "title": "Y&S Forever", "body": "一张没发出去的截图。尹瑟在备忘录里打下 Y&S Forever，又全部删掉，只留下这张截图。", "kind": "image", "time": "2026-10-25 01:32", "folder": "Y&S", "hidden": true}
     ],
@@ -174,8 +184,8 @@
       {"id": "calendar-riverside", "title": "河边见", "body": "2026.10.25 22:30 · 和将太郎把话说清楚", "kind": "event", "time": "2026-10-25 22:30", "hidden": true}
     ],
     "phone": [
-      {"id": "call-shotaro-missed", "title": "将太郎", "body": "未接来电 · 3次", "kind": "call", "time": "2026-10-25 22:03", "meta": {"phone": "010-1125-2000"}},
-      {"id": "voicemail-shotaro", "title": "语音信箱 · 将太郎", "body": "尹瑟，看到以后回电话。手机不重要，我只是想知道你有没有安全到家。", "kind": "audio", "time": "2026-10-25 22:06", "folder": "语音信箱"}
+      {"id": "call-shotaro-missed", "title": "哥哥", "body": "未接来电 · 3次", "kind": "call", "time": "2026-10-25 22:03", "meta": {"phone": "010-1125-2000"}},
+      {"id": "voicemail-shotaro", "title": "语音信箱 · 哥哥", "body": "尹瑟，看到以后回电话。手机不重要，我只是想知道你有没有安全到家。", "kind": "audio", "time": "2026-10-25 22:06", "folder": "语音信箱"}
     ],
     "instagram": [
       {"id": "ig-first-phone", "title": "yoonseul.archive", "body": "人生第一部手机📱 妈妈说不要弄丢。某位哥哥说要把他置顶。", "kind": "post", "time": "2019-03-02 19:04", "likes": 23, "comments": ["有真：某位哥哥是谁呀ㅎㅎ", "尹瑟：闭嘴"]},
@@ -211,7 +221,7 @@
     ],
     "settings": [
       {"id": "settings-01", "title": "设备名称", "body": "尹瑟的第4部手机", "kind": "text"},
-      {"id": "settings-02", "title": "紧急联系人", "body": "将太郎哥哥 · 010-1125-2000", "kind": "text"}
+      {"id": "settings-02", "title": "紧急联系人", "body": "哥哥 · 010-1125-2000", "kind": "text"}
     ],
     "calculator": [
       {"id": "calculator-01", "title": "最近一次计算", "body": "2026 - 2019 = 7", "kind": "text"}
@@ -239,6 +249,8 @@
       "actions": [
         {"type": "unlock", "key": "note-new-phone", "value": true},
         {"type": "unlock", "key": "photo-convenience-store", "value": true},
+        {"type": "unlock", "key": "album-black-shirt", "value": true},
+        {"type": "unlock", "key": "album-night-shadows", "value": true},
         {"type": "unlock", "key": "guide-childhood", "value": true},
         {"type": "notification", "key": "", "value": "提醒事项：任务一‘第一部手机’已出现"}
       ]
@@ -271,6 +283,9 @@
         {"type": "variable", "key": "era", "value": "2026"},
         {"type": "unlock", "key": "photo-university", "value": true},
         {"type": "unlock", "key": "photo-lockscreen-note", "value": true},
+        {"type": "unlock", "key": "album-hanyang-jacket", "value": true},
+        {"type": "unlock", "key": "album-pink-hair", "value": true},
+        {"type": "unlock", "key": "album-pool", "value": true},
         {"type": "unlock", "key": "note-unsent", "value": true},
         {"type": "unlock", "key": "note-clue", "value": true},
         {"type": "unlock", "key": "calendar-riverside", "value": true},
@@ -300,7 +315,7 @@
       "type": "delay",
       "delayMs": 800,
       "actions": [
-        {"type": "call", "key": "call-shotaro-live", "value": "将太郎"}
+        {"type": "call", "key": "call-shotaro-live", "value": "哥哥"}
       ]
     },
     {
