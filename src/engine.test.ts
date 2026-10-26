@@ -6,8 +6,17 @@ import {
   testCondition,
   visible,
   validateGraph,
+  availableActivities,
+  performActivity,
+  classifySceneIntent,
+  classifyChatIntent,
 } from "./engine";
-import { initialRuntime, validateWork, safeMedia } from "./schema";
+import {
+  initialRuntime,
+  migrateRuntime,
+  validateWork,
+  safeMedia,
+} from "./schema";
 import { parseChat, parseCsv } from "./chat";
 import { registry } from "./registry";
 describe("story progression", () => {
@@ -76,6 +85,63 @@ describe("story progression", () => {
     const w = createWork();
     const s = dispatch(w, initialRuntime(w), "read", "note-clue");
     expect(JSON.parse(JSON.stringify(s))).toEqual(s);
+  });
+  it("offers location-aware activities and advances the shared clock", () => {
+    const w = createWork();
+    w.life = {
+      initialLocation: "江边入口",
+      npcs: [],
+      activities: [
+        {
+          id: "walk",
+          label: "散步",
+          description: "",
+          emoji: "🚶",
+          kind: "ordinary",
+          minutes: 15,
+          locations: ["江边入口"],
+          conditions: [],
+          initiallyAvailable: true,
+        },
+      ],
+    };
+    const state = initialRuntime(w);
+    expect(availableActivities(w, state).map((a) => a.id)).toEqual(["walk"]);
+    expect(performActivity(w, state, w.life.activities[0]).time).toBe("09:56");
+    state.location = "家";
+    expect(availableActivities(w, state)).toEqual([]);
+  });
+  it("migrates old saves without erasing messages or progress", () => {
+    const w = createWork();
+    w.life.initialLocation = "汉江公园入口";
+    w.life.npcs = [
+      {
+        id: "shotaro",
+        name: "大﨑将太郎",
+        location: "江边",
+        status: "等待",
+        availableAt: "23:40",
+        known: [],
+        closeness: 10,
+        trust: 20,
+        tension: 0,
+      },
+    ];
+    const old = initialRuntime(w);
+    old.revision -= 1;
+    old.read.push("note-clue");
+    old.messages.kakao = [];
+    const migrated = migrateRuntime(w, old);
+    expect(migrated.revision).toBe(w.updatedAt);
+    expect(migrated.read).toContain("note-clue");
+    expect(migrated.messages.kakao).toEqual([]);
+    expect(migrated.npcStates.shotaro.status).toBe("等待");
+  });
+  it("classifies free scene and chat input into explicit fallback intents", () => {
+    expect(classifySceneIntent("我想沿着江边散步")).toBe("walk");
+    expect(classifySceneIntent("随便说点什么")).toBe("other");
+    expect(classifyChatIntent("等我，我现在过去")).toBe("meet");
+    expect(classifyChatIntent("嗯嗯")).toBe("other");
   });
 });
 describe("import and schema safety", () => {

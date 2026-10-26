@@ -35,6 +35,7 @@ import { safeMedia, type Item, type UiValue } from "./schema";
 export type SkinProps = {
   ui?: Record<string, UiValue>;
   onUi?: (key: string, value: UiValue) => void;
+  onSend?: (thread: string, text: string) => void;
   appId?: string;
   owner?: string;
   virtualTime?: string;

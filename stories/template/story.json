@@ -2,13 +2,13 @@
   "scriptVersion": 1,
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
-  "description": "从李尹瑟升入初中、第一次拿到新手机开始，沿着六年的聊天、照片与未发送草稿，拼出她和青梅竹马将太郎没有说出口的秘密。",
-  "revision": 9,
+  "description": "李尹瑟的校园生活手机。查看消息、自由安排行动，在日常与朋友关系中慢慢推进属于自己的故事。",
+  "revision": 20,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
     "date": "2026-10-25",
-    "time": "22:17",
+    "time": "23:18",
     "battery": 63,
     "network": "5G",
     "wallpaper": "yoonseul-photo",
@@ -16,15 +16,52 @@
     "notifications": true
   },
   "installedApps": [
-    "phone", "messages", "contacts", "photos", "camera", "kakao",
-    "instagram", "notes", "calendar", "music", "maps", "clock",
-    "settings", "calculator", "safari", "forum"
+    "phone",
+    "messages",
+    "contacts",
+    "photos",
+    "camera",
+    "kakao",
+    "instagram",
+    "notes",
+    "calendar",
+    "music",
+    "maps",
+    "clock",
+    "settings",
+    "calculator",
+    "safari",
+    "forum"
   ],
   "contacts": [
-    {"id": "shotaro", "name": "哥哥", "phone": "010-1125-2000", "avatar": "", "bio": "只比我大一岁。"},
-    {"id": "yujin", "name": "韩有真", "phone": "010-0817-2006", "avatar": "", "bio": "从初中开始就什么都知道的朋友"},
-    {"id": "mom", "name": "妈妈", "phone": "010-1223-0000", "avatar": "", "bio": "每天都要问我到家没有"},
-    {"id": "alex", "name": "Alex", "phone": "010-0314-2004", "avatar": "", "bio": "大学朋友"}
+    {
+      "id": "shotaro",
+      "name": "哥哥",
+      "phone": "010-1125-2000",
+      "avatar": "",
+      "bio": "只比我大一岁。"
+    },
+    {
+      "id": "yujin",
+      "name": "韩有真",
+      "phone": "010-0817-2006",
+      "avatar": "",
+      "bio": "从初中开始就什么都知道的朋友"
+    },
+    {
+      "id": "mom",
+      "name": "妈妈",
+      "phone": "010-1223-0000",
+      "avatar": "",
+      "bio": "每天都要问我到家没有"
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "phone": "010-0314-2004",
+      "avatar": "",
+      "bio": "大学朋友"
+    }
   ],
   "chats": [
     {
@@ -33,16 +70,76 @@
       "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
-        {"id": "k19-01", "title": "", "body": "新手机拿到了？", "senderId": "shotaro", "time": "2019-03-02 16:08"},
-        {"id": "k19-02", "title": "", "body": "拿到了！妈妈终于同意了ㅎㅎ", "senderId": "owner", "time": "2019-03-02 16:09"},
-        {"id": "k19-03", "title": "", "body": "先把我置顶。", "senderId": "shotaro", "time": "2019-03-02 16:09"},
-        {"id": "k19-04", "title": "", "body": "为什么？", "senderId": "owner", "time": "2019-03-02 16:10"},
-        {"id": "k19-05", "title": "", "body": "放学找不到路、忘记带伞、跟妈妈吵架，不都是先找我。", "senderId": "shotaro", "time": "2019-03-02 16:11"},
-        {"id": "k19-06", "title": "", "body": "哥哥只比我大一岁。", "senderId": "owner", "time": "2019-03-02 16:12"},
-        {"id": "k19-07", "title": "", "body": "大一天也是哥哥。", "senderId": "shotaro", "time": "2019-03-02 16:12"},
-        {"id": "k19-08", "title": "", "body": "那你要一直负责吗？", "senderId": "owner", "time": "2019-03-02 16:13"},
-        {"id": "k19-09", "title": "", "body": "先负责你安全到家。下楼，我在便利店门口。", "senderId": "shotaro", "time": "2019-03-02 16:14"},
-        {"id": "k19-10", "title": "", "body": "手机密码别再用生日。你这么好猜，迟早会被人打开。", "senderId": "shotaro", "time": "2019-03-02 16:15"}
+        {
+          "id": "k19-01",
+          "title": "",
+          "body": "新手机拿到了？",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:08"
+        },
+        {
+          "id": "k19-02",
+          "title": "",
+          "body": "拿到了！妈妈终于同意了ㅎㅎ",
+          "senderId": "owner",
+          "time": "2019-03-02 16:09"
+        },
+        {
+          "id": "k19-03",
+          "title": "",
+          "body": "先把我置顶。",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:09"
+        },
+        {
+          "id": "k19-04",
+          "title": "",
+          "body": "为什么？",
+          "senderId": "owner",
+          "time": "2019-03-02 16:10"
+        },
+        {
+          "id": "k19-05",
+          "title": "",
+          "body": "放学找不到路、忘记带伞、跟妈妈吵架，不都是先找我。",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:11"
+        },
+        {
+          "id": "k19-06",
+          "title": "",
+          "body": "哥哥只比我大一岁。",
+          "senderId": "owner",
+          "time": "2019-03-02 16:12"
+        },
+        {
+          "id": "k19-07",
+          "title": "",
+          "body": "大一天也是哥哥。",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:12"
+        },
+        {
+          "id": "k19-08",
+          "title": "",
+          "body": "那你要一直负责吗？",
+          "senderId": "owner",
+          "time": "2019-03-02 16:13"
+        },
+        {
+          "id": "k19-09",
+          "title": "",
+          "body": "先负责你安全到家。下楼，我在便利店门口。",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:14"
+        },
+        {
+          "id": "k19-10",
+          "title": "",
+          "body": "手机密码别再用生日。你这么好猜，迟早会被人打开。",
+          "senderId": "shotaro",
+          "time": "2019-03-02 16:15"
+        }
       ]
     },
     {
@@ -51,12 +148,48 @@
       "title": "韩有真",
       "participants": ["owner", "yujin"],
       "messages": [
-        {"id": "y19-01", "title": "", "body": "你终于有手机了！号码快发我。", "senderId": "yujin", "time": "2019-03-02 18:31"},
-        {"id": "y19-02", "title": "", "body": "不许给别人看我小时候的照片。", "senderId": "owner", "time": "2019-03-02 18:32"},
-        {"id": "y19-03", "title": "", "body": "你那个哥哥给你设好了吗？联系人第一位也是他吧。", "senderId": "yujin", "time": "2019-03-02 18:33"},
-        {"id": "y19-04", "title": "", "body": "他非要帮我弄。还说密码不能用我的生日。", "senderId": "owner", "time": "2019-03-02 18:34"},
-        {"id": "y19-password", "title": "", "body": "所以你就偷偷改成他的生日？11月25日，1125。你也太好懂了。", "senderId": "yujin", "time": "2019-03-02 18:35"},
-        {"id": "y19-06", "title": "", "body": "不是！只是这个数字顺手！", "senderId": "owner", "time": "2019-03-02 18:35"}
+        {
+          "id": "y19-01",
+          "title": "",
+          "body": "你终于有手机了！号码快发我。",
+          "senderId": "yujin",
+          "time": "2019-03-02 18:31"
+        },
+        {
+          "id": "y19-02",
+          "title": "",
+          "body": "不许给别人看我小时候的照片。",
+          "senderId": "owner",
+          "time": "2019-03-02 18:32"
+        },
+        {
+          "id": "y19-03",
+          "title": "",
+          "body": "你那个哥哥给你设好了吗？联系人第一位也是他吧。",
+          "senderId": "yujin",
+          "time": "2019-03-02 18:33"
+        },
+        {
+          "id": "y19-04",
+          "title": "",
+          "body": "他非要帮我弄。还说密码不能用我的生日。",
+          "senderId": "owner",
+          "time": "2019-03-02 18:34"
+        },
+        {
+          "id": "y19-password",
+          "title": "",
+          "body": "所以你就偷偷改成他的生日？11月25日，1125。你也太好懂了。",
+          "senderId": "yujin",
+          "time": "2019-03-02 18:35"
+        },
+        {
+          "id": "y19-06",
+          "title": "",
+          "body": "不是！只是这个数字顺手！",
+          "senderId": "owner",
+          "time": "2019-03-02 18:35"
+        }
       ]
     },
     {
@@ -65,17 +198,83 @@
       "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
-        {"id": "k22-01", "title": "", "body": "到家了吗？", "senderId": "shotaro", "time": "2022-09-17 22:48"},
-        {"id": "k22-02", "title": "", "body": "还没有，在河边。", "senderId": "owner", "time": "2022-09-17 22:49"},
-        {"id": "k22-03", "title": "", "body": "位置发我。", "senderId": "shotaro", "time": "2022-09-17 22:49"},
-        {"id": "k22-04", "title": "", "body": "我又没有走丢。", "senderId": "owner", "time": "2022-09-17 22:50"},
-        {"id": "k22-05", "title": "", "body": "你心情不好的时候方向感会一起消失。", "senderId": "shotaro", "time": "2022-09-17 22:51"},
-        {"id": "k22-06", "title": "", "body": "你不是在朋友聚会吗？", "senderId": "owner", "time": "2022-09-17 22:52"},
-        {"id": "k22-07", "title": "", "body": "出来了。抬头。", "senderId": "shotaro", "time": "2022-09-17 22:58"},
-        {"id": "k22-08", "title": "", "body": "……你怎么真的来了。", "senderId": "owner", "time": "2022-09-17 22:59"},
-        {"id": "k22-09", "title": "", "body": "因为某人小时候问过，我是不是会一直负责。", "senderId": "shotaro", "time": "2022-09-17 23:00"},
-        {"id": "k22-10", "title": "", "body": "小时候说的话不算。", "senderId": "owner", "time": "2022-09-17 23:01"},
-        {"id": "k22-11", "title": "", "body": "我没说不算。", "senderId": "shotaro", "time": "2022-09-17 23:01"}
+        {
+          "id": "k22-01",
+          "title": "",
+          "body": "到家了吗？",
+          "senderId": "shotaro",
+          "time": "2022-09-17 22:48"
+        },
+        {
+          "id": "k22-02",
+          "title": "",
+          "body": "还没有，在河边。",
+          "senderId": "owner",
+          "time": "2022-09-17 22:49"
+        },
+        {
+          "id": "k22-03",
+          "title": "",
+          "body": "位置发我。",
+          "senderId": "shotaro",
+          "time": "2022-09-17 22:49"
+        },
+        {
+          "id": "k22-04",
+          "title": "",
+          "body": "我又没有走丢。",
+          "senderId": "owner",
+          "time": "2022-09-17 22:50"
+        },
+        {
+          "id": "k22-05",
+          "title": "",
+          "body": "你心情不好的时候方向感会一起消失。",
+          "senderId": "shotaro",
+          "time": "2022-09-17 22:51"
+        },
+        {
+          "id": "k22-06",
+          "title": "",
+          "body": "你不是在朋友聚会吗？",
+          "senderId": "owner",
+          "time": "2022-09-17 22:52"
+        },
+        {
+          "id": "k22-07",
+          "title": "",
+          "body": "出来了。抬头。",
+          "senderId": "shotaro",
+          "time": "2022-09-17 22:58"
+        },
+        {
+          "id": "k22-08",
+          "title": "",
+          "body": "……你怎么真的来了。",
+          "senderId": "owner",
+          "time": "2022-09-17 22:59"
+        },
+        {
+          "id": "k22-09",
+          "title": "",
+          "body": "因为某人小时候问过，我是不是会一直负责。",
+          "senderId": "shotaro",
+          "time": "2022-09-17 23:00"
+        },
+        {
+          "id": "k22-10",
+          "title": "",
+          "body": "小时候说的话不算。",
+          "senderId": "owner",
+          "time": "2022-09-17 23:01"
+        },
+        {
+          "id": "k22-11",
+          "title": "",
+          "body": "我没说不算。",
+          "senderId": "shotaro",
+          "time": "2022-09-17 23:01"
+        }
       ]
     },
     {
@@ -84,11 +283,41 @@
       "title": "韩有真",
       "participants": ["owner", "yujin"],
       "messages": [
-        {"id": "y22-01", "title": "", "body": "他放着聚会不管跑去接你，你还说是普通哥哥？", "senderId": "yujin", "time": "2022-09-18 00:14"},
-        {"id": "y22-02", "title": "", "body": "本来就是。我们从小一起长大。", "senderId": "owner", "time": "2022-09-18 00:15"},
-        {"id": "y22-03", "title": "", "body": "那你为什么把合照藏进‘不是约会’相册？", "senderId": "yujin", "time": "2022-09-18 00:16"},
-        {"id": "y22-04", "title": "", "body": "因为真的不是约会。", "senderId": "owner", "time": "2022-09-18 00:17"},
-        {"id": "y22-05", "title": "", "body": "好。不是约会，只是凌晨零点你还在看他发的‘到家告诉我’。", "senderId": "yujin", "time": "2022-09-18 00:18"}
+        {
+          "id": "y22-01",
+          "title": "",
+          "body": "他放着聚会不管跑去接你，你还说是普通哥哥？",
+          "senderId": "yujin",
+          "time": "2022-09-18 00:14"
+        },
+        {
+          "id": "y22-02",
+          "title": "",
+          "body": "本来就是。我们从小一起长大。",
+          "senderId": "owner",
+          "time": "2022-09-18 00:15"
+        },
+        {
+          "id": "y22-03",
+          "title": "",
+          "body": "那你为什么把合照藏进‘不是约会’相册？",
+          "senderId": "yujin",
+          "time": "2022-09-18 00:16"
+        },
+        {
+          "id": "y22-04",
+          "title": "",
+          "body": "因为真的不是约会。",
+          "senderId": "owner",
+          "time": "2022-09-18 00:17"
+        },
+        {
+          "id": "y22-05",
+          "title": "",
+          "body": "好。不是约会，只是凌晨零点你还在看他发的‘到家告诉我’。",
+          "senderId": "yujin",
+          "time": "2022-09-18 00:18"
+        }
       ]
     },
     {
@@ -97,16 +326,104 @@
       "title": "哥哥",
       "participants": ["owner", "shotaro"],
       "messages": [
-        {"id": "k26-01", "title": "", "body": "今天几点结束？", "senderId": "shotaro", "time": "2026-10-25 18:02"},
-        {"id": "k26-02", "title": "", "body": "九点左右。你不用来，我和同学一起。", "senderId": "owner", "time": "2026-10-25 18:04"},
-        {"id": "k26-03", "title": "", "body": "Alex？", "senderId": "shotaro", "time": "2026-10-25 18:04"},
-        {"id": "k26-04", "title": "", "body": "还有别人。你问这么清楚干什么？", "senderId": "owner", "time": "2026-10-25 18:05"},
-        {"id": "k26-05", "title": "", "body": "哥哥关心妹妹。", "senderId": "shotaro", "time": "2026-10-25 18:06"},
-        {"id": "k26-06", "title": "", "body": "你现在倒是记得自己是哥哥。", "senderId": "owner", "time": "2026-10-25 18:06"},
-        {"id": "k26-07", "title": "", "body": "我什么时候忘过？", "senderId": "shotaro", "time": "2026-10-25 18:07"},
-        {"id": "k26-08", "title": "", "body": "算了。当我没说。", "senderId": "owner", "time": "2026-10-25 18:08"},
-        {"id": "k26-09", "title": "", "body": "结束了给我电话。我有话跟你说。", "senderId": "shotaro", "time": "2026-10-25 18:10"},
-        {"id": "k26-10", "title": "", "body": "还有，别再叫我哥哥了。今晚开始不想当了。", "senderId": "shotaro", "time": "2026-10-25 18:11"}
+        {
+          "id": "k26-01",
+          "title": "",
+          "body": "今天几点结束？",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:02"
+        },
+        {
+          "id": "k26-02",
+          "title": "",
+          "body": "九点左右。你不用来，我和同学一起。",
+          "senderId": "owner",
+          "time": "2026-10-25 18:04"
+        },
+        {
+          "id": "k26-03",
+          "title": "",
+          "body": "Alex？",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:04"
+        },
+        {
+          "id": "k26-04",
+          "title": "",
+          "body": "还有别人。你问这么清楚干什么？",
+          "senderId": "owner",
+          "time": "2026-10-25 18:05"
+        },
+        {
+          "id": "k26-05",
+          "title": "",
+          "body": "哥哥关心妹妹。",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:06"
+        },
+        {
+          "id": "k26-06",
+          "title": "",
+          "body": "你现在倒是记得自己是哥哥。",
+          "senderId": "owner",
+          "time": "2026-10-25 18:06"
+        },
+        {
+          "id": "k26-07",
+          "title": "",
+          "body": "我什么时候忘过？",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:07"
+        },
+        {
+          "id": "k26-08",
+          "title": "",
+          "body": "算了。当我没说。",
+          "senderId": "owner",
+          "time": "2026-10-25 18:08"
+        },
+        {
+          "id": "k26-09",
+          "title": "",
+          "body": "结束了给我电话。我有话跟你说。",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:10"
+        },
+        {
+          "id": "k26-10",
+          "title": "",
+          "body": "还有，别再叫我哥哥了。今晚开始不想当了。",
+          "senderId": "shotaro",
+          "time": "2026-10-25 18:11"
+        },
+        {
+          "id": "k26-11",
+          "title": "",
+          "body": "你说不当就不当？",
+          "senderId": "owner",
+          "time": "2026-10-25 23:14"
+        },
+        {
+          "id": "k26-12",
+          "title": "",
+          "body": "我在江边。你要不要来，自己决定。",
+          "senderId": "shotaro",
+          "time": "2026-10-25 23:15"
+        },
+        {
+          "id": "k26-13",
+          "title": "",
+          "body": "你说了算？",
+          "senderId": "owner",
+          "time": "2026-10-25 23:16"
+        },
+        {
+          "id": "k26-14",
+          "title": "",
+          "body": "我说说不算。",
+          "senderId": "shotaro",
+          "time": "2026-10-25 23:16"
+        }
       ]
     },
     {
@@ -115,9 +432,27 @@
       "title": "Alex",
       "participants": ["owner", "alex"],
       "messages": [
-        {"id": "a26-01", "title": "", "body": "你的手机是不是落在咖啡店了？", "senderId": "alex", "time": "2026-10-25 21:58"},
-        {"id": "a26-02", "title": "", "body": "我回去找。你先别告诉将太郎，他会念我一晚上。", "senderId": "owner", "time": "2026-10-25 21:59"},
-        {"id": "a26-03", "title": "", "body": "晚了。他已经在问所有人。", "senderId": "alex", "time": "2026-10-25 22:00"}
+        {
+          "id": "a26-01",
+          "title": "",
+          "body": "你的手机是不是落在咖啡店了？",
+          "senderId": "alex",
+          "time": "2026-10-25 21:58"
+        },
+        {
+          "id": "a26-02",
+          "title": "",
+          "body": "我回去找。你先别告诉将太郎，他会念我一晚上。",
+          "senderId": "owner",
+          "time": "2026-10-25 21:59"
+        },
+        {
+          "id": "a26-03",
+          "title": "",
+          "body": "晚了。他已经在问所有人。",
+          "senderId": "alex",
+          "time": "2026-10-25 22:00"
+        }
       ]
     },
     {
@@ -126,14 +461,62 @@
       "title": "今晚谁都不准迟到",
       "participants": ["owner", "yujin", "alex"],
       "messages": [
-        {"id": "g26-01", "title": "", "body": "九点结束以后去吃宵夜？", "senderId": "yujin", "time": "2026-10-25 17:34"},
-        {"id": "g26-02", "title": "", "body": "我可以，但尹瑟大概又要被某人接走。", "senderId": "alex", "time": "2026-10-25 17:35"},
-        {"id": "g26-03", "title": "", "body": "没有人接我，我自己回去。", "senderId": "owner", "time": "2026-10-25 17:36"},
-        {"id": "g26-04", "title": "", "body": "截图了。等将太郎出现在门口我就发回来。", "senderId": "yujin", "time": "2026-10-25 17:37"},
-        {"id": "g26-05", "title": "", "body": "他今天不会来。我们刚刚还吵架了。", "senderId": "owner", "time": "2026-10-25 17:38"},
-        {"id": "g26-06", "title": "", "body": "你们两个所谓的吵架，通常是他问你到家没有，你故意十分钟不回。", "senderId": "yujin", "time": "2026-10-25 17:39"},
-        {"id": "g26-07", "title": "", "body": "这次不一样。他说今晚有话要讲。", "senderId": "owner", "time": "2026-10-25 17:41"},
-        {"id": "g26-08", "title": "", "body": "那今晚的宵夜可能要改成庆功宴了。", "senderId": "alex", "time": "2026-10-25 17:42"}
+        {
+          "id": "g26-01",
+          "title": "",
+          "body": "九点结束以后去吃宵夜？",
+          "senderId": "yujin",
+          "time": "2026-10-25 17:34"
+        },
+        {
+          "id": "g26-02",
+          "title": "",
+          "body": "我可以，但尹瑟大概又要被某人接走。",
+          "senderId": "alex",
+          "time": "2026-10-25 17:35"
+        },
+        {
+          "id": "g26-03",
+          "title": "",
+          "body": "没有人接我，我自己回去。",
+          "senderId": "owner",
+          "time": "2026-10-25 17:36"
+        },
+        {
+          "id": "g26-04",
+          "title": "",
+          "body": "截图了。等将太郎出现在门口我就发回来。",
+          "senderId": "yujin",
+          "time": "2026-10-25 17:37"
+        },
+        {
+          "id": "g26-05",
+          "title": "",
+          "body": "他今天不会来。我们刚刚还吵架了。",
+          "senderId": "owner",
+          "time": "2026-10-25 17:38"
+        },
+        {
+          "id": "g26-06",
+          "title": "",
+          "body": "你们两个所谓的吵架，通常是他问你到家没有，你故意十分钟不回。",
+          "senderId": "yujin",
+          "time": "2026-10-25 17:39"
+        },
+        {
+          "id": "g26-07",
+          "title": "",
+          "body": "这次不一样。他说今晚有话要讲。",
+          "senderId": "owner",
+          "time": "2026-10-25 17:41"
+        },
+        {
+          "id": "g26-08",
+          "title": "",
+          "body": "那今晚的宵夜可能要改成庆功宴了。",
+          "senderId": "alex",
+          "time": "2026-10-25 17:42"
+        }
       ]
     },
     {
@@ -142,166 +525,1616 @@
       "title": "妈妈",
       "participants": ["owner", "mom"],
       "messages": [
-        {"id": "mom-01", "title": "", "body": "新手机是升初中的礼物，要好好保管。", "senderId": "mom", "time": "2019-03-02 15:10"},
-        {"id": "mom-02", "title": "", "body": "知道啦。我一定不会弄丢。", "senderId": "owner", "time": "2019-03-02 15:12"},
-        {"id": "mom-03", "title": "", "body": "让将太郎帮你设置一下，有问题先问他。", "senderId": "mom", "time": "2019-03-02 15:13"},
-        {"id": "mom-04", "title": "", "body": "为什么你们都觉得他很可靠……", "senderId": "owner", "time": "2019-03-02 15:14"},
-        {"id": "mom-05", "title": "", "body": "今晚回家吗？冰箱里有海带汤。", "senderId": "mom", "time": "2026-10-25 19:26"},
-        {"id": "mom-06", "title": "", "body": "回。活动结束以后就走。", "senderId": "owner", "time": "2026-10-25 19:31"},
-        {"id": "mom-07", "title": "", "body": "将太郎刚问我你有没有到家。你又没回他消息？", "senderId": "mom", "time": "2026-10-25 22:02"},
-        {"id": "mom-08", "title": "", "body": "手机好像落在咖啡店了。我马上去找，不要担心。", "senderId": "owner", "time": "2026-10-25 22:03"}
+        {
+          "id": "mom-01",
+          "title": "",
+          "body": "新手机是升初中的礼物，要好好保管。",
+          "senderId": "mom",
+          "time": "2019-03-02 15:10"
+        },
+        {
+          "id": "mom-02",
+          "title": "",
+          "body": "知道啦。我一定不会弄丢。",
+          "senderId": "owner",
+          "time": "2019-03-02 15:12"
+        },
+        {
+          "id": "mom-03",
+          "title": "",
+          "body": "让将太郎帮你设置一下，有问题先问他。",
+          "senderId": "mom",
+          "time": "2019-03-02 15:13"
+        },
+        {
+          "id": "mom-04",
+          "title": "",
+          "body": "为什么你们都觉得他很可靠……",
+          "senderId": "owner",
+          "time": "2019-03-02 15:14"
+        },
+        {
+          "id": "mom-05",
+          "title": "",
+          "body": "今晚回家吗？冰箱里有海带汤。",
+          "senderId": "mom",
+          "time": "2026-10-25 19:26"
+        },
+        {
+          "id": "mom-06",
+          "title": "",
+          "body": "回。活动结束以后就走。",
+          "senderId": "owner",
+          "time": "2026-10-25 19:31"
+        },
+        {
+          "id": "mom-07",
+          "title": "",
+          "body": "将太郎刚问我你有没有到家。你又没回他消息？",
+          "senderId": "mom",
+          "time": "2026-10-25 22:02"
+        },
+        {
+          "id": "mom-08",
+          "title": "",
+          "body": "手机好像落在咖啡店了。我马上去找，不要担心。",
+          "senderId": "owner",
+          "time": "2026-10-25 22:03"
+        }
       ]
     }
   ],
   "content": {
     "photos": [
-      {"id": "photo-first-phone", "title": "第一部手机", "body": "2019.03.02。透明手机壳里夹着两个人小学毕业时的大头贴。照片背面写着：以后联系不到我，就先找将太郎。", "kind": "image", "time": "2019-03-02 15:06", "folder": "新手机"},
-      {"id": "album-spring-hanok", "title": "春天第一次出门", "body": "拿到新手机以后拍的第一张风景。哥哥说构图歪了，却还是让我把它留到现在。", "kind": "image", "media": "story-images/spring-hanok.jpeg", "time": "2019-03-09 14:26", "folder": "新手机"},
-      {"id": "album-beauty-search", "title": "给有真看的截图", "body": "本来只想问她哪一盘高光好看，最后聊了整整一晚。", "kind": "image", "media": "story-images/beauty-search.jpeg", "time": "2026-04-20 20:41", "folder": "截图"},
-      {"id": "album-math-notes", "title": "将太郎的作业", "body": "他说只是借我检查格式，结果连草稿都整理得像打印出来的一样。", "kind": "image", "media": "story-images/math-notes.jpeg", "time": "2026-04-08 23:16", "folder": "校园"},
-      {"id": "album-econ-lecture", "title": "又没听懂的经济学", "body": "拍下来准备回家重看。右下角还有我偷偷写的：今晚问哥哥。", "kind": "image", "media": "story-images/econ-lecture.jpeg", "time": "2026-04-12 11:37", "folder": "校园"},
-      {"id": "album-cafe-meal", "title": "下课后的晚饭", "body": "一个人点了两人份。哥哥迟到十二分钟，还说是我点太早。", "kind": "image", "media": "story-images/cafe-meal.jpeg", "time": "2026-05-03 18:52", "folder": "日常"},
-      {"id": "photo-convenience-store", "title": "便利店门口", "body": "2019.03.02。将太郎撑着伞，另一只手拎着草莓牛奶。他不肯看镜头，耳朵却红了。", "kind": "image", "time": "2019-03-02 16:22", "folder": "只有我们"},
-      {"id": "album-black-shirt", "title": "哥哥发来的照片", "body": "他说新衣服不太适合自己，问完意见又不肯换。照片被我保存了两次。", "kind": "image", "media": "story-images/shotaro-black-shirt.jpeg", "time": "2022-04-19 21:08", "folder": "只有我们", "hidden": true},
-      {"id": "album-night-shadows", "title": "回家路上的影子", "body": "没有拍脸，也没有牵手。可影子靠得太近，还是被我藏进了‘不是约会’。", "kind": "image", "media": "story-images/night-shadows.jpeg", "time": "2022-09-17 23:26", "folder": "不是约会", "hidden": true},
-      {"id": "photo-school-gate", "title": "高中开学", "body": "2022.03.03。校门口的合照。将太郎站在她身后，手虚虚护在她肩边，没有真的碰到。", "kind": "image", "time": "2022-03-03 08:17", "folder": "不是约会", "hidden": true},
-      {"id": "photo-riverside", "title": "河边的背影", "body": "2022.09.17 23:14。夜风很大，将太郎把外套披给她。玻璃倒影里，两个人的手几乎碰到一起。", "kind": "image", "time": "2022-09-17 23:14", "folder": "不是约会", "hidden": true},
-      {"id": "album-hanyang-jacket", "title": "汉阳外套", "body": "他说只是顺路替我取衣服。后来我才发现，他提前一周问好了尺码。", "kind": "image", "media": "story-images/hanyang-jacket.jpeg", "time": "2026-03-04 16:02", "folder": "Y&S", "hidden": true},
-      {"id": "album-pink-hair", "title": "便利店偶遇", "body": "他染了新发色却装作没事，手里还拿着我喜欢的小玩偶。", "kind": "image", "media": "story-images/shotaro-pink-hair.jpeg", "time": "2026-06-11 22:14", "folder": "Y&S", "hidden": true},
-      {"id": "album-pool", "title": "夏天的泳池", "body": "他伸手让我下水。我说先拍一张，结果这张照片在隐藏相册里放了四个月。", "kind": "image", "media": "story-images/shotaro-pool.jpeg", "time": "2026-07-27 15:48", "folder": "Y&S", "hidden": true},
-      {"id": "photo-university", "title": "大学庆典", "body": "2026.05.16。朋友拍下的照片里，所有人都在看舞台，只有将太郎侧过脸看着尹瑟。", "kind": "image", "time": "2026-05-16 20:40", "folder": "Y&S", "hidden": true},
-      {"id": "photo-lockscreen-note", "title": "Y&S Forever", "body": "一张没发出去的截图。尹瑟在备忘录里打下 Y&S Forever，又全部删掉，只留下这张截图。", "kind": "image", "time": "2026-10-25 01:32", "folder": "Y&S", "hidden": true}
+      {
+        "id": "photo-first-phone",
+        "title": "第一部手机",
+        "body": "2019.03.02。透明手机壳里夹着两个人小学毕业时的大头贴。照片背面写着：以后联系不到我，就先找将太郎。",
+        "kind": "image",
+        "time": "2019-03-02 15:06",
+        "folder": "新手机"
+      },
+      {
+        "id": "album-spring-hanok",
+        "title": "春天第一次出门",
+        "body": "拿到新手机以后拍的第一张风景。哥哥说构图歪了，却还是让我把它留到现在。",
+        "kind": "image",
+        "media": "story-images/spring-hanok.jpeg",
+        "time": "2019-03-09 14:26",
+        "folder": "新手机"
+      },
+      {
+        "id": "album-beauty-search",
+        "title": "给有真看的截图",
+        "body": "本来只想问她哪一盘高光好看，最后聊了整整一晚。",
+        "kind": "image",
+        "media": "story-images/beauty-search.jpeg",
+        "time": "2026-04-20 20:41",
+        "folder": "截图"
+      },
+      {
+        "id": "album-math-notes",
+        "title": "将太郎的作业",
+        "body": "他说只是借我检查格式，结果连草稿都整理得像打印出来的一样。",
+        "kind": "image",
+        "media": "story-images/math-notes.jpeg",
+        "time": "2026-04-08 23:16",
+        "folder": "校园"
+      },
+      {
+        "id": "album-econ-lecture",
+        "title": "又没听懂的经济学",
+        "body": "拍下来准备回家重看。右下角还有我偷偷写的：今晚问哥哥。",
+        "kind": "image",
+        "media": "story-images/econ-lecture.jpeg",
+        "time": "2026-04-12 11:37",
+        "folder": "校园"
+      },
+      {
+        "id": "album-cafe-meal",
+        "title": "下课后的晚饭",
+        "body": "一个人点了两人份。哥哥迟到十二分钟，还说是我点太早。",
+        "kind": "image",
+        "media": "story-images/cafe-meal.jpeg",
+        "time": "2026-05-03 18:52",
+        "folder": "日常"
+      },
+      {
+        "id": "photo-convenience-store",
+        "title": "便利店门口",
+        "body": "2019.03.02。将太郎撑着伞，另一只手拎着草莓牛奶。他不肯看镜头，耳朵却红了。",
+        "kind": "image",
+        "time": "2019-03-02 16:22",
+        "folder": "只有我们"
+      },
+      {
+        "id": "album-black-shirt",
+        "title": "哥哥发来的照片",
+        "body": "他说新衣服不太适合自己，问完意见又不肯换。照片被我保存了两次。",
+        "kind": "image",
+        "media": "story-images/shotaro-black-shirt.jpeg",
+        "time": "2022-04-19 21:08",
+        "folder": "只有我们",
+        "hidden": true
+      },
+      {
+        "id": "album-night-shadows",
+        "title": "回家路上的影子",
+        "body": "没有拍脸，也没有牵手。可影子靠得太近，还是被我藏进了‘不是约会’。",
+        "kind": "image",
+        "media": "story-images/night-shadows.jpeg",
+        "time": "2022-09-17 23:26",
+        "folder": "不是约会",
+        "hidden": true
+      },
+      {
+        "id": "photo-school-gate",
+        "title": "高中开学",
+        "body": "2022.03.03。校门口的合照。将太郎站在她身后，手虚虚护在她肩边，没有真的碰到。",
+        "kind": "image",
+        "time": "2022-03-03 08:17",
+        "folder": "不是约会",
+        "hidden": true
+      },
+      {
+        "id": "photo-riverside",
+        "title": "河边的背影",
+        "body": "2022.09.17 23:14。夜风很大，将太郎把外套披给她。玻璃倒影里，两个人的手几乎碰到一起。",
+        "kind": "image",
+        "time": "2022-09-17 23:14",
+        "folder": "不是约会",
+        "hidden": true
+      },
+      {
+        "id": "album-hanyang-jacket",
+        "title": "汉阳外套",
+        "body": "他说只是顺路替我取衣服。后来我才发现，他提前一周问好了尺码。",
+        "kind": "image",
+        "media": "story-images/hanyang-jacket.jpeg",
+        "time": "2026-03-04 16:02",
+        "folder": "Y&S",
+        "hidden": true
+      },
+      {
+        "id": "album-pink-hair",
+        "title": "便利店偶遇",
+        "body": "他染了新发色却装作没事，手里还拿着我喜欢的小玩偶。",
+        "kind": "image",
+        "media": "story-images/shotaro-pink-hair.jpeg",
+        "time": "2026-06-11 22:14",
+        "folder": "Y&S",
+        "hidden": true
+      },
+      {
+        "id": "album-pool",
+        "title": "夏天的泳池",
+        "body": "他伸手让我下水。我说先拍一张，结果这张照片在隐藏相册里放了四个月。",
+        "kind": "image",
+        "media": "story-images/shotaro-pool.jpeg",
+        "time": "2026-07-27 15:48",
+        "folder": "Y&S",
+        "hidden": true
+      },
+      {
+        "id": "photo-university",
+        "title": "大学庆典",
+        "body": "2026.05.16。朋友拍下的照片里，所有人都在看舞台，只有将太郎侧过脸看着尹瑟。",
+        "kind": "image",
+        "time": "2026-05-16 20:40",
+        "folder": "Y&S",
+        "hidden": true
+      },
+      {
+        "id": "photo-lockscreen-note",
+        "title": "Y&S Forever",
+        "body": "一张没发出去的截图。尹瑟在备忘录里打下 Y&S Forever，又全部删掉，只留下这张截图。",
+        "kind": "image",
+        "time": "2026-10-25 01:32",
+        "folder": "Y&S",
+        "hidden": true
+      }
     ],
     "notes": [
-      {"id": "note-new-phone", "title": "第一部手机使用规则", "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。", "kind": "note", "time": "2019-03-02 23:41", "folder": "私人笔记", "password": "1125"},
-      {"id": "note-middle-first-week", "title": "初中第一周", "body": "周一不要坐错公交。\n周二交学生证照片。\n周三带美术材料。\n周四把有真的漫画还给她。\n周五放学和哥哥去吃辣炒年糕。", "kind": "note", "time": "2019-03-03 21:12", "folder": "日常"},
-      {"id": "note-pocket-money-2019", "title": "三月零花钱", "body": "草莓牛奶 1,400\n自动铅笔 2,000\n手机壳 8,900\n给哥哥买的创可贴 1,000（不要告诉他）", "kind": "note", "time": "2019-03-12 19:07", "folder": "日常"},
-      {"id": "note-highschool", "title": "不是约会", "body": "他说只是来接我。\n他说小时候答应过会负责。\n他说‘我没说不算’的时候，我居然不敢看他。\n\n韩有真说，如果我需要反复解释这不是约会，那大概已经很像约会了。", "kind": "note", "time": "2022-09-18 01:03", "folder": "私人笔记", "password": "1125", "hidden": true},
-      {"id": "note-club-festival-2022", "title": "社团节当天", "body": "充电宝、发夹、止痛药、备用T恤。\n有真说结束后要去吃烤肉。\n哥哥的舞台在18:40，嘴上说不去看，还是提前设了闹钟。", "kind": "note", "time": "2022-05-18 07:26", "folder": "高中", "hidden": true},
-      {"id": "note-rain-2022", "title": "不要再忘记带伞", "body": "天气预报明明写了80%。\n最后又和哥哥挤一把伞。\n他右边肩膀全湿了，还说自己没有淋到。", "kind": "note", "time": "2022-07-11 23:09", "folder": "高中", "hidden": true},
-      {"id": "note-exam-2022", "title": "期中以后要做的事", "body": "睡十二小时。\n把桌子整理干净。\n陪有真逛街。\n不要再让哥哥教数学，他讲到最后比我还生气。", "kind": "note", "time": "2022-10-14 00:32", "folder": "高中", "hidden": true},
-      {"id": "note-unsent", "title": "没有发送", "body": "将太郎：\n\n我知道你只比我大一岁。小时候一直叫你哥哥，是因为所有人都这么叫；后来还叫，是因为只要这样叫，我们就永远有理由留在彼此身边。\n\n可是今天你说不想当哥哥了。\n\n如果你真的问我，我想说：那就不要当了。", "kind": "note", "time": "2026-10-25 21:42", "folder": "草稿", "password": "1125", "hidden": true},
-      {"id": "note-clue", "title": "六年没换的数字", "body": "新手机的第一天，有真就猜中了那个四位数。后来换过三部手机，私人笔记的密码一直没换。", "kind": "note", "time": "2026-10-25 21:45", "folder": "草稿", "hidden": true},
-      {"id": "note-week-plan-2026", "title": "这周不要再拖延", "body": "计量作业周三前写完。\n打印交换项目材料。\n给妈妈回电话。\n洗衣液快没有了。\n不要半夜两点搜索奇怪的恋爱问题。", "kind": "note", "time": "2026-10-20 02:06", "folder": "日常", "hidden": true},
-      {"id": "note-fridge-2026", "title": "冰箱", "body": "牛奶、鸡蛋、泡菜、桃子气泡水。\n哥哥不吃香菜。\n有真要的草莓酸奶。", "kind": "note", "time": "2026-10-23 17:20", "folder": "日常", "hidden": true},
-      {"id": "note-graduate-school", "title": "以后想去的地方", "body": "日本修士申请时间线。\n语言成绩。\n研究计划书。\n奖学金。\n先不要因为害怕就放弃。", "kind": "note", "time": "2026-10-24 00:48", "folder": "学习", "hidden": true}
+      {
+        "id": "note-new-phone",
+        "title": "第一部手机使用规则",
+        "body": "1. 每天回家给妈妈发消息。\n2. 不熬夜偷偷聊天。\n3. 不许再弄丢东西。\n4. 将太郎不算家长，他说的话可以不听。\n\n补充：他今天在便利店等了我二十分钟。以后下雨，要记得也给他带伞。\n\n有真偷拍的那张照片先放进相册「只有我们」里。绝对不能让他看见。",
+        "kind": "note",
+        "time": "2019-03-02 23:41",
+        "folder": "私人笔记",
+        "password": "1125"
+      },
+      {
+        "id": "note-middle-first-week",
+        "title": "初中第一周",
+        "body": "周一不要坐错公交。\n周二交学生证照片。\n周三带美术材料。\n周四把有真的漫画还给她。\n周五放学和哥哥去吃辣炒年糕。",
+        "kind": "note",
+        "time": "2019-03-03 21:12",
+        "folder": "日常"
+      },
+      {
+        "id": "note-pocket-money-2019",
+        "title": "三月零花钱",
+        "body": "草莓牛奶 1,400\n自动铅笔 2,000\n手机壳 8,900\n给哥哥买的创可贴 1,000（不要告诉他）",
+        "kind": "note",
+        "time": "2019-03-12 19:07",
+        "folder": "日常"
+      },
+      {
+        "id": "note-highschool",
+        "title": "不是约会",
+        "body": "他说只是来接我。\n他说小时候答应过会负责。\n他说‘我没说不算’的时候，我居然不敢看他。\n\n韩有真说，如果我需要反复解释这不是约会，那大概已经很像约会了。",
+        "kind": "note",
+        "time": "2022-09-18 01:03",
+        "folder": "私人笔记",
+        "password": "1125",
+        "hidden": true
+      },
+      {
+        "id": "note-club-festival-2022",
+        "title": "社团节当天",
+        "body": "充电宝、发夹、止痛药、备用T恤。\n有真说结束后要去吃烤肉。\n哥哥的舞台在18:40，嘴上说不去看，还是提前设了闹钟。",
+        "kind": "note",
+        "time": "2022-05-18 07:26",
+        "folder": "高中",
+        "hidden": true
+      },
+      {
+        "id": "note-rain-2022",
+        "title": "不要再忘记带伞",
+        "body": "天气预报明明写了80%。\n最后又和哥哥挤一把伞。\n他右边肩膀全湿了，还说自己没有淋到。",
+        "kind": "note",
+        "time": "2022-07-11 23:09",
+        "folder": "高中",
+        "hidden": true
+      },
+      {
+        "id": "note-exam-2022",
+        "title": "期中以后要做的事",
+        "body": "睡十二小时。\n把桌子整理干净。\n陪有真逛街。\n不要再让哥哥教数学，他讲到最后比我还生气。",
+        "kind": "note",
+        "time": "2022-10-14 00:32",
+        "folder": "高中",
+        "hidden": true
+      },
+      {
+        "id": "note-unsent",
+        "title": "没有发送",
+        "body": "将太郎：\n\n我知道你只比我大一岁。小时候一直叫你哥哥，是因为所有人都这么叫；后来还叫，是因为只要这样叫，我们就永远有理由留在彼此身边。\n\n可是今天你说不想当哥哥了。\n\n如果你真的问我，我想说：那就不要当了。",
+        "kind": "note",
+        "time": "2026-10-25 21:42",
+        "folder": "草稿",
+        "password": "1125",
+        "hidden": true
+      },
+      {
+        "id": "note-clue",
+        "title": "六年没换的数字",
+        "body": "新手机的第一天，有真就猜中了那个四位数。后来换过三部手机，私人笔记的密码一直没换。",
+        "kind": "note",
+        "time": "2026-10-25 21:45",
+        "folder": "草稿",
+        "hidden": true
+      },
+      {
+        "id": "note-week-plan-2026",
+        "title": "这周不要再拖延",
+        "body": "计量作业周三前写完。\n打印交换项目材料。\n给妈妈回电话。\n洗衣液快没有了。\n不要半夜两点搜索奇怪的恋爱问题。",
+        "kind": "note",
+        "time": "2026-10-20 02:06",
+        "folder": "日常",
+        "hidden": true
+      },
+      {
+        "id": "note-fridge-2026",
+        "title": "冰箱",
+        "body": "牛奶、鸡蛋、泡菜、桃子气泡水。\n哥哥不吃香菜。\n有真要的草莓酸奶。",
+        "kind": "note",
+        "time": "2026-10-23 17:20",
+        "folder": "日常",
+        "hidden": true
+      },
+      {
+        "id": "note-graduate-school",
+        "title": "以后想去的地方",
+        "body": "日本修士申请时间线。\n语言成绩。\n研究计划书。\n奖学金。\n先不要因为害怕就放弃。",
+        "kind": "note",
+        "time": "2026-10-24 00:48",
+        "folder": "学习",
+        "hidden": true
+      }
     ],
     "calendar": [
-      {"id": "calendar-middle-school", "title": "初中入学", "body": "2019.03.04 · 新制服、新书包、第一部手机", "kind": "event", "time": "2019-03-04 08:00"},
-      {"id": "calendar-shotaro-birthday", "title": "将太郎生日", "body": "11月25日 · 每年重复", "kind": "event", "time": "2026-11-25 00:00"},
-      {"id": "calendar-riverside", "title": "河边见", "body": "2026.10.25 22:30 · 和将太郎把话说清楚", "kind": "event", "time": "2026-10-25 22:30", "hidden": true}
+      {
+        "id": "calendar-middle-school",
+        "title": "初中入学",
+        "body": "2019.03.04 · 新制服、新书包、第一部手机",
+        "kind": "event",
+        "time": "2019-03-04 08:00"
+      },
+      {
+        "id": "calendar-shotaro-birthday",
+        "title": "将太郎生日",
+        "body": "11月25日 · 每年重复",
+        "kind": "event",
+        "time": "2026-11-25 00:00"
+      },
+      {
+        "id": "calendar-riverside",
+        "title": "河边见",
+        "body": "2026.10.25 22:30 · 和将太郎把话说清楚",
+        "kind": "event",
+        "time": "2026-10-25 22:30",
+        "hidden": true
+      }
     ],
     "phone": [
-      {"id": "call-shotaro-missed", "title": "哥哥", "body": "未接来电 · 3次", "kind": "call", "time": "2026-10-25 22:03", "meta": {"phone": "010-1125-2000"}},
-      {"id": "voicemail-shotaro", "title": "语音信箱 · 哥哥", "body": "尹瑟，看到以后回电话。手机不重要，我只是想知道你有没有安全到家。", "kind": "audio", "time": "2026-10-25 22:06", "folder": "语音信箱"}
+      {
+        "id": "call-shotaro-missed",
+        "title": "哥哥",
+        "body": "未接来电 · 3次",
+        "kind": "call",
+        "time": "2026-10-25 22:03",
+        "meta": { "phone": "010-1125-2000" }
+      },
+      {
+        "id": "voicemail-shotaro",
+        "title": "语音信箱 · 哥哥",
+        "body": "尹瑟，看到以后回电话。手机不重要，我只是想知道你有没有安全到家。",
+        "kind": "audio",
+        "time": "2026-10-25 22:06",
+        "folder": "语音信箱"
+      }
     ],
     "instagram": [
-      {"id": "ig-first-phone", "title": "yoonseul.archive", "body": "人生第一部手机📱 妈妈说不要弄丢。某位哥哥说要把他置顶。", "kind": "post", "time": "2019-03-02 19:04", "likes": 23, "comments": ["有真：某位哥哥是谁呀ㅎㅎ", "尹瑟：闭嘴"]},
-      {"id": "ig-yujin-2019", "title": "yujin.zip", "body": "初中第一周存活成功。旁边这位午饭只吃了三口，因为有人在校门口等她。", "kind": "post", "time": "2019-03-08 18:12", "likes": 31, "comments": ["尹瑟：你删掉最后一句", "有真：拒绝"]},
-      {"id": "ig-shotaro-2019", "title": "shotaro.1125", "body": "被迫负责接送小孩的第一周。", "kind": "post", "time": "2019-03-08 19:02", "likes": 46, "comments": ["尹瑟：谁是小孩", "将太郎：谁回复谁就是"]},
-      {"id": "ig-river", "title": "yoonseul.archive", "body": "不是约会。只是有人半夜跑来送外套。", "kind": "post", "time": "2022-09-18 00:07", "likes": 118, "comments": ["有真：好的不是约会", "Alex：此地无银三百两"], "hidden": true},
-      {"id": "ig-shotaro-club-2022", "title": "shotaro.1125", "body": "社团节结束。谢谢今天来的人。", "kind": "post", "time": "2022-05-18 22:14", "likes": 624, "comments": ["舞社成员：社长辛苦了", "有真：某个人明明说不来", "尹瑟：不要艾特我"], "hidden": true},
-      {"id": "ig-classmate-2022", "title": "minseo.daily", "body": "今日校园目击：舞社社长表演结束第一件事不是合照，是给人送水。", "kind": "post", "time": "2022-05-18 22:36", "likes": 203, "comments": ["同学A：青梅竹马那位？", "敏书：我什么都没说ㅎㅎ"], "hidden": true},
-      {"id": "ig-yujin-rain-2022", "title": "yujin.zip", "body": "有人共享一把伞，有人负责在后面替他们拍证据。", "kind": "post", "time": "2022-07-11 20:44", "likes": 87, "comments": ["尹瑟：韩有真。", "有真：在"] , "hidden": true},
-      {"id": "ig-shotaro-campus-2026", "title": "shotaro.1125", "body": "忙完以后去吃饭。有人说只等十分钟。", "kind": "post", "time": "2026-05-03 18:40", "likes": 1321, "comments": ["Alex：你已经迟到十二分钟", "有真：她还是会等"] , "hidden": true},
-      {"id": "ig-yujin-cafe-2026", "title": "yujin.zip", "body": "复习五分钟，聊天两小时。大学生活非常充实。", "kind": "post", "time": "2026-10-18 21:33", "likes": 241, "comments": ["尹瑟：照片里的笔记是谁的", "有真：反正不是你的"] , "hidden": true},
-      {"id": "ig-classmate-night-2026", "title": "alex.after9", "body": "今晚活动结束。手机落在店里的同学请尽快回来认领。", "kind": "post", "time": "2026-10-25 22:01", "likes": 76, "comments": ["有真：我知道是谁", "Alex：她本人还不知道"] , "hidden": true},
-      {"id": "ig-story-2026", "title": "yoonseul.archive · 快拍草稿", "body": "有些称呼用了太久，就会让人忘记它本来只是一种借口。", "kind": "post", "time": "2026-10-25 21:51", "folder": "草稿", "meta": {"story": "true"}, "hidden": true}
+      {
+        "id": "ig-first-phone",
+        "title": "yoonseul.archive",
+        "body": "人生第一部手机📱 妈妈说不要弄丢。某位哥哥说要把他置顶。",
+        "kind": "post",
+        "time": "2019-03-02 19:04",
+        "likes": 23,
+        "comments": ["有真：某位哥哥是谁呀ㅎㅎ", "尹瑟：闭嘴"]
+      },
+      {
+        "id": "ig-yujin-2019",
+        "title": "yujin.zip",
+        "body": "初中第一周存活成功。旁边这位午饭只吃了三口，因为有人在校门口等她。",
+        "kind": "post",
+        "time": "2019-03-08 18:12",
+        "likes": 31,
+        "comments": ["尹瑟：你删掉最后一句", "有真：拒绝"]
+      },
+      {
+        "id": "ig-shotaro-2019",
+        "title": "shotaro.1125",
+        "body": "被迫负责接送小孩的第一周。",
+        "kind": "post",
+        "time": "2019-03-08 19:02",
+        "likes": 46,
+        "comments": ["尹瑟：谁是小孩", "将太郎：谁回复谁就是"]
+      },
+      {
+        "id": "ig-river",
+        "title": "yoonseul.archive",
+        "body": "不是约会。只是有人半夜跑来送外套。",
+        "kind": "post",
+        "time": "2022-09-18 00:07",
+        "likes": 118,
+        "comments": ["有真：好的不是约会", "Alex：此地无银三百两"],
+        "hidden": true
+      },
+      {
+        "id": "ig-shotaro-club-2022",
+        "title": "shotaro.1125",
+        "body": "社团节结束。谢谢今天来的人。",
+        "kind": "post",
+        "time": "2022-05-18 22:14",
+        "likes": 624,
+        "comments": [
+          "舞社成员：社长辛苦了",
+          "有真：某个人明明说不来",
+          "尹瑟：不要艾特我"
+        ],
+        "hidden": true
+      },
+      {
+        "id": "ig-classmate-2022",
+        "title": "minseo.daily",
+        "body": "今日校园目击：舞社社长表演结束第一件事不是合照，是给人送水。",
+        "kind": "post",
+        "time": "2022-05-18 22:36",
+        "likes": 203,
+        "comments": ["同学A：青梅竹马那位？", "敏书：我什么都没说ㅎㅎ"],
+        "hidden": true
+      },
+      {
+        "id": "ig-yujin-rain-2022",
+        "title": "yujin.zip",
+        "body": "有人共享一把伞，有人负责在后面替他们拍证据。",
+        "kind": "post",
+        "time": "2022-07-11 20:44",
+        "likes": 87,
+        "comments": ["尹瑟：韩有真。", "有真：在"],
+        "hidden": true
+      },
+      {
+        "id": "ig-shotaro-campus-2026",
+        "title": "shotaro.1125",
+        "body": "忙完以后去吃饭。有人说只等十分钟。",
+        "kind": "post",
+        "time": "2026-05-03 18:40",
+        "likes": 1321,
+        "comments": ["Alex：你已经迟到十二分钟", "有真：她还是会等"],
+        "hidden": true
+      },
+      {
+        "id": "ig-yujin-cafe-2026",
+        "title": "yujin.zip",
+        "body": "复习五分钟，聊天两小时。大学生活非常充实。",
+        "kind": "post",
+        "time": "2026-10-18 21:33",
+        "likes": 241,
+        "comments": ["尹瑟：照片里的笔记是谁的", "有真：反正不是你的"],
+        "hidden": true
+      },
+      {
+        "id": "ig-classmate-night-2026",
+        "title": "alex.after9",
+        "body": "今晚活动结束。手机落在店里的同学请尽快回来认领。",
+        "kind": "post",
+        "time": "2026-10-25 22:01",
+        "likes": 76,
+        "comments": ["有真：我知道是谁", "Alex：她本人还不知道"],
+        "hidden": true
+      },
+      {
+        "id": "ig-story-2026",
+        "title": "yoonseul.archive · 快拍草稿",
+        "body": "有些称呼用了太久，就会让人忘记它本来只是一种借口。",
+        "kind": "post",
+        "time": "2026-10-25 21:51",
+        "folder": "草稿",
+        "meta": { "story": "true" },
+        "hidden": true
+      }
     ],
     "forum": [
-      {"id": "forum-lost-card-2019", "title": "有人在一年级走廊捡到学生证吗", "body": "蓝色卡套，里面夹了一张便利店积分卡。找到请放到教务室，谢谢。", "sender": "匿名", "kind": "post", "time": "2019-03-06 16:22", "folder": "失物招领", "meta": {"views": "84", "status": "求助"}, "comments": ["1楼：好像在图书馆门口见过", "楼主：找到了谢谢！"]},
-      {"id": "forum-cafeteria-2019", "title": "今天食堂的炸猪排是不是变小了", "body": "不是错觉吧？我拍了上周和今天的对比。", "sender": "一年级匿名", "kind": "post", "time": "2019-03-14 12:48", "folder": "校园闲聊", "meta": {"views": "311"}, "comments": ["2楼：你居然有上周的照片", "7楼：学术精神"]},
-      {"id": "forum-dance-president-01", "title": "舞社社长是不是每天都在等一个女生放学", "body": "连续三天看到他站在一年级楼下，手里还拿着草莓牛奶。", "sender": "匿名同学A", "kind": "post", "time": "2022-04-21 18:07", "folder": "校园匿名", "meta": {"views": "1842", "status": "热"}, "comments": ["1楼：青梅竹马啦，从小认识", "3楼：青梅竹马更可疑好吗", "8楼：女方叫他哥哥", "12楼：只大一岁也叫哥哥？"] , "hidden": true},
-      {"id": "forum-dance-president-02", "title": "更新：社团节送水那个就是青梅竹马吗", "body": "社长表演完绕过所有人，先把水递给了观众席边上的女生。", "sender": "前排目击者", "kind": "post", "time": "2022-05-18 22:29", "folder": "校园匿名", "meta": {"views": "3260", "status": "热"}, "comments": ["2楼：她还帮他拿外套", "6楼：他们自己说不是恋爱", "9楼：没人在问他们是不是恋爱吧", "15楼：越解释越奇怪"] , "hidden": true},
-      {"id": "forum-dance-president-03", "title": "所以舞社社长和青梅竹马到底在没在一起", "body": "投票：A 已经在一起；B 互相喜欢但都嘴硬；C 真的是兄妹。", "sender": "吃瓜不嫌事大", "kind": "post", "time": "2022-09-18 09:12", "folder": "校园匿名", "meta": {"views": "4971", "status": "投票"}, "comments": ["1楼：B压倒性胜利", "4楼：昨晚有人看到他去河边接她", "10楼：C选项为什么只有两票", "16楼：其中一票不会是本人吧"] , "hidden": true},
-      {"id": "forum-rain-2022", "title": "共享一把伞还说只是哥哥合理吗", "body": "男方自己半边肩膀全湿，伞几乎都偏到女方那边。", "sender": "路过操场", "kind": "post", "time": "2022-07-11 21:02", "folder": "校园匿名", "meta": {"views": "2219"}, "comments": ["3楼：普通哥哥也会吧", "5楼：但他只比她大一岁", "11楼：这对的重点永远是只大一岁"] , "hidden": true},
-      {"id": "forum-campus-2026", "title": "有人认识经金系总在咖啡店靠窗坐的女生吗", "body": "想还她掉在座位下的笔记本，封面写着Y&S。", "sender": "匿名", "kind": "post", "time": "2026-10-12 20:17", "folder": "大学生活", "meta": {"views": "608", "status": "求助"}, "comments": ["1楼：交给店员吧", "4楼：Y&S听起来像情侣缩写"] , "hidden": true},
-      {"id": "forum-phone-2026", "title": "咖啡店捡到一部手机", "body": "蓝色壁纸，锁屏是一个戴绿色帽子的人。失主看到请联系前台。", "sender": "店员", "kind": "post", "time": "2026-10-25 22:04", "folder": "失物招领", "meta": {"views": "92", "status": "置顶"}, "comments": ["1楼：失主朋友已经在找了", "店员：已有人联系前台"] , "hidden": true}
+      {
+        "id": "forum-lost-card-2019",
+        "title": "有人在一年级走廊捡到学生证吗",
+        "body": "蓝色卡套，里面夹了一张便利店积分卡。找到请放到教务室，谢谢。",
+        "sender": "匿名",
+        "kind": "post",
+        "time": "2019-03-06 16:22",
+        "folder": "失物招领",
+        "meta": { "views": "84", "status": "求助" },
+        "comments": ["1楼：好像在图书馆门口见过", "楼主：找到了谢谢！"]
+      },
+      {
+        "id": "forum-cafeteria-2019",
+        "title": "今天食堂的炸猪排是不是变小了",
+        "body": "不是错觉吧？我拍了上周和今天的对比。",
+        "sender": "一年级匿名",
+        "kind": "post",
+        "time": "2019-03-14 12:48",
+        "folder": "校园闲聊",
+        "meta": { "views": "311" },
+        "comments": ["2楼：你居然有上周的照片", "7楼：学术精神"]
+      },
+      {
+        "id": "forum-dance-president-01",
+        "title": "舞社社长是不是每天都在等一个女生放学",
+        "body": "连续三天看到他站在一年级楼下，手里还拿着草莓牛奶。",
+        "sender": "匿名同学A",
+        "kind": "post",
+        "time": "2022-04-21 18:07",
+        "folder": "校园匿名",
+        "meta": { "views": "1842", "status": "热" },
+        "comments": [
+          "1楼：青梅竹马啦，从小认识",
+          "3楼：青梅竹马更可疑好吗",
+          "8楼：女方叫他哥哥",
+          "12楼：只大一岁也叫哥哥？"
+        ],
+        "hidden": true
+      },
+      {
+        "id": "forum-dance-president-02",
+        "title": "更新：社团节送水那个就是青梅竹马吗",
+        "body": "社长表演完绕过所有人，先把水递给了观众席边上的女生。",
+        "sender": "前排目击者",
+        "kind": "post",
+        "time": "2022-05-18 22:29",
+        "folder": "校园匿名",
+        "meta": { "views": "3260", "status": "热" },
+        "comments": [
+          "2楼：她还帮他拿外套",
+          "6楼：他们自己说不是恋爱",
+          "9楼：没人在问他们是不是恋爱吧",
+          "15楼：越解释越奇怪"
+        ],
+        "hidden": true
+      },
+      {
+        "id": "forum-dance-president-03",
+        "title": "所以舞社社长和青梅竹马到底在没在一起",
+        "body": "投票：A 已经在一起；B 互相喜欢但都嘴硬；C 真的是兄妹。",
+        "sender": "吃瓜不嫌事大",
+        "kind": "post",
+        "time": "2022-09-18 09:12",
+        "folder": "校园匿名",
+        "meta": { "views": "4971", "status": "投票" },
+        "comments": [
+          "1楼：B压倒性胜利",
+          "4楼：昨晚有人看到他去河边接她",
+          "10楼：C选项为什么只有两票",
+          "16楼：其中一票不会是本人吧"
+        ],
+        "hidden": true
+      },
+      {
+        "id": "forum-rain-2022",
+        "title": "共享一把伞还说只是哥哥合理吗",
+        "body": "男方自己半边肩膀全湿，伞几乎都偏到女方那边。",
+        "sender": "路过操场",
+        "kind": "post",
+        "time": "2022-07-11 21:02",
+        "folder": "校园匿名",
+        "meta": { "views": "2219" },
+        "comments": [
+          "3楼：普通哥哥也会吧",
+          "5楼：但他只比她大一岁",
+          "11楼：这对的重点永远是只大一岁"
+        ],
+        "hidden": true
+      },
+      {
+        "id": "forum-campus-2026",
+        "title": "有人认识经金系总在咖啡店靠窗坐的女生吗",
+        "body": "想还她掉在座位下的笔记本，封面写着Y&S。",
+        "sender": "匿名",
+        "kind": "post",
+        "time": "2026-10-12 20:17",
+        "folder": "大学生活",
+        "meta": { "views": "608", "status": "求助" },
+        "comments": ["1楼：交给店员吧", "4楼：Y&S听起来像情侣缩写"],
+        "hidden": true
+      },
+      {
+        "id": "forum-phone-2026",
+        "title": "咖啡店捡到一部手机",
+        "body": "蓝色壁纸，锁屏是一个戴绿色帽子的人。失主看到请联系前台。",
+        "sender": "店员",
+        "kind": "post",
+        "time": "2026-10-25 22:04",
+        "folder": "失物招领",
+        "meta": { "views": "92", "status": "置顶" },
+        "comments": ["1楼：失主朋友已经在找了", "店员：已有人联系前台"],
+        "hidden": true
+      }
     ],
     "music": [
-      {"id": "music-childhood", "title": "回家路上", "body": "2019 年春天创建 · 27首歌", "kind": "audio", "folder": "歌单"},
-      {"id": "music-not-date", "title": "不是约会", "body": "2022 年秋天创建 · 封面是模糊的河岸灯光", "kind": "audio", "folder": "歌单", "hidden": true},
-      {"id": "music-confession", "title": "如果今晚说出口", "body": "2026.10.25 创建 · 只有一首歌", "kind": "audio", "folder": "歌单", "hidden": true}
+      {
+        "id": "music-childhood",
+        "title": "回家路上",
+        "body": "2019 年春天创建 · 27首歌",
+        "kind": "audio",
+        "folder": "歌单"
+      },
+      {
+        "id": "music-not-date",
+        "title": "不是约会",
+        "body": "2022 年秋天创建 · 封面是模糊的河岸灯光",
+        "kind": "audio",
+        "folder": "歌单",
+        "hidden": true
+      },
+      {
+        "id": "music-confession",
+        "title": "如果今晚说出口",
+        "body": "2026.10.25 创建 · 只有一首歌",
+        "kind": "audio",
+        "folder": "歌单",
+        "hidden": true
+      }
     ],
     "maps": [
-      {"id": "map-convenience-store", "title": "小时候的便利店", "body": "收藏地点 · 从家步行4分钟", "kind": "text"},
-      {"id": "map-riverside", "title": "河边长椅", "body": "收藏地点 · 备注：他说‘我没说不算’的地方", "kind": "text", "hidden": true}
+      {
+        "id": "map-convenience-store",
+        "title": "小时候的便利店",
+        "body": "收藏地点 · 从家步行4分钟",
+        "kind": "text"
+      },
+      {
+        "id": "map-riverside",
+        "title": "河边长椅",
+        "body": "收藏地点 · 备注：他说‘我没说不算’的地方",
+        "kind": "text",
+        "hidden": true
+      }
     ],
     "safari": [
-      {"id": "safari-01", "title": "青梅竹马突然不让叫哥哥是什么意思", "body": "搜索记录 · 2026.10.25 21:14", "kind": "text"},
-      {"id": "safari-02", "title": "怎么判断对方吃醋但不承认", "body": "搜索记录 · 2026.10.25 21:17", "kind": "text"},
-      {"id": "safari-03", "title": "朋友变成恋人以后还能回到以前吗", "body": "搜索记录 · 2026.10.25 21:23", "kind": "text"},
-      {"id": "safari-04", "title": "河边晚上十点半会不会冷", "body": "搜索记录 · 2026.10.25 21:29", "kind": "text"}
+      {
+        "id": "safari-01",
+        "title": "青梅竹马突然不让叫哥哥是什么意思",
+        "body": "搜索记录 · 2026.10.25 21:14",
+        "kind": "text"
+      },
+      {
+        "id": "safari-02",
+        "title": "怎么判断对方吃醋但不承认",
+        "body": "搜索记录 · 2026.10.25 21:17",
+        "kind": "text"
+      },
+      {
+        "id": "safari-03",
+        "title": "朋友变成恋人以后还能回到以前吗",
+        "body": "搜索记录 · 2026.10.25 21:23",
+        "kind": "text"
+      },
+      {
+        "id": "safari-04",
+        "title": "河边晚上十点半会不会冷",
+        "body": "搜索记录 · 2026.10.25 21:29",
+        "kind": "text"
+      }
     ],
     "clock": [
-      {"id": "clock-01", "title": "07:10", "body": "上课 · 工作日", "kind": "event"},
-      {"id": "clock-02", "title": "08:00", "body": "周末也不要睡到中午", "kind": "event"},
-      {"id": "clock-03", "title": "22:30", "body": "去河边 · 仅今天", "kind": "event", "hidden": true}
+      {
+        "id": "clock-01",
+        "title": "07:10",
+        "body": "上课 · 工作日",
+        "kind": "event"
+      },
+      {
+        "id": "clock-02",
+        "title": "08:00",
+        "body": "周末也不要睡到中午",
+        "kind": "event"
+      },
+      {
+        "id": "clock-03",
+        "title": "22:30",
+        "body": "去河边 · 仅今天",
+        "kind": "event",
+        "hidden": true
+      }
     ],
     "settings": [
-      {"id": "settings-01", "title": "设备名称", "body": "尹瑟的第4部手机", "kind": "text"},
-      {"id": "settings-02", "title": "紧急联系人", "body": "哥哥 · 010-1125-2000", "kind": "text"}
+      {
+        "id": "settings-01",
+        "title": "设备名称",
+        "body": "尹瑟的第4部手机",
+        "kind": "text"
+      },
+      {
+        "id": "settings-02",
+        "title": "紧急联系人",
+        "body": "哥哥 · 010-1125-2000",
+        "kind": "text"
+      }
     ],
     "calculator": [
-      {"id": "calculator-01", "title": "最近一次计算", "body": "2026 - 2019 = 7", "kind": "text"}
+      {
+        "id": "calculator-01",
+        "title": "最近一次计算",
+        "body": "2026 - 2019 = 7",
+        "kind": "text"
+      }
     ]
   },
   "variables": {
     "era": "2019",
-    "secretFound": false
+    "secretFound": false,
+    "lifePhase": "riverside-night",
+    "riversideStatus": "waiting",
+    "dayCycle": 0
+  },
+  "life": {
+    "initialLocation": "汉江公园入口",
+    "npcs": [
+      {
+        "id": "shotaro",
+        "name": "大﨑将太郎",
+        "location": "汉江公园江边",
+        "status": "在长椅附近等尹瑟",
+        "availableAt": "23:40",
+        "known": ["尹瑟已经找回手机", "尹瑟今晚参加了同学活动"],
+        "closeness": 62,
+        "trust": 76,
+        "tension": 8
+      },
+      {
+        "id": "yujin",
+        "name": "韩有真",
+        "location": "家",
+        "status": "准备睡觉",
+        "availableAt": "明天 13:30",
+        "known": ["尹瑟的手机曾落在咖啡店"],
+        "closeness": 74,
+        "trust": 82,
+        "tension": 0
+      },
+      {
+        "id": "alex",
+        "name": "Alex",
+        "location": "咖啡店",
+        "status": "帮忙收尾",
+        "availableAt": "明天 12:00",
+        "known": ["尹瑟已经取回手机", "将太郎询问过尹瑟的位置"],
+        "closeness": 48,
+        "trust": 63,
+        "tension": 0
+      }
+    ],
+    "activities": [
+      {
+        "id": "find-shotaro",
+        "label": "去找将太郎",
+        "description": "他正在江边，但没有催你过去",
+        "emoji": "🚶",
+        "kind": "important",
+        "minutes": 5,
+        "locations": ["汉江公园入口"],
+        "conditions": [
+          { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+        ]
+      },
+      {
+        "id": "stay-riverside",
+        "label": "在入口再待一会儿",
+        "description": "吹吹风，整理一下今晚发生的事",
+        "emoji": "🌙",
+        "kind": "ordinary",
+        "minutes": 10,
+        "locations": ["汉江公园入口"]
+      },
+      {
+        "id": "go-convenience",
+        "label": "去便利店",
+        "description": "买点喝的，不一定会发生特别的事",
+        "emoji": "🏪",
+        "kind": "ordinary",
+        "minutes": 15,
+        "locations": ["汉江公园入口", "汉江公园江边"]
+      },
+      {
+        "id": "go-home",
+        "label": "回家",
+        "description": "今晚的事也可以暂时不处理",
+        "emoji": "🏠",
+        "kind": "ordinary",
+        "minutes": 35,
+        "locations": ["汉江公园入口", "汉江公园江边", "便利店"]
+      },
+      {
+        "id": "sleep",
+        "label": "睡觉",
+        "description": "结束今天，进入第二天的生活",
+        "emoji": "🛏️",
+        "kind": "ordinary",
+        "minutes": 0,
+        "locations": ["家"]
+      },
+      {
+        "id": "yujin-cafe",
+        "label": "和有真去咖啡厅",
+        "description": "她说有一家新店想去看看",
+        "emoji": "☕",
+        "kind": "daily",
+        "minutes": 90,
+        "locations": ["家", "汉阳大学"],
+        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+      },
+      {
+        "id": "study-library",
+        "label": "去图书馆复习",
+        "description": "把落下的计量笔记补完",
+        "emoji": "📚",
+        "kind": "ordinary",
+        "minutes": 90,
+        "locations": ["家", "汉阳大学"],
+        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+      },
+      {
+        "id": "walk-alone",
+        "label": "一个人去校园散步",
+        "description": "不约任何人，慢慢走一圈",
+        "emoji": "🍂",
+        "kind": "ordinary",
+        "minutes": 45,
+        "locations": ["家", "汉阳大学"],
+        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+      }
+    ]
   },
   "events": [
     {
       "id": "welcome",
-      "label": "第一部手机",
+      "label": "历史记录已载入",
+      "type": "start",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
+      "actions": [
+        { "type": "hide", "key": "k22-01", "value": true },
+        { "type": "hide", "key": "k22-02", "value": true },
+        { "type": "hide", "key": "k22-03", "value": true },
+        { "type": "hide", "key": "k22-04", "value": true },
+        { "type": "hide", "key": "k22-05", "value": true },
+        { "type": "hide", "key": "k22-06", "value": true },
+        { "type": "hide", "key": "k22-07", "value": true },
+        { "type": "hide", "key": "k22-08", "value": true },
+        { "type": "hide", "key": "k22-09", "value": true },
+        { "type": "hide", "key": "k22-10", "value": true },
+        { "type": "hide", "key": "k22-11", "value": true },
+        { "type": "hide", "key": "y22-01", "value": true },
+        { "type": "hide", "key": "y22-02", "value": true },
+        { "type": "hide", "key": "y22-03", "value": true },
+        { "type": "hide", "key": "y22-04", "value": true },
+        { "type": "hide", "key": "y22-05", "value": true },
+        { "type": "hide", "key": "k26-01", "value": true },
+        { "type": "hide", "key": "k26-02", "value": true },
+        { "type": "hide", "key": "k26-03", "value": true },
+        { "type": "hide", "key": "k26-04", "value": true },
+        { "type": "hide", "key": "k26-05", "value": true },
+        { "type": "hide", "key": "k26-06", "value": true },
+        { "type": "hide", "key": "k26-07", "value": true },
+        { "type": "hide", "key": "k26-08", "value": true },
+        { "type": "hide", "key": "k26-09", "value": true },
+        { "type": "hide", "key": "k26-10", "value": true },
+        { "type": "hide", "key": "a26-01", "value": true },
+        { "type": "hide", "key": "a26-02", "value": true },
+        { "type": "hide", "key": "a26-03", "value": true },
+        { "type": "hide", "key": "g26-01", "value": true },
+        { "type": "hide", "key": "g26-02", "value": true },
+        { "type": "hide", "key": "g26-03", "value": true },
+        { "type": "hide", "key": "g26-04", "value": true },
+        { "type": "hide", "key": "g26-05", "value": true },
+        { "type": "hide", "key": "g26-06", "value": true },
+        { "type": "hide", "key": "g26-07", "value": true },
+        { "type": "hide", "key": "g26-08", "value": true },
+        { "type": "hide", "key": "mom-05", "value": true },
+        { "type": "hide", "key": "mom-06", "value": true },
+        { "type": "hide", "key": "mom-07", "value": true },
+        { "type": "hide", "key": "mom-08", "value": true },
+        { "type": "hide", "key": "safari-01", "value": true },
+        { "type": "hide", "key": "safari-02", "value": true },
+        { "type": "hide", "key": "safari-03", "value": true },
+        { "type": "hide", "key": "safari-04", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "有真：你不会到现在还拿11月25日当密码吧？"
+        }
+      ]
+    },
+    {
+      "id": "life-start",
+      "label": "江边这一晚",
       "type": "start",
       "actions": [
-        {"type": "hide", "key": "k22-01", "value": true},
-        {"type": "hide", "key": "k22-02", "value": true},
-        {"type": "hide", "key": "k22-03", "value": true},
-        {"type": "hide", "key": "k22-04", "value": true},
-        {"type": "hide", "key": "k22-05", "value": true},
-        {"type": "hide", "key": "k22-06", "value": true},
-        {"type": "hide", "key": "k22-07", "value": true},
-        {"type": "hide", "key": "k22-08", "value": true},
-        {"type": "hide", "key": "k22-09", "value": true},
-        {"type": "hide", "key": "k22-10", "value": true},
-        {"type": "hide", "key": "k22-11", "value": true},
-        {"type": "hide", "key": "y22-01", "value": true},
-        {"type": "hide", "key": "y22-02", "value": true},
-        {"type": "hide", "key": "y22-03", "value": true},
-        {"type": "hide", "key": "y22-04", "value": true},
-        {"type": "hide", "key": "y22-05", "value": true},
-        {"type": "hide", "key": "k26-01", "value": true},
-        {"type": "hide", "key": "k26-02", "value": true},
-        {"type": "hide", "key": "k26-03", "value": true},
-        {"type": "hide", "key": "k26-04", "value": true},
-        {"type": "hide", "key": "k26-05", "value": true},
-        {"type": "hide", "key": "k26-06", "value": true},
-        {"type": "hide", "key": "k26-07", "value": true},
-        {"type": "hide", "key": "k26-08", "value": true},
-        {"type": "hide", "key": "k26-09", "value": true},
-        {"type": "hide", "key": "k26-10", "value": true},
-        {"type": "hide", "key": "a26-01", "value": true},
-        {"type": "hide", "key": "a26-02", "value": true},
-        {"type": "hide", "key": "a26-03", "value": true},
-        {"type": "hide", "key": "g26-01", "value": true},
-        {"type": "hide", "key": "g26-02", "value": true},
-        {"type": "hide", "key": "g26-03", "value": true},
-        {"type": "hide", "key": "g26-04", "value": true},
-        {"type": "hide", "key": "g26-05", "value": true},
-        {"type": "hide", "key": "g26-06", "value": true},
-        {"type": "hide", "key": "g26-07", "value": true},
-        {"type": "hide", "key": "g26-08", "value": true},
-        {"type": "hide", "key": "mom-05", "value": true},
-        {"type": "hide", "key": "mom-06", "value": true},
-        {"type": "hide", "key": "mom-07", "value": true},
-        {"type": "hide", "key": "mom-08", "value": true},
-        {"type": "hide", "key": "safari-01", "value": true},
-        {"type": "hide", "key": "safari-02", "value": true},
-        {"type": "hide", "key": "safari-03", "value": true},
-        {"type": "hide", "key": "safari-04", "value": true},
-        {"type": "notification", "key": "", "value": "有真：你不会到现在还拿11月25日当密码吧？"}
+        { "type": "eventEnd", "key": "", "value": "riverside-meeting" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "行动：你可以回复哥哥，也可以直接去江边找他"
+        }
+      ],
+      "next": ["riverside-wait-timeout"]
+    },
+    {
+      "id": "read-riverside-message",
+      "label": "回复「我说说不算」",
+      "type": "choice",
+      "event": "read",
+      "target": "k26-14",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "next": ["reply-meet-now", "reply-ask-first", "reply-not-now"]
+    },
+    {
+      "id": "reply-meet-now",
+      "label": "「等我五分钟。」",
+      "type": "event",
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "等我五分钟。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "嗯。慢慢走，别跑。"
+        },
+        { "type": "time", "key": "", "value": "23:23" }
+      ],
+      "next": ["scene-riverside-arrival"]
+    },
+    {
+      "id": "reply-ask-first",
+      "label": "「你到底想说什么？」",
+      "type": "event",
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "你到底想说什么？"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "当面说。你到了再叫我。"
+        }
+      ]
+    },
+    {
+      "id": "reply-not-now",
+      "label": "「我现在还不想过去。」",
+      "type": "event",
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "我现在还不想过去。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "好。我再待二十分钟，你自己决定。"
+        },
+        { "type": "npcStatus", "key": "shotaro.availableAt", "value": "23:40" }
+      ],
+      "next": ["riverside-wait-timeout"]
+    },
+    {
+      "id": "typed-reply-meet",
+      "label": "从聊天前往江边",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|哥哥|meet",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "嗯。慢慢走，别跑。"
+        },
+        { "type": "time", "key": "", "value": "23:23" }
+      ],
+      "next": ["scene-riverside-arrival"]
+    },
+    {
+      "id": "typed-reply-ask",
+      "label": "先在聊天里问清楚",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|哥哥|ask",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "当面说。你到了再叫我。"
+        }
+      ]
+    },
+    {
+      "id": "typed-reply-later",
+      "label": "暂时不处理江边消息",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|哥哥|later",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "好。我再待二十分钟，你自己决定。"
+        },
+        { "type": "npcStatus", "key": "shotaro.availableAt", "value": "23:40" }
+      ],
+      "next": ["riverside-wait-timeout"]
+    },
+    {
+      "id": "typed-reply-other",
+      "label": "哥哥收到其他回复",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|哥哥|other",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "我在江边。别着急，想清楚再来。"
+        }
+      ]
+    },
+    {
+      "id": "riverside-wait-timeout",
+      "label": "将太郎结束等待",
+      "type": "delay",
+      "delayMs": 1200000,
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true },
+        { "key": "riversideStatus", "op": "eq", "value": "waiting" }
+      ],
+      "actions": [
+        { "type": "eventStart", "key": "riverside-meeting", "value": true },
+        { "type": "eventEnd", "key": "riverside-meeting", "value": "" },
+        { "type": "variable", "key": "riversideStatus", "value": "postponed" },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "今晚不再等待"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "我先回去了。不是催你，今晚不想说也没关系。"
+        },
+        { "type": "notification", "key": "", "value": "哥哥：我先回去了。" }
+      ]
+    },
+    {
+      "id": "action-find-shotaro",
+      "label": "主动去找将太郎",
+      "type": "event",
+      "event": "action",
+      "target": "find-shotaro",
+      "conditions": [
+        { "key": "pending:riverside-meeting", "op": "eq", "value": true }
+      ],
+      "next": ["scene-riverside-arrival"]
+    },
+    {
+      "id": "action-stay-riverside",
+      "label": "在入口整理心情",
+      "type": "event",
+      "event": "action",
+      "target": "stay-riverside",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "",
+          "value": "十分钟过去了。江边的风比刚才更凉。"
+        }
+      ]
+    },
+    {
+      "id": "action-convenience",
+      "label": "去便利店",
+      "type": "event",
+      "event": "action",
+      "target": "go-convenience",
+      "actions": [
+        { "type": "location", "key": "", "value": "便利店" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "便利店：买到了草莓牛奶，今晚没有发生特别的事。"
+        }
+      ]
+    },
+    {
+      "id": "action-go-home",
+      "label": "先回家",
+      "type": "event",
+      "event": "action",
+      "target": "go-home",
+      "actions": [
+        { "type": "location", "key": "", "value": "家" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "已到家。江边的消息仍然可以稍后处理。"
+        }
+      ]
+    },
+    {
+      "id": "scene-riverside-arrival",
+      "label": "在江边见到将太郎",
+      "type": "choice",
+      "actions": [
+        { "type": "eventStart", "key": "riverside-meeting", "value": true },
+        { "type": "activityLock", "key": "find-shotaro", "value": true },
+        { "type": "location", "key": "", "value": "汉江公园江边" },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "正在和尹瑟见面"
+        },
+        {
+          "type": "knowledge",
+          "key": "shotaro",
+          "value": "尹瑟今晚主动来到江边"
+        },
+        {
+          "type": "scene",
+          "key": "riverside-arrival|江边见面|true",
+          "value": "你沿着步道往下走，看见将太郎靠在长椅旁。\n他手里拿着两罐饮料，外套搭在臂弯上。看见你以后，他没有立刻走过来。\n「你还真来了。」"
+        }
+      ],
+      "next": ["scene-ask-why", "scene-deflect", "scene-take-drink"]
+    },
+    {
+      "id": "scene-ask-why",
+      "label": "「你怎么突然过来了？」",
+      "type": "choice",
+      "actions": [
+        { "type": "relationship", "key": "shotaro.trust", "value": 1 },
+        {
+          "type": "scene",
+          "key": "riverside-conversation|没有说完的话|false",
+          "value": "「不是突然。」他低头看了一眼手机，「我从十点半就在附近。」\n他停了停，没有追问你为什么一直没回复。\n「你今天看起来很累。我只是想确认你安全到家。」"
+        }
+      ],
+      "next": ["scene-continue-walk", "scene-end-meeting", "scene-go-store"]
+    },
+    {
+      "id": "scene-deflect",
+      "label": "「我又没让你来。」",
+      "type": "choice",
+      "actions": [
+        { "type": "relationship", "key": "shotaro.tension", "value": 1 },
+        {
+          "type": "scene",
+          "key": "riverside-conversation|没有说完的话|false",
+          "value": "「嗯，你没让我来。」将太郎没有反驳，只把其中一罐饮料放到长椅上。\n「所以我也没要求你一定留下。」\n他说得平静，像是在给你留足够的退路。"
+        }
+      ],
+      "next": ["scene-continue-walk", "scene-end-meeting", "scene-go-store"]
+    },
+    {
+      "id": "scene-take-drink",
+      "label": "走过去，拿走他手里的饮料",
+      "type": "choice",
+      "actions": [
+        { "type": "relationship", "key": "shotaro.closeness", "value": 1 },
+        {
+          "type": "scene",
+          "key": "riverside-conversation|没有说完的话|false",
+          "value": "你没接他的话，只把草莓牛奶从他手里抽走。\n将太郎看了眼空掉的手，往旁边让出一点位置。\n「还以为你今天连这个都不肯拿。」"
+        }
+      ],
+      "next": ["scene-continue-walk", "scene-end-meeting", "scene-go-store"]
+    },
+    {
+      "id": "scene-input-ask",
+      "label": "自由行动：追问原因",
+      "type": "event",
+      "event": "sceneInput",
+      "target": "riverside-arrival:ask",
+      "next": ["scene-ask-why"]
+    },
+    {
+      "id": "scene-input-drink",
+      "label": "自由行动：拿饮料",
+      "type": "event",
+      "event": "sceneInput",
+      "target": "riverside-arrival:drink",
+      "next": ["scene-take-drink"]
+    },
+    {
+      "id": "scene-input-leave",
+      "label": "自由行动：结束见面",
+      "type": "event",
+      "event": "sceneInput",
+      "target": "riverside-arrival:leave",
+      "next": ["scene-end-meeting"]
+    },
+    {
+      "id": "scene-input-quiet",
+      "label": "自由行动：暂时沉默",
+      "type": "event",
+      "event": "sceneInput",
+      "target": "riverside-arrival:quiet",
+      "next": ["scene-deflect"]
+    },
+    {
+      "id": "scene-input-other",
+      "label": "自由行动：未识别兜底",
+      "type": "choice",
+      "event": "sceneInput",
+      "target": "riverside-arrival:other",
+      "actions": [
+        {
+          "type": "scene",
+          "key": "riverside-conversation|他等你说完|false",
+          "value": "你换了一种说法。将太郎安静听完，没有擅自替你下结论。\n「我大概明白。剩下的，你想说的时候再说。」"
+        }
+      ],
+      "next": ["scene-continue-walk", "scene-end-meeting", "scene-go-store"]
+    },
+    {
+      "id": "scene-continue-walk",
+      "label": "沿着江边继续走一会儿",
+      "type": "choice",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:37" },
+        {
+          "type": "scene",
+          "key": "riverside-walk|并肩散步|false",
+          "value": "你们沿着江边慢慢往前走。将太郎说起今天社团排练临时换了教室，又问你明天是不是还有早课。\n话题很普通。谁都没有再提那句“不想当哥哥”。\n走到下一个路灯时，他放慢了脚步，等你决定接下来去哪。"
+        }
+      ],
+      "next": ["scene-walk-home", "scene-walk-more", "scene-walk-quiet"]
+    },
+    {
+      "id": "scene-end-meeting",
+      "label": "今晚先到这里",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:32" },
+        {
+          "type": "variable",
+          "key": "riversideStatus",
+          "value": "ended-early"
+        },
+        { "type": "eventEnd", "key": "riverside-meeting", "value": "" },
+        { "type": "npcStatus", "key": "shotaro.status", "value": "准备回家" },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "到家告诉我。今晚的事不急。"
+        }
+      ]
+    },
+    {
+      "id": "scene-go-store",
+      "label": "一起去便利店",
+      "type": "choice",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:35" },
+        { "type": "location", "key": "", "value": "便利店" },
+        {
+          "type": "scene",
+          "key": "riverside-store|便利店灯光|false",
+          "value": "便利店的自动门在你们面前打开。将太郎熟门熟路地走向饮料柜，却没有替你做决定。\n「今天自己选。我不猜你想喝什么。」"
+        }
+      ],
+      "next": ["scene-store-milk", "scene-store-tease", "scene-store-home"]
+    },
+    {
+      "id": "scene-walk-home",
+      "label": "说该回家了",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:43" },
+        { "type": "variable", "key": "riversideStatus", "value": "completed" },
+        { "type": "relationship", "key": "shotaro.trust", "value": 1 },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "送尹瑟到车站"
+        },
+        {
+          "type": "knowledge",
+          "key": "shotaro",
+          "value": "尹瑟愿意在江边把话慢慢说完"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "上车了告诉我。明天还有课，别再熬夜。"
+        }
+      ]
+    },
+    {
+      "id": "scene-walk-more",
+      "label": "再走十分钟",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:47" },
+        { "type": "variable", "key": "riversideStatus", "value": "completed" },
+        { "type": "relationship", "key": "shotaro.closeness", "value": 1 },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "陪尹瑟继续散步"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "我到家了。你也早点睡。"
+        }
+      ]
+    },
+    {
+      "id": "scene-walk-quiet",
+      "label": "什么也不说，只继续走",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:45" },
+        {
+          "type": "variable",
+          "key": "riversideStatus",
+          "value": "completed-quiet"
+        },
+        { "type": "relationship", "key": "shotaro.trust", "value": 1 },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "今天没说完也没关系。晚安。"
+        }
+      ]
+    },
+    {
+      "id": "scene-store-milk",
+      "label": "拿一瓶草莓牛奶",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:48" },
+        { "type": "variable", "key": "riversideStatus", "value": "completed" },
+        { "type": "relationship", "key": "shotaro.closeness", "value": 1 },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "还是选了这个。到家告诉我。"
+        }
+      ]
+    },
+    {
+      "id": "scene-store-tease",
+      "label": "「你不是最会猜吗？」",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:49" },
+        { "type": "variable", "key": "riversideStatus", "value": "completed" },
+        { "type": "relationship", "key": "shotaro.tension", "value": -1 },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "猜错了你又要怪我。下次再猜。"
+        }
+      ]
+    },
+    {
+      "id": "scene-store-home",
+      "label": "什么都不买，直接回家",
+      "type": "event",
+      "actions": [
+        { "type": "time", "key": "", "value": "23:46" },
+        { "type": "variable", "key": "riversideStatus", "value": "completed" },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "好。那就回家。"
+        }
+      ]
+    },
+    {
+      "id": "sleep-after-riverside",
+      "label": "进入第二天",
+      "type": "event",
+      "event": "action",
+      "target": "sleep",
+      "conditions": [
+        { "key": "riversideStatus", "op": "neq", "value": "waiting" }
+      ],
+      "actions": [
+        { "type": "date", "key": "", "value": "2026-10-26" },
+        { "type": "time", "key": "", "value": "08:10" },
+        { "type": "variable", "key": "dayCycle", "value": 1 },
+        { "type": "location", "key": "", "value": "家" },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "汉阳大学" },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "上午上课，下午舞社排练"
+        },
+        { "type": "npcStatus", "key": "yujin.location", "value": "汉阳大学" },
+        { "type": "npcStatus", "key": "yujin.status", "value": "下午有空" },
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "醒了吗？下午没课的话陪我去新开的咖啡厅。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|妈妈|incoming",
+          "value": "早饭在冰箱第二层，出门记得带伞。"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "新的一天：朋友和课程都有自己的安排"
+        }
+      ]
+    },
+    {
+      "id": "sleep-missed-riverside",
+      "label": "没有处理江边消息也继续生活",
+      "type": "event",
+      "event": "action",
+      "target": "sleep",
+      "conditions": [
+        { "key": "riversideStatus", "op": "eq", "value": "waiting" }
+      ],
+      "actions": [
+        { "type": "eventStart", "key": "riverside-meeting", "value": true },
+        {
+          "type": "eventEnd",
+          "key": "riverside-meeting",
+          "value": "next-day-routine"
+        },
+        { "type": "variable", "key": "riversideStatus", "value": "missed" },
+        { "type": "date", "key": "", "value": "2026-10-26" },
+        { "type": "time", "key": "", "value": "08:10" },
+        { "type": "variable", "key": "dayCycle", "value": 1 },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "汉阳大学" },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "上午上课，暂时没有发消息"
+        },
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "醒了吗？下午没课的话陪我去新开的咖啡厅。"
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "新的一天照常开始。昨晚的谈话可以以后再处理。"
+        }
+      ]
+    },
+    {
+      "id": "second-day-yujin-cafe",
+      "label": "和有真度过下午",
+      "type": "choice",
+      "event": "action",
+      "target": "yujin-cafe",
+      "actions": [
+        { "type": "location", "key": "", "value": "往十里咖啡厅" },
+        { "type": "time", "key": "", "value": "15:20" },
+        { "type": "npcStatus", "key": "yujin.status", "value": "和尹瑟喝咖啡" },
+        {
+          "type": "knowledge",
+          "key": "yujin",
+          "value": "尹瑟今天主动赴约喝咖啡"
+        },
+        {
+          "type": "scene",
+          "key": "yujin-cafe|有真的新店清单|false",
+          "value": "有真把靠窗的位置留给你，桌上已经放着两份菜单。\n她先吐槽了十分钟小组作业，才像是不经意一样问：\n「所以你昨晚后来去哪了？」"
+        }
+      ],
+      "next": ["yujin-talk-school", "yujin-change-topic", "yujin-tell-little"]
+    },
+    {
+      "id": "yujin-talk-school",
+      "label": "继续吐槽小组作业",
+      "type": "event",
+      "actions": [
+        { "type": "relationship", "key": "yujin.closeness", "value": 1 },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "有真没有继续追问。你们讨论起下周的课程。"
+        }
+      ]
+    },
+    {
+      "id": "yujin-change-topic",
+      "label": "问她甜点好不好吃",
+      "type": "event",
+      "actions": [
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "有真看出你在转移话题，但只把蛋糕推到你面前。"
+        }
+      ]
+    },
+    {
+      "id": "yujin-tell-little",
+      "label": "只说去江边走了一会儿",
+      "type": "event",
+      "actions": [
+        {
+          "type": "knowledge",
+          "key": "yujin",
+          "value": "尹瑟昨晚去过江边，但不知道同行者和谈话内容"
+        },
+        { "type": "relationship", "key": "yujin.trust", "value": 1 },
+        { "type": "sceneClose", "key": "", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "有真只知道你去过江边，没有得到更多细节。"
+        }
+      ]
+    },
+    {
+      "id": "second-day-library",
+      "label": "独自去图书馆",
+      "type": "event",
+      "event": "action",
+      "target": "study-library",
+      "actions": [
+        { "type": "location", "key": "", "value": "汉阳大学图书馆" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "图书馆：补完了两页计量笔记，没有触发关系剧情。"
+        }
+      ]
+    },
+    {
+      "id": "second-day-walk",
+      "label": "一个人的校园时间",
+      "type": "event",
+      "event": "action",
+      "target": "walk-alone",
+      "actions": [
+        { "type": "location", "key": "", "value": "汉阳大学" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "校园散步：遇到同班同学聊了几句，下午平静地过去。"
+        }
+      ]
+    },
+    {
+      "id": "archive-test-mode",
+      "label": "兼容旧版回忆路径",
+      "type": "event",
+      "event": "archiveMode",
+      "target": "legacy",
+      "actions": [
+        { "type": "variable", "key": "lifePhase", "value": "archive" }
       ]
     },
     {
@@ -310,10 +2143,15 @@
       "type": "event",
       "event": "password",
       "target": "1125",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "unlock", "key": "note-new-phone", "value": true},
-        {"type": "unlock", "key": "photo-convenience-store", "value": true},
-        {"type": "notification", "key": "", "value": "备忘录：发现一篇2019年的加密笔记"}
+        { "type": "unlock", "key": "note-new-phone", "value": true },
+        { "type": "unlock", "key": "photo-convenience-store", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：发现一篇2019年的加密笔记"
+        }
       ]
     },
     {
@@ -322,8 +2160,14 @@
       "type": "event",
       "event": "read",
       "target": "note-new-phone",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "time", "key": "", "value": "22:19"}
+        { "type": "time", "key": "", "value": "22:19" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：发现一张与备忘录同一天拍摄的照片"
+        }
       ]
     },
     {
@@ -331,26 +2175,30 @@
       "label": "解锁高中回忆",
       "type": "event",
       "actions": [
-        {"type": "variable", "key": "era", "value": "2022"},
-        {"type": "unlock", "key": "k22-01", "value": true},
-        {"type": "unlock", "key": "k22-02", "value": true},
-        {"type": "unlock", "key": "k22-03", "value": true},
-        {"type": "unlock", "key": "k22-04", "value": true},
-        {"type": "unlock", "key": "k22-05", "value": true},
-        {"type": "unlock", "key": "k22-06", "value": true},
-        {"type": "unlock", "key": "k22-07", "value": true},
-        {"type": "unlock", "key": "k22-08", "value": true},
-        {"type": "unlock", "key": "k22-09", "value": true},
-        {"type": "unlock", "key": "k22-10", "value": true},
-        {"type": "unlock", "key": "k22-11", "value": true},
-        {"type": "unlock", "key": "y22-01", "value": true},
-        {"type": "unlock", "key": "y22-02", "value": true},
-        {"type": "unlock", "key": "y22-03", "value": true},
-        {"type": "unlock", "key": "y22-04", "value": true},
-        {"type": "unlock", "key": "y22-05", "value": true},
-        {"type": "unlock", "key": "photo-school-gate", "value": true},
-        {"type": "unlock", "key": "photo-riverside", "value": true},
-        {"type": "notification", "key": "", "value": "KakaoTalk：恢复了2022年的旧聊天"}
+        { "type": "variable", "key": "era", "value": "2022" },
+        { "type": "unlock", "key": "k22-01", "value": true },
+        { "type": "unlock", "key": "k22-02", "value": true },
+        { "type": "unlock", "key": "k22-03", "value": true },
+        { "type": "unlock", "key": "k22-04", "value": true },
+        { "type": "unlock", "key": "k22-05", "value": true },
+        { "type": "unlock", "key": "k22-06", "value": true },
+        { "type": "unlock", "key": "k22-07", "value": true },
+        { "type": "unlock", "key": "k22-08", "value": true },
+        { "type": "unlock", "key": "k22-09", "value": true },
+        { "type": "unlock", "key": "k22-10", "value": true },
+        { "type": "unlock", "key": "k22-11", "value": true },
+        { "type": "unlock", "key": "y22-01", "value": true },
+        { "type": "unlock", "key": "y22-02", "value": true },
+        { "type": "unlock", "key": "y22-03", "value": true },
+        { "type": "unlock", "key": "y22-04", "value": true },
+        { "type": "unlock", "key": "y22-05", "value": true },
+        { "type": "unlock", "key": "photo-school-gate", "value": true },
+        { "type": "unlock", "key": "photo-riverside", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KakaoTalk：恢复了2022年的旧聊天"
+        }
       ]
     },
     {
@@ -359,6 +2207,7 @@
       "type": "event",
       "event": "read",
       "target": "photo-convenience-store",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "next": ["unlock-highschool"]
     },
     {
@@ -367,24 +2216,29 @@
       "type": "event",
       "event": "read",
       "target": "k22-11",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "unlock", "key": "album-black-shirt", "value": true},
-        {"type": "unlock", "key": "album-night-shadows", "value": true},
-        {"type": "unlock", "key": "note-highschool", "value": true},
-        {"type": "unlock", "key": "note-club-festival-2022", "value": true},
-        {"type": "unlock", "key": "note-rain-2022", "value": true},
-        {"type": "unlock", "key": "note-exam-2022", "value": true},
-        {"type": "unlock", "key": "ig-river", "value": true},
-        {"type": "unlock", "key": "ig-shotaro-club-2022", "value": true},
-        {"type": "unlock", "key": "ig-classmate-2022", "value": true},
-        {"type": "unlock", "key": "ig-yujin-rain-2022", "value": true},
-        {"type": "unlock", "key": "forum-dance-president-01", "value": true},
-        {"type": "unlock", "key": "forum-dance-president-02", "value": true},
-        {"type": "unlock", "key": "forum-dance-president-03", "value": true},
-        {"type": "unlock", "key": "forum-rain-2022", "value": true},
-        {"type": "unlock", "key": "music-not-date", "value": true},
-        {"type": "unlock", "key": "map-riverside", "value": true},
-        {"type": "notification", "key": "", "value": "备忘录：发现一篇2022年的私人笔记"}
+        { "type": "unlock", "key": "album-black-shirt", "value": true },
+        { "type": "unlock", "key": "album-night-shadows", "value": true },
+        { "type": "unlock", "key": "note-highschool", "value": true },
+        { "type": "unlock", "key": "note-club-festival-2022", "value": true },
+        { "type": "unlock", "key": "note-rain-2022", "value": true },
+        { "type": "unlock", "key": "note-exam-2022", "value": true },
+        { "type": "unlock", "key": "ig-river", "value": true },
+        { "type": "unlock", "key": "ig-shotaro-club-2022", "value": true },
+        { "type": "unlock", "key": "ig-classmate-2022", "value": true },
+        { "type": "unlock", "key": "ig-yujin-rain-2022", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-01", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-02", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-03", "value": true },
+        { "type": "unlock", "key": "forum-rain-2022", "value": true },
+        { "type": "unlock", "key": "music-not-date", "value": true },
+        { "type": "unlock", "key": "map-riverside", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：发现一篇2022年的私人笔记"
+        }
       ]
     },
     {
@@ -393,9 +2247,8 @@
       "type": "event",
       "event": "read",
       "target": "note-highschool",
-      "actions": [
-        {"type": "time", "key": "", "value": "22:22"}
-      ],
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
+      "actions": [{ "type": "time", "key": "", "value": "22:22" }],
       "next": ["unlock-adult"]
     },
     {
@@ -403,13 +2256,17 @@
       "label": "解锁成年后的秘密",
       "type": "event",
       "actions": [
-        {"type": "variable", "key": "era", "value": "2026"},
-        {"type": "unlock", "key": "photo-university", "value": true},
-        {"type": "unlock", "key": "photo-lockscreen-note", "value": true},
-        {"type": "unlock", "key": "album-hanyang-jacket", "value": true},
-        {"type": "unlock", "key": "album-pink-hair", "value": true},
-        {"type": "unlock", "key": "album-pool", "value": true},
-        {"type": "notification", "key": "", "value": "相册：Y&S 相册出现了新的照片"}
+        { "type": "variable", "key": "era", "value": "2026" },
+        { "type": "unlock", "key": "photo-university", "value": true },
+        { "type": "unlock", "key": "photo-lockscreen-note", "value": true },
+        { "type": "unlock", "key": "album-hanyang-jacket", "value": true },
+        { "type": "unlock", "key": "album-pink-hair", "value": true },
+        { "type": "unlock", "key": "album-pool", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "相册：Y&S 相册出现了新的照片"
+        }
       ]
     },
     {
@@ -418,45 +2275,50 @@
       "type": "event",
       "event": "read",
       "target": "album-hanyang-jacket",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "unlock", "key": "k26-01", "value": true},
-        {"type": "unlock", "key": "k26-02", "value": true},
-        {"type": "unlock", "key": "k26-03", "value": true},
-        {"type": "unlock", "key": "k26-04", "value": true},
-        {"type": "unlock", "key": "k26-05", "value": true},
-        {"type": "unlock", "key": "k26-06", "value": true},
-        {"type": "unlock", "key": "k26-07", "value": true},
-        {"type": "unlock", "key": "k26-08", "value": true},
-        {"type": "unlock", "key": "k26-09", "value": true},
-        {"type": "unlock", "key": "k26-10", "value": true},
-        {"type": "unlock", "key": "a26-01", "value": true},
-        {"type": "unlock", "key": "a26-02", "value": true},
-        {"type": "unlock", "key": "a26-03", "value": true},
-        {"type": "unlock", "key": "g26-01", "value": true},
-        {"type": "unlock", "key": "g26-02", "value": true},
-        {"type": "unlock", "key": "g26-03", "value": true},
-        {"type": "unlock", "key": "g26-04", "value": true},
-        {"type": "unlock", "key": "g26-05", "value": true},
-        {"type": "unlock", "key": "g26-06", "value": true},
-        {"type": "unlock", "key": "g26-07", "value": true},
-        {"type": "unlock", "key": "g26-08", "value": true},
-        {"type": "unlock", "key": "mom-05", "value": true},
-        {"type": "unlock", "key": "mom-06", "value": true},
-        {"type": "unlock", "key": "mom-07", "value": true},
-        {"type": "unlock", "key": "mom-08", "value": true},
-        {"type": "unlock", "key": "safari-01", "value": true},
-        {"type": "unlock", "key": "safari-02", "value": true},
-        {"type": "unlock", "key": "safari-03", "value": true},
-        {"type": "unlock", "key": "safari-04", "value": true},
-        {"type": "unlock", "key": "note-week-plan-2026", "value": true},
-        {"type": "unlock", "key": "note-fridge-2026", "value": true},
-        {"type": "unlock", "key": "note-graduate-school", "value": true},
-        {"type": "unlock", "key": "ig-shotaro-campus-2026", "value": true},
-        {"type": "unlock", "key": "ig-yujin-cafe-2026", "value": true},
-        {"type": "unlock", "key": "ig-classmate-night-2026", "value": true},
-        {"type": "unlock", "key": "forum-campus-2026", "value": true},
-        {"type": "unlock", "key": "forum-phone-2026", "value": true},
-        {"type": "notification", "key": "", "value": "KakaoTalk：恢复了今晚丢失手机前的消息"}
+        { "type": "unlock", "key": "k26-01", "value": true },
+        { "type": "unlock", "key": "k26-02", "value": true },
+        { "type": "unlock", "key": "k26-03", "value": true },
+        { "type": "unlock", "key": "k26-04", "value": true },
+        { "type": "unlock", "key": "k26-05", "value": true },
+        { "type": "unlock", "key": "k26-06", "value": true },
+        { "type": "unlock", "key": "k26-07", "value": true },
+        { "type": "unlock", "key": "k26-08", "value": true },
+        { "type": "unlock", "key": "k26-09", "value": true },
+        { "type": "unlock", "key": "k26-10", "value": true },
+        { "type": "unlock", "key": "a26-01", "value": true },
+        { "type": "unlock", "key": "a26-02", "value": true },
+        { "type": "unlock", "key": "a26-03", "value": true },
+        { "type": "unlock", "key": "g26-01", "value": true },
+        { "type": "unlock", "key": "g26-02", "value": true },
+        { "type": "unlock", "key": "g26-03", "value": true },
+        { "type": "unlock", "key": "g26-04", "value": true },
+        { "type": "unlock", "key": "g26-05", "value": true },
+        { "type": "unlock", "key": "g26-06", "value": true },
+        { "type": "unlock", "key": "g26-07", "value": true },
+        { "type": "unlock", "key": "g26-08", "value": true },
+        { "type": "unlock", "key": "mom-05", "value": true },
+        { "type": "unlock", "key": "mom-06", "value": true },
+        { "type": "unlock", "key": "mom-07", "value": true },
+        { "type": "unlock", "key": "mom-08", "value": true },
+        { "type": "unlock", "key": "safari-01", "value": true },
+        { "type": "unlock", "key": "safari-02", "value": true },
+        { "type": "unlock", "key": "safari-03", "value": true },
+        { "type": "unlock", "key": "safari-04", "value": true },
+        { "type": "unlock", "key": "note-week-plan-2026", "value": true },
+        { "type": "unlock", "key": "note-fridge-2026", "value": true },
+        { "type": "unlock", "key": "note-graduate-school", "value": true },
+        { "type": "unlock", "key": "ig-shotaro-campus-2026", "value": true },
+        { "type": "unlock", "key": "ig-yujin-cafe-2026", "value": true },
+        { "type": "unlock", "key": "ig-classmate-night-2026", "value": true },
+        { "type": "unlock", "key": "forum-campus-2026", "value": true },
+        { "type": "unlock", "key": "forum-phone-2026", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KakaoTalk：恢复了今晚丢失手机前的消息"
+        }
       ]
     },
     {
@@ -465,14 +2327,19 @@
       "type": "event",
       "event": "read",
       "target": "k26-10",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "unlock", "key": "note-unsent", "value": true},
-        {"type": "unlock", "key": "note-clue", "value": true},
-        {"type": "unlock", "key": "calendar-riverside", "value": true},
-        {"type": "unlock", "key": "ig-story-2026", "value": true},
-        {"type": "unlock", "key": "music-confession", "value": true},
-        {"type": "unlock", "key": "clock-03", "value": true},
-        {"type": "notification", "key": "", "value": "备忘录：发现一封没有发送的信"}
+        { "type": "unlock", "key": "note-unsent", "value": true },
+        { "type": "unlock", "key": "note-clue", "value": true },
+        { "type": "unlock", "key": "calendar-riverside", "value": true },
+        { "type": "unlock", "key": "ig-story-2026", "value": true },
+        { "type": "unlock", "key": "music-confession", "value": true },
+        { "type": "unlock", "key": "clock-03", "value": true },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "备忘录：发现一封没有发送的信"
+        }
       ]
     },
     {
@@ -481,9 +2348,10 @@
       "type": "event",
       "event": "read",
       "target": "note-unsent",
+      "conditions": [{ "key": "lifePhase", "op": "eq", "value": "archive" }],
       "actions": [
-        {"type": "variable", "key": "secretFound", "value": true},
-        {"type": "time", "key": "", "value": "22:25"}
+        { "type": "variable", "key": "secretFound", "value": true },
+        { "type": "time", "key": "", "value": "22:25" }
       ],
       "next": ["final-message"]
     },
@@ -493,8 +2361,12 @@
       "type": "delay",
       "delayMs": 2000,
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "手机找到了吗？Alex说你回咖啡店了。先告诉我你平安。"},
-        {"type": "notification", "key": "", "value": "哥哥：先告诉我你平安。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "手机找到了吗？Alex说你回咖啡店了。先告诉我你平安。"
+        },
+        { "type": "notification", "key": "", "value": "哥哥：先告诉我你平安。" }
       ],
       "next": ["final-reply-choice"]
     },
@@ -509,8 +2381,16 @@
       "label": "找到了。我也有话说。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "找到了。我也有话说。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "好，我等你。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "找到了。我也有话说。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "好，我等你。"
+        }
       ],
       "next": ["second-message"]
     },
@@ -519,8 +2399,16 @@
       "label": "你先别走。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你先别走。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "我不会走。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "你先别走。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "我不会走。"
+        }
       ],
       "next": ["second-message"]
     },
@@ -529,8 +2417,16 @@
       "label": "不许再叫我妹妹。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "不许再叫我妹妹。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那你也别再叫我哥哥。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "不许再叫我妹妹。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "那你也别再叫我哥哥。"
+        }
       ],
       "next": ["second-message"]
     },
@@ -540,8 +2436,12 @@
       "type": "delay",
       "delayMs": 1600,
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "我在第一次等你的便利店门口。别急，慢慢走。"},
-        {"type": "notification", "key": "", "value": "哥哥：别急，慢慢走。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "我在第一次等你的便利店门口。别急，慢慢走。"
+        },
+        { "type": "notification", "key": "", "value": "哥哥：别急，慢慢走。" }
       ],
       "next": ["second-reply-choice"]
     },
@@ -549,15 +2449,27 @@
       "id": "second-reply-choice",
       "label": "继续回复哥哥",
       "type": "choice",
-      "next": ["second-reply-find", "second-reply-coming", "second-reply-confirm"]
+      "next": [
+        "second-reply-find",
+        "second-reply-coming",
+        "second-reply-confirm"
+      ]
     },
     {
       "id": "second-reply-find",
       "label": "你怎么每次都能找到我。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "你怎么每次都能找到我。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "因为你每次不安的时候，都会走回同一个地方。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "你怎么每次都能找到我。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "因为你每次不安的时候，都会走回同一个地方。"
+        }
       ],
       "next": ["incoming-call"]
     },
@@ -566,8 +2478,16 @@
       "label": "我马上过去。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "我马上过去。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "好。我给你买了草莓牛奶。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "我马上过去。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "好。我给你买了草莓牛奶。"
+        }
       ],
       "next": ["incoming-call"]
     },
@@ -576,8 +2496,16 @@
       "label": "等一下，我有件事想确认。",
       "type": "event",
       "actions": [
-        {"type": "message", "key": "kakao|哥哥|outgoing", "value": "等一下，我有件事想确认。"},
-        {"type": "message", "key": "kakao|哥哥|incoming", "value": "那就当面问。今晚我不会躲。"}
+        {
+          "type": "message",
+          "key": "kakao|哥哥|outgoing",
+          "value": "等一下，我有件事想确认。"
+        },
+        {
+          "type": "message",
+          "key": "kakao|哥哥|incoming",
+          "value": "那就当面问。今晚我不会躲。"
+        }
       ],
       "next": ["incoming-call"]
     },
@@ -587,7 +2515,7 @@
       "type": "delay",
       "delayMs": 1800,
       "actions": [
-        {"type": "call", "key": "call-shotaro-live", "value": "哥哥"}
+        { "type": "call", "key": "call-shotaro-live", "value": "哥哥" }
       ]
     },
     {
@@ -609,7 +2537,11 @@
       "label": "交给河边等待的将太郎",
       "type": "ending",
       "actions": [
-        {"type": "ending", "key": "", "value": "结局·不再叫哥哥：将太郎替尹瑟保守了手机里的秘密，却在她赶到河边时第一次没有应那声‘哥哥’。他说，小时候的承诺仍然算数，只是从今晚起，他想换一种身份继续负责。"}
+        {
+          "type": "ending",
+          "key": "",
+          "value": "结局·不再叫哥哥：将太郎替尹瑟保守了手机里的秘密，却在她赶到河边时第一次没有应那声‘哥哥’。他说，小时候的承诺仍然算数，只是从今晚起，他想换一种身份继续负责。"
+        }
       ]
     },
     {
@@ -617,7 +2549,11 @@
       "label": "锁好手机，交给失物招领处",
       "type": "ending",
       "actions": [
-        {"type": "ending", "key": "", "value": "结局·秘密仍在：尹瑟取回手机后，发现所有内容都停在原处。她按下1125，重新打开那封草稿，终于主动拨出了那通拖了六年的电话。"}
+        {
+          "type": "ending",
+          "key": "",
+          "value": "结局·秘密仍在：尹瑟取回手机后，发现所有内容都停在原处。她按下1125，重新打开那封草稿，终于主动拨出了那通拖了六年的电话。"
+        }
       ]
     },
     {
@@ -625,76 +2561,134 @@
       "label": "先联系唯一知道秘密的有真",
       "type": "ending",
       "actions": [
-        {"type": "ending", "key": "", "value": "结局·被推了一把：有真赶来取走手机，只看了一眼来电姓名就笑了。半小时后，她把尹瑟推进河边的长椅旁：‘六年了，今天不许再说只是哥哥。’"}
+        {
+          "type": "ending",
+          "key": "",
+          "value": "结局·被推了一把：有真赶来取走手机，只看了一眼来电姓名就笑了。半小时后，她把尹瑟推进河边的长椅旁：‘六年了，今天不许再说只是哥哥。’"
+        }
       ]
     }
   ],
   "tests": [
     {
+      "name": "life-reply-and-walk",
+      "steps": [
+        { "event": "read", "target": "k26-14" },
+        { "choose": "reply-meet-now", "target": "" },
+        { "choose": "scene-ask-why", "target": "" },
+        { "choose": "scene-continue-walk", "target": "" },
+        { "choose": "scene-walk-home", "target": "" }
+      ],
+      "expectCompleted": ["scene-riverside-arrival", "scene-walk-home"],
+      "expectLocation": "汉江公园江边",
+      "expectDate": "2026-10-25",
+      "expectTime": "23:43"
+    },
+    {
+      "name": "life-action-direct-meeting",
+      "steps": [
+        { "event": "action", "target": "find-shotaro" },
+        { "choose": "scene-take-drink", "target": "" },
+        { "choose": "scene-end-meeting", "target": "" }
+      ],
+      "expectCompleted": ["action-find-shotaro", "scene-end-meeting"],
+      "expectLocation": "汉江公园江边",
+      "expectTime": "23:32"
+    },
+    {
+      "name": "life-ignore-and-next-day",
+      "steps": [
+        { "event": "action", "target": "go-home" },
+        { "event": "action", "target": "sleep" }
+      ],
+      "expectCompleted": ["action-go-home", "sleep-missed-riverside"],
+      "expectLocation": "家",
+      "expectDate": "2026-10-26",
+      "expectTime": "08:10"
+    },
+    {
       "name": "riverside-ending",
       "steps": [
-        {"event": "password", "target": "1125"},
-        {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"event": "read", "target": "photo-convenience-store"},
-        {"event": "read", "target": "k22-11"},
-        {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"event": "read", "target": "album-hanyang-jacket"},
-        {"event": "read", "target": "k26-10"},
-        {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 2000, "target": ""},
-        {"choose": "final-reply-talk", "target": ""},
-        {"advanceMs": 1600, "target": ""},
-        {"choose": "second-reply-coming", "target": ""},
-        {"advanceMs": 1800, "target": ""},
-        {"event": "callAnswered", "target": "call-shotaro-live"},
-        {"choose": "ending-riverside", "target": ""}
+        { "event": "archiveMode", "target": "legacy" },
+        { "event": "password", "target": "1125" },
+        { "event": "read", "target": "note-new-phone", "password": "1125" },
+        { "event": "read", "target": "photo-convenience-store" },
+        { "event": "read", "target": "k22-11" },
+        { "event": "read", "target": "note-highschool", "password": "1125" },
+        { "event": "read", "target": "album-hanyang-jacket" },
+        { "event": "read", "target": "k26-10" },
+        { "event": "read", "target": "note-unsent", "password": "1125" },
+        { "advanceMs": 2000, "target": "" },
+        { "choose": "final-reply-talk", "target": "" },
+        { "advanceMs": 1600, "target": "" },
+        { "choose": "second-reply-coming", "target": "" },
+        { "advanceMs": 1800, "target": "" },
+        { "event": "callAnswered", "target": "call-shotaro-live" },
+        { "choose": "ending-riverside", "target": "" }
       ],
       "ending": "结局·不再叫哥哥：将太郎替尹瑟保守了手机里的秘密，却在她赶到河边时第一次没有应那声‘哥哥’。他说，小时候的承诺仍然算数，只是从今晚起，他想换一种身份继续负责。",
-      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+      "expectUnlocked": [
+        "note-new-phone",
+        "note-highschool",
+        "note-unsent",
+        "photo-university"
+      ]
     },
     {
       "name": "protect-ending",
       "steps": [
-        {"event": "password", "target": "1125"},
-        {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"event": "read", "target": "photo-convenience-store"},
-        {"event": "read", "target": "k22-11"},
-        {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"event": "read", "target": "album-hanyang-jacket"},
-        {"event": "read", "target": "k26-10"},
-        {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 2000, "target": ""},
-        {"choose": "final-reply-wait", "target": ""},
-        {"advanceMs": 1600, "target": ""},
-        {"choose": "second-reply-find", "target": ""},
-        {"advanceMs": 1800, "target": ""},
-        {"event": "callAnswered", "target": "call-shotaro-live"},
-        {"choose": "ending-protect", "target": ""}
+        { "event": "archiveMode", "target": "legacy" },
+        { "event": "password", "target": "1125" },
+        { "event": "read", "target": "note-new-phone", "password": "1125" },
+        { "event": "read", "target": "photo-convenience-store" },
+        { "event": "read", "target": "k22-11" },
+        { "event": "read", "target": "note-highschool", "password": "1125" },
+        { "event": "read", "target": "album-hanyang-jacket" },
+        { "event": "read", "target": "k26-10" },
+        { "event": "read", "target": "note-unsent", "password": "1125" },
+        { "advanceMs": 2000, "target": "" },
+        { "choose": "final-reply-wait", "target": "" },
+        { "advanceMs": 1600, "target": "" },
+        { "choose": "second-reply-find", "target": "" },
+        { "advanceMs": 1800, "target": "" },
+        { "event": "callAnswered", "target": "call-shotaro-live" },
+        { "choose": "ending-protect", "target": "" }
       ],
       "ending": "结局·秘密仍在：尹瑟取回手机后，发现所有内容都停在原处。她按下1125，重新打开那封草稿，终于主动拨出了那通拖了六年的电话。",
-      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+      "expectUnlocked": [
+        "note-new-phone",
+        "note-highschool",
+        "note-unsent",
+        "photo-university"
+      ]
     },
     {
       "name": "yujin-ending",
       "steps": [
-        {"event": "password", "target": "1125"},
-        {"event": "read", "target": "note-new-phone", "password": "1125"},
-        {"event": "read", "target": "photo-convenience-store"},
-        {"event": "read", "target": "k22-11"},
-        {"event": "read", "target": "note-highschool", "password": "1125"},
-        {"event": "read", "target": "album-hanyang-jacket"},
-        {"event": "read", "target": "k26-10"},
-        {"event": "read", "target": "note-unsent", "password": "1125"},
-        {"advanceMs": 2000, "target": ""},
-        {"choose": "final-reply-sister", "target": ""},
-        {"advanceMs": 1600, "target": ""},
-        {"choose": "second-reply-confirm", "target": ""},
-        {"advanceMs": 1800, "target": ""},
-        {"event": "callAnswered", "target": "call-shotaro-live"},
-        {"choose": "ending-yujin", "target": ""}
+        { "event": "archiveMode", "target": "legacy" },
+        { "event": "password", "target": "1125" },
+        { "event": "read", "target": "note-new-phone", "password": "1125" },
+        { "event": "read", "target": "photo-convenience-store" },
+        { "event": "read", "target": "k22-11" },
+        { "event": "read", "target": "note-highschool", "password": "1125" },
+        { "event": "read", "target": "album-hanyang-jacket" },
+        { "event": "read", "target": "k26-10" },
+        { "event": "read", "target": "note-unsent", "password": "1125" },
+        { "advanceMs": 2000, "target": "" },
+        { "choose": "final-reply-sister", "target": "" },
+        { "advanceMs": 1600, "target": "" },
+        { "choose": "second-reply-confirm", "target": "" },
+        { "advanceMs": 1800, "target": "" },
+        { "event": "callAnswered", "target": "call-shotaro-live" },
+        { "choose": "ending-yujin", "target": "" }
       ],
       "ending": "结局·被推了一把：有真赶来取走手机，只看了一眼来电姓名就笑了。半小时后，她把尹瑟推进河边的长椅旁：‘六年了，今天不许再说只是哥哥。’",
-      "expectUnlocked": ["note-new-phone", "note-highschool", "note-unsent", "photo-university"]
+      "expectUnlocked": [
+        "note-new-phone",
+        "note-highschool",
+        "note-unsent",
+        "photo-university"
+      ]
     }
   ]
 }

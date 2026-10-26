@@ -3,6 +3,8 @@ import {
   workSchema,
   itemSchema,
   nodeSchema,
+  activitySchema,
+  npcDefinitionSchema,
   validateWork,
   safeMedia,
   type Work,
@@ -75,6 +77,14 @@ export const storySchema = z
       )
       .default([]),
     content: z.record(z.string(), z.array(content)).default({}),
+    life: z
+      .object({
+        initialLocation: z.string().default("未知地点"),
+        activities: z.array(activitySchema.extend({ id }).strict()).default([]),
+        npcs: z.array(npcDefinitionSchema.extend({ id }).strict()).default([]),
+      })
+      .strict()
+      .default({ initialLocation: "未知地点", activities: [], npcs: [] }),
     variables: workSchema.shape.variables.default({}),
     events: z.array(event).default([]),
     tests: z
@@ -90,8 +100,12 @@ export const storySchema = z
               password: z.string().optional(),
             }),
           ),
-          ending: z.string(),
+          ending: z.string().default(""),
           expectUnlocked: z.array(z.string()).default([]),
+          expectCompleted: z.array(z.string()).default([]),
+          expectLocation: z.string().optional(),
+          expectDate: z.string().optional(),
+          expectTime: z.string().optional(),
         }),
       )
       .default([]),
@@ -234,7 +248,12 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
         .flat()
         .map((i) => i.id),
     ),
-    nodeIds = new Set(nodes.map((n) => n.id));
+    nodeIds = new Set(nodes.map((n) => n.id)),
+    activityIds = new Set(s.life.activities.map((activity) => activity.id));
+  if (activityIds.size !== s.life.activities.length)
+    fail("life.activities", "行动 ID 重复");
+  if (new Set(s.life.npcs.map((npc) => npc.id)).size !== s.life.npcs.length)
+    fail("life.npcs", "NPC ID 重复");
   nodes.forEach((n, i) => {
     n.next.forEach((x, j) => {
       if (!nodeIds.has(x)) fail(`events.${i}.next.${j}`, "不存在的节点: " + x);
@@ -243,6 +262,8 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
       fail(`events.${i}.target`, "不存在的内容");
     if (n.event === "openApp" && n.target && !installed.has(n.target))
       fail(`events.${i}.target`, "事件 App 未安装");
+    if (n.event === "action" && n.target && !activityIds.has(n.target))
+      fail(`events.${i}.target`, "事件行动不存在");
     n.actions.forEach((a, j) => {
       if (["unlock", "hide"].includes(a.type) && !itemIds.has(a.key))
         fail(`events.${i}.actions.${j}.key`, "不存在的内容");
@@ -250,6 +271,11 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
         fail(`events.${i}.actions.${j}.key`, "消息 App 未安装");
       if (a.type === "choice" && !nodeIds.has(a.key))
         fail(`events.${i}.actions.${j}.key`, "选项节点不存在");
+      if (
+        ["activityUnlock", "activityLock"].includes(a.type) &&
+        !activityIds.has(a.key)
+      )
+        fail(`events.${i}.actions.${j}.key`, "行动不存在");
     });
     n.conditions.forEach((c, j) => {
       const [scope, ...rest] = c.key.split(":");
@@ -258,6 +284,8 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
         fail(`events.${i}.conditions.${j}.key`, "条件内容不存在");
       if (scope === "visited" && !installed.has(key))
         fail(`events.${i}.conditions.${j}.key`, "条件 App 未安装");
+      if (scope === "activity" && !activityIds.has(key))
+        fail(`events.${i}.conditions.${j}.key`, "条件行动不存在");
     });
   });
   const errors = validateGraph(nodes);
@@ -308,6 +336,7 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
     data,
     nodes,
     variables: s.variables,
+    life: s.life,
     mode: nodes.length ? "mixed" : "explore",
   });
   return { story: s, work };
