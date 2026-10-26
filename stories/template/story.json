@@ -3,7 +3,7 @@
   "id": "yoonseul-first-phone",
   "title": "哥哥只比我大一岁",
   "description": "李尹瑟的校园生活手机。查看消息、自由安排行动，在日常与朋友关系中慢慢推进属于自己的故事。",
-  "revision": 20,
+  "revision": 21,
   "phone": {
     "owner": "李尹瑟",
     "passcode": "1125",
@@ -997,6 +997,16 @@
         "folder": "草稿",
         "meta": { "story": "true" },
         "hidden": true
+      },
+      {
+        "id": "ig-yujin-morning-2026",
+        "title": "yujin.zip",
+        "body": "早八之后最大的成就：把昨天忘在教室的围巾找回来了。下午想去试试新开的咖啡厅。",
+        "kind": "post",
+        "time": "2026-10-26 08:03",
+        "likes": 18,
+        "comments": ["同学：围巾不是一直在你包里吗", "有真：请不要说出来"],
+        "hidden": true
       }
     ],
     "forum": [
@@ -1111,6 +1121,21 @@
         "folder": "失物招领",
         "meta": { "views": "92", "status": "置顶" },
         "comments": ["1楼：失主朋友已经在找了", "店员：已有人联系前台"],
+        "hidden": true
+      },
+      {
+        "id": "forum-econ-quiz-2026",
+        "title": "今天计量课的小测有人看懂第三题吗",
+        "body": "我只记得最后一行要写检验结论，前面怎么推的完全没跟上。",
+        "sender": "经金系匿名",
+        "kind": "post",
+        "time": "2026-10-26 10:20",
+        "folder": "课程闲聊",
+        "meta": { "views": "34" },
+        "comments": [
+          "2楼：老师说会把答案放课程网站",
+          "5楼：至少不只有我没听懂"
+        ],
         "hidden": true
       }
     ],
@@ -1229,6 +1254,7 @@
     "secretFound": false,
     "lifePhase": "riverside-night",
     "riversideStatus": "waiting",
+    "yujinInvite": "pending",
     "dayCycle": 0
   },
   "life": {
@@ -1302,11 +1328,18 @@
       {
         "id": "go-home",
         "label": "回家",
-        "description": "今晚的事也可以暂时不处理",
+        "description": "回去休息，手机仍然可以继续使用",
         "emoji": "🏠",
         "kind": "ordinary",
         "minutes": 35,
-        "locations": ["汉江公园入口", "汉江公园江边", "便利店"]
+        "locations": [
+          "汉江公园入口",
+          "汉江公园江边",
+          "便利店",
+          "汉阳大学",
+          "汉阳大学图书馆",
+          "往十里咖啡厅"
+        ]
       },
       {
         "id": "sleep",
@@ -1325,7 +1358,11 @@
         "kind": "daily",
         "minutes": 90,
         "locations": ["家", "汉阳大学"],
-        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+        "conditions": [
+          { "key": "date", "op": "eq", "value": "2026-10-26" },
+          { "key": "time", "op": "lt", "value": "13:50" },
+          { "key": "yujinInvite", "op": "neq", "value": "declined" }
+        ]
       },
       {
         "id": "study-library",
@@ -1335,7 +1372,7 @@
         "kind": "ordinary",
         "minutes": 90,
         "locations": ["家", "汉阳大学"],
-        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+        "conditions": [{ "key": "dayCycle", "op": "gt", "value": 0 }]
       },
       {
         "id": "walk-alone",
@@ -1345,7 +1382,17 @@
         "kind": "ordinary",
         "minutes": 45,
         "locations": ["家", "汉阳大学"],
-        "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }]
+        "conditions": [{ "key": "dayCycle", "op": "gt", "value": 0 }]
+      },
+      {
+        "id": "wait-hour",
+        "label": "继续生活一小时",
+        "description": "看书、整理房间或在校园里待一会儿",
+        "emoji": "⏳",
+        "kind": "ordinary",
+        "minutes": 60,
+        "locations": ["家", "汉阳大学", "汉阳大学图书馆", "往十里咖啡厅"],
+        "conditions": [{ "key": "dayCycle", "op": "gt", "value": 0 }]
       }
     ]
   },
@@ -1414,6 +1461,39 @@
       "type": "start",
       "actions": [
         { "type": "eventEnd", "key": "", "value": "riverside-meeting" },
+        { "type": "unlock", "key": "album-black-shirt", "value": true },
+        { "type": "unlock", "key": "album-night-shadows", "value": true },
+        { "type": "unlock", "key": "photo-school-gate", "value": true },
+        { "type": "unlock", "key": "photo-riverside", "value": true },
+        { "type": "unlock", "key": "album-hanyang-jacket", "value": true },
+        { "type": "unlock", "key": "album-pink-hair", "value": true },
+        { "type": "unlock", "key": "album-pool", "value": true },
+        { "type": "unlock", "key": "photo-university", "value": true },
+        { "type": "unlock", "key": "photo-lockscreen-note", "value": true },
+        { "type": "unlock", "key": "note-highschool", "value": true },
+        { "type": "unlock", "key": "note-club-festival-2022", "value": true },
+        { "type": "unlock", "key": "note-rain-2022", "value": true },
+        { "type": "unlock", "key": "note-exam-2022", "value": true },
+        { "type": "unlock", "key": "note-unsent", "value": true },
+        { "type": "unlock", "key": "note-clue", "value": true },
+        { "type": "unlock", "key": "note-week-plan-2026", "value": true },
+        { "type": "unlock", "key": "note-fridge-2026", "value": true },
+        { "type": "unlock", "key": "note-graduate-school", "value": true },
+        { "type": "unlock", "key": "calendar-riverside", "value": true },
+        { "type": "unlock", "key": "ig-river", "value": true },
+        { "type": "unlock", "key": "ig-shotaro-club-2022", "value": true },
+        { "type": "unlock", "key": "ig-classmate-2022", "value": true },
+        { "type": "unlock", "key": "ig-yujin-rain-2022", "value": true },
+        { "type": "unlock", "key": "ig-shotaro-campus-2026", "value": true },
+        { "type": "unlock", "key": "ig-yujin-cafe-2026", "value": true },
+        { "type": "unlock", "key": "ig-classmate-night-2026", "value": true },
+        { "type": "unlock", "key": "ig-story-2026", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-01", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-02", "value": true },
+        { "type": "unlock", "key": "forum-dance-president-03", "value": true },
+        { "type": "unlock", "key": "forum-rain-2022", "value": true },
+        { "type": "unlock", "key": "forum-campus-2026", "value": true },
+        { "type": "unlock", "key": "forum-phone-2026", "value": true },
         {
           "type": "notification",
           "key": "",
@@ -1448,7 +1528,7 @@
           "key": "kakao|哥哥|incoming",
           "value": "嗯。慢慢走，别跑。"
         },
-        { "type": "time", "key": "", "value": "23:23" }
+        { "type": "advanceMinutes", "key": "", "value": 5 }
       ],
       "next": ["scene-riverside-arrival"]
     },
@@ -1503,7 +1583,7 @@
           "key": "kakao|哥哥|incoming",
           "value": "嗯。慢慢走，别跑。"
         },
-        { "type": "time", "key": "", "value": "23:23" }
+        { "type": "advanceMinutes", "key": "", "value": 5 }
       ],
       "next": ["scene-riverside-arrival"]
     },
@@ -1602,6 +1682,7 @@
       "id": "action-stay-riverside",
       "label": "在入口整理心情",
       "type": "event",
+      "once": false,
       "event": "action",
       "target": "stay-riverside",
       "actions": [
@@ -1616,6 +1697,7 @@
       "id": "action-convenience",
       "label": "去便利店",
       "type": "event",
+      "once": false,
       "event": "action",
       "target": "go-convenience",
       "actions": [
@@ -1631,6 +1713,7 @@
       "id": "action-go-home",
       "label": "先回家",
       "type": "event",
+      "once": false,
       "event": "action",
       "target": "go-home",
       "actions": [
@@ -1638,7 +1721,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "已到家。江边的消息仍然可以稍后处理。"
+          "value": "已到家。先休息一会儿也好。"
         }
       ]
     },
@@ -1762,7 +1845,7 @@
       "label": "沿着江边继续走一会儿",
       "type": "choice",
       "actions": [
-        { "type": "time", "key": "", "value": "23:37" },
+        { "type": "advanceMinutes", "key": "", "value": 14 },
         {
           "type": "scene",
           "key": "riverside-walk|并肩散步|false",
@@ -1776,7 +1859,7 @@
       "label": "今晚先到这里",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:32" },
+        { "type": "advanceMinutes", "key": "", "value": 9 },
         {
           "type": "variable",
           "key": "riversideStatus",
@@ -1797,7 +1880,7 @@
       "label": "一起去便利店",
       "type": "choice",
       "actions": [
-        { "type": "time", "key": "", "value": "23:35" },
+        { "type": "advanceMinutes", "key": "", "value": 12 },
         { "type": "location", "key": "", "value": "便利店" },
         {
           "type": "scene",
@@ -1812,7 +1895,7 @@
       "label": "说该回家了",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:43" },
+        { "type": "advanceMinutes", "key": "", "value": 6 },
         { "type": "variable", "key": "riversideStatus", "value": "completed" },
         { "type": "relationship", "key": "shotaro.trust", "value": 1 },
         {
@@ -1843,7 +1926,7 @@
       "label": "再走十分钟",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:47" },
+        { "type": "advanceMinutes", "key": "", "value": 10 },
         { "type": "variable", "key": "riversideStatus", "value": "completed" },
         { "type": "relationship", "key": "shotaro.closeness", "value": 1 },
         {
@@ -1869,7 +1952,7 @@
       "label": "什么也不说，只继续走",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:45" },
+        { "type": "advanceMinutes", "key": "", "value": 8 },
         {
           "type": "variable",
           "key": "riversideStatus",
@@ -1894,7 +1977,7 @@
       "label": "拿一瓶草莓牛奶",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:48" },
+        { "type": "advanceMinutes", "key": "", "value": 13 },
         { "type": "variable", "key": "riversideStatus", "value": "completed" },
         { "type": "relationship", "key": "shotaro.closeness", "value": 1 },
         {
@@ -1915,7 +1998,7 @@
       "label": "「你不是最会猜吗？」",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:49" },
+        { "type": "advanceMinutes", "key": "", "value": 14 },
         { "type": "variable", "key": "riversideStatus", "value": "completed" },
         { "type": "relationship", "key": "shotaro.tension", "value": -1 },
         {
@@ -1936,7 +2019,7 @@
       "label": "什么都不买，直接回家",
       "type": "event",
       "actions": [
-        { "type": "time", "key": "", "value": "23:46" },
+        { "type": "advanceMinutes", "key": "", "value": 11 },
         { "type": "variable", "key": "riversideStatus", "value": "completed" },
         {
           "type": "eventEnd",
@@ -1952,17 +2035,79 @@
       ]
     },
     {
+      "id": "forum-econ-nextday",
+      "label": "课后论坛出现新话题",
+      "type": "event",
+      "event": "time",
+      "target": "10:20",
+      "conditions": [{ "key": "date", "op": "eq", "value": "2026-10-26" }],
+      "actions": [
+        { "type": "unlock", "key": "forum-econ-quiz-2026", "value": true }
+      ]
+    },
+    {
+      "id": "missed-yujin-cafe",
+      "label": "有真的邀请改日再约",
+      "type": "event",
+      "event": "action",
+      "target": "sleep",
+      "conditions": [
+        { "key": "date", "op": "eq", "value": "2026-10-26" },
+        {
+          "key": "completed:second-day-yujin-cafe",
+          "op": "eq",
+          "value": false
+        },
+        { "key": "yujinInvite", "op": "neq", "value": "declined" }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "今天没碰上，那家咖啡厅改天再去吧。我明天还有小组会。"
+        }
+      ]
+    },
+    {
+      "id": "sleep-daily",
+      "label": "按自己的节奏迎接下一天",
+      "type": "event",
+      "event": "action",
+      "target": "sleep",
+      "once": false,
+      "conditions": [{ "key": "dayCycle", "op": "gt", "value": 0 }],
+      "actions": [
+        { "type": "advanceDay", "key": "", "value": "08:10" },
+        { "type": "variableDelta", "key": "dayCycle", "value": 1 },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "汉阳大学" },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "上课或参加社团活动"
+        },
+        { "type": "npcStatus", "key": "yujin.location", "value": "汉阳大学" },
+        { "type": "npcStatus", "key": "yujin.status", "value": "在忙自己的事" },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "新的一天。今天可以独自安排时间，也可以看看手机里的消息。"
+        }
+      ]
+    },
+    {
       "id": "sleep-after-riverside",
       "label": "进入第二天",
       "type": "event",
       "event": "action",
       "target": "sleep",
       "conditions": [
+        { "key": "dayCycle", "op": "eq", "value": 0 },
         { "key": "riversideStatus", "op": "neq", "value": "waiting" }
       ],
       "actions": [
         { "type": "date", "key": "", "value": "2026-10-26" },
         { "type": "time", "key": "", "value": "08:10" },
+        { "type": "unlock", "key": "ig-yujin-morning-2026", "value": true },
         { "type": "variable", "key": "dayCycle", "value": 1 },
         { "type": "location", "key": "", "value": "家" },
         { "type": "npcStatus", "key": "shotaro.location", "value": "汉阳大学" },
@@ -1997,6 +2142,7 @@
       "event": "action",
       "target": "sleep",
       "conditions": [
+        { "key": "dayCycle", "op": "eq", "value": 0 },
         { "key": "riversideStatus", "op": "eq", "value": "waiting" }
       ],
       "actions": [
@@ -2009,6 +2155,7 @@
         { "type": "variable", "key": "riversideStatus", "value": "missed" },
         { "type": "date", "key": "", "value": "2026-10-26" },
         { "type": "time", "key": "", "value": "08:10" },
+        { "type": "unlock", "key": "ig-yujin-morning-2026", "value": true },
         { "type": "variable", "key": "dayCycle", "value": 1 },
         { "type": "npcStatus", "key": "shotaro.location", "value": "汉阳大学" },
         {
@@ -2029,14 +2176,73 @@
       ]
     },
     {
+      "id": "yujin-reply-accept",
+      "label": "答应有真的咖啡邀约",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|韩有真|meet",
+      "conditions": [
+        { "key": "date", "op": "eq", "value": "2026-10-26" },
+        { "key": "yujinInvite", "op": "eq", "value": "pending" }
+      ],
+      "actions": [
+        { "type": "variable", "key": "yujinInvite", "value": "accepted" },
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "好呀。我下午一点半以后有空，晚点在咖啡厅见。"
+        }
+      ]
+    },
+    {
+      "id": "yujin-reply-decline",
+      "label": "婉拒有真的咖啡邀约",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|韩有真|later",
+      "conditions": [
+        { "key": "date", "op": "eq", "value": "2026-10-26" },
+        { "key": "yujinInvite", "op": "eq", "value": "pending" }
+      ],
+      "actions": [
+        { "type": "variable", "key": "yujinInvite", "value": "declined" },
+        { "type": "activityLock", "key": "yujin-cafe", "value": true },
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "好，没关系。等你有空再约，我先去把小组作业弄完。"
+        }
+      ]
+    },
+    {
+      "id": "yujin-reply-other",
+      "label": "有真接着安排自己的事",
+      "type": "event",
+      "event": "messageSent",
+      "target": "kakao|韩有真|other",
+      "conditions": [
+        { "key": "date", "op": "eq", "value": "2026-10-26" },
+        { "key": "yujinInvite", "op": "eq", "value": "pending" }
+      ],
+      "actions": [
+        {
+          "type": "message",
+          "key": "kakao|韩有真|incoming",
+          "value": "我下午一点半以后才有空。你先忙，到时候再决定也行。"
+        }
+      ]
+    },
+    {
       "id": "second-day-yujin-cafe",
       "label": "和有真度过下午",
       "type": "choice",
       "event": "action",
       "target": "yujin-cafe",
       "actions": [
+        { "type": "variable", "key": "yujinInvite", "value": "attended" },
+        { "type": "activityLock", "key": "yujin-cafe", "value": true },
         { "type": "location", "key": "", "value": "往十里咖啡厅" },
-        { "type": "time", "key": "", "value": "15:20" },
+        { "type": "time", "key": "", "value": "13:50" },
         { "type": "npcStatus", "key": "yujin.status", "value": "和尹瑟喝咖啡" },
         {
           "type": "knowledge",
@@ -2101,6 +2307,7 @@
       "id": "second-day-library",
       "label": "独自去图书馆",
       "type": "event",
+      "once": false,
       "event": "action",
       "target": "study-library",
       "actions": [
@@ -2116,6 +2323,7 @@
       "id": "second-day-walk",
       "label": "一个人的校园时间",
       "type": "event",
+      "once": false,
       "event": "action",
       "target": "walk-alone",
       "actions": [
@@ -2585,9 +2793,23 @@
       "expectTime": "23:43"
     },
     {
+      "name": "life-wait-before-reply-keeps-time-forward",
+      "steps": [
+        { "advanceMs": 600000, "target": "" },
+        { "event": "read", "target": "k26-14" },
+        { "choose": "reply-meet-now", "target": "" },
+        { "choose": "scene-take-drink", "target": "" },
+        { "choose": "scene-end-meeting", "target": "" }
+      ],
+      "expectCompleted": ["scene-riverside-arrival", "scene-end-meeting"],
+      "expectLocation": "汉江公园江边",
+      "expectTime": "23:42"
+    },
+    {
       "name": "life-action-direct-meeting",
       "steps": [
         { "event": "action", "target": "find-shotaro" },
+        { "advanceMs": 300000, "target": "" },
         { "choose": "scene-take-drink", "target": "" },
         { "choose": "scene-end-meeting", "target": "" }
       ],
@@ -2605,6 +2827,36 @@
       "expectLocation": "家",
       "expectDate": "2026-10-26",
       "expectTime": "08:10"
+    },
+    {
+      "name": "life-library-home-and-third-day",
+      "steps": [
+        { "event": "action", "target": "go-home" },
+        { "event": "action", "target": "sleep" },
+        { "event": "action", "target": "study-library" },
+        { "event": "action", "target": "go-home" },
+        { "event": "action", "target": "sleep" }
+      ],
+      "expectCompleted": ["second-day-library", "sleep-daily"],
+      "expectLocation": "家",
+      "expectDate": "2026-10-27",
+      "expectTime": "08:10"
+    },
+    {
+      "name": "life-yujin-reply-and-public-campus-update",
+      "steps": [
+        { "event": "action", "target": "go-home" },
+        { "event": "action", "target": "sleep" },
+        { "event": "messageSent", "target": "kakao|韩有真|meet" },
+        { "advanceMs": 7800000, "target": "" },
+        { "event": "action", "target": "yujin-cafe" },
+        { "choose": "yujin-change-topic", "target": "" },
+        { "event": "action", "target": "go-home" }
+      ],
+      "expectCompleted": ["yujin-reply-accept", "second-day-yujin-cafe"],
+      "expectUnlocked": ["ig-yujin-morning-2026", "forum-econ-quiz-2026"],
+      "expectLocation": "家",
+      "expectDate": "2026-10-26"
     },
     {
       "name": "riverside-ending",

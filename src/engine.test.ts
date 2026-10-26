@@ -10,6 +10,7 @@ import {
   performActivity,
   classifySceneIntent,
   classifyChatIntent,
+  advance,
 } from "./engine";
 import {
   initialRuntime,
@@ -137,10 +138,43 @@ describe("story progression", () => {
     expect(migrated.messages.kakao).toEqual([]);
     expect(migrated.npcStates.shotaro.status).toBe("等待");
   });
+  it("keeps locked activities locked after reload and rolls the clock into a new day", () => {
+    const w = createWork();
+    w.life.activities = [
+      {
+        id: "meet",
+        label: "见面",
+        description: "",
+        emoji: "🚶",
+        kind: "important",
+        minutes: 0,
+        locations: [],
+        conditions: [],
+        initiallyAvailable: true,
+      },
+    ];
+    const state = initialRuntime(w);
+    state.unlockedActivities = [];
+    state.date = "2026-10-26";
+    state.time = "23:50";
+    expect(migrateRuntime(w, state).unlockedActivities).toEqual([]);
+    const tomorrow = performActivity(
+      w,
+      {
+        ...state,
+        unlockedActivities: ["meet"],
+      },
+      w.life.activities[0],
+    );
+    expect(tomorrow.date).toBe("2026-10-26");
+    expect(advance(w, tomorrow, 20 * 60_000).date).toBe("2026-10-27");
+  });
   it("classifies free scene and chat input into explicit fallback intents", () => {
     expect(classifySceneIntent("我想沿着江边散步")).toBe("walk");
     expect(classifySceneIntent("随便说点什么")).toBe("other");
     expect(classifyChatIntent("等我，我现在过去")).toBe("meet");
+    expect(classifyChatIntent("我现在不去找你，改天吧")).toBe("later");
+    expect(classifyChatIntent("好呀，下午一起去咖啡厅")).toBe("meet");
     expect(classifyChatIntent("嗯嗯")).toBe("other");
   });
 });

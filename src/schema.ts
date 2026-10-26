@@ -93,6 +93,9 @@ export const actionSchema = z.object({
     "activityLock",
     "eventStart",
     "eventEnd",
+    "advanceDay",
+    "advanceMinutes",
+    "variableDelta",
   ]),
   key: z.string(),
   value: z.union([z.string(), z.number(), z.boolean()]),
@@ -304,12 +307,9 @@ export function migrateRuntime(w: Work, saved: Partial<Runtime>): Runtime {
     scheduled: (saved.scheduled ?? []).filter((entry) =>
       nodeIds.has(entry.nodeId),
     ),
-    unlockedActivities: [
-      ...new Set([
-        ...fresh.unlockedActivities,
-        ...(saved.unlockedActivities ?? []).filter((id) => activityIds.has(id)),
-      ]),
-    ],
+    unlockedActivities: saved.unlockedActivities
+      ? saved.unlockedActivities.filter((id) => activityIds.has(id))
+      : fresh.unlockedActivities,
     relationships: { ...fresh.relationships, ...(saved.relationships ?? {}) },
     npcStates: { ...fresh.npcStates, ...(saved.npcStates ?? {}) },
     history: (saved.history ?? []).slice(-200),

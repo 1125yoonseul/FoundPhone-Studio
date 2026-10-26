@@ -734,7 +734,10 @@
                     "activityUnlock",
                     "activityLock",
                     "eventStart",
-                    "eventEnd"
+                    "eventEnd",
+                    "advanceDay",
+                    "advanceMinutes",
+                    "variableDelta"
                   ]
                 },
                 "key": {

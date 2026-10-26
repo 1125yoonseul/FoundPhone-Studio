@@ -49,8 +49,12 @@ export function testCondition(c: Condition, s: Runtime): boolean {
     case "neq":
       return actual !== c.value;
     case "gt":
+      if (c.key === "time" && typeof actual === "string")
+        return actual > String(c.value);
       return typeof actual === "number" && actual > Number(c.value);
     case "lt":
+      if (c.key === "time" && typeof actual === "string")
+        return actual < String(c.value);
       return typeof actual === "number" && actual < Number(c.value);
     case "includes":
       return String(actual ?? "").includes(String(c.value));
@@ -58,6 +62,38 @@ export function testCondition(c: Condition, s: Runtime): boolean {
 }
 function apply(a: Action, s: Runtime, w: Work) {
   switch (a.type) {
+    case "advanceDay": {
+      const date = s.date ?? w.phone.date;
+      if (date) {
+        const parsed = new Date(`${date}T00:00:00Z`);
+        if (!Number.isNaN(parsed.getTime())) {
+          parsed.setUTCDate(parsed.getUTCDate() + 1);
+          s.date = parsed.toISOString().slice(0, 10);
+        }
+      }
+      s.time = String(a.value);
+      s.clockRemainderMs = 0;
+      break;
+    }
+    case "advanceMinutes": {
+      const match = s.time.match(/^(\d{1,2}):(\d{2})$/);
+      const minutes = Math.max(0, Math.floor(Number(a.value)));
+      if (!match || !Number.isFinite(minutes)) break;
+      const total = Number(match[1]) * 60 + Number(match[2]) + minutes;
+      const days = Math.floor(total / 1440);
+      if (days && s.date) {
+        const date = new Date(`${s.date}T00:00:00Z`);
+        date.setUTCDate(date.getUTCDate() + days);
+        s.date = date.toISOString().slice(0, 10);
+      }
+      const clock = total % 1440;
+      s.time = `${String(Math.floor(clock / 60)).padStart(2, "0")}:${String(clock % 60).padStart(2, "0")}`;
+      s.elapsedMs = (s.elapsedMs ?? 0) + minutes * 60_000;
+      break;
+    }
+    case "variableDelta":
+      s.variables[a.key] = Number(s.variables[a.key] ?? 0) + Number(a.value);
+      break;
     case "date":
       if (/^\d{4}-\d{2}-\d{2}$/.test(String(a.value))) s.date = String(a.value);
       break;
@@ -225,7 +261,7 @@ function runQueue(
       const previous =
         a.type === "variable"
           ? s.variables[a.key]
-          : a.type === "time"
+          : a.type === "time" || a.type === "advanceMinutes"
             ? s.time
             : a.type === "location"
               ? s.location
@@ -240,7 +276,10 @@ function runQueue(
             )
             .map((n) => n.id),
         );
-      if (a.type === "time" && previous !== s.time)
+      if (
+        (a.type === "time" || a.type === "advanceMinutes") &&
+        previous !== s.time
+      )
         queue.push(
           ...w.nodes
             .filter(
@@ -347,8 +386,10 @@ export function classifySceneIntent(value: string) {
 
 export function classifyChatIntent(value: string) {
   const text = value.trim().toLowerCase();
-  if (/过去|去找|去江边|马上来|等我/.test(text)) return "meet";
-  if (/等会|晚点|现在不|先不|不想回/.test(text)) return "later";
+  if (/不去|不要|没空|改天|等会|晚点|现在不|先不|不想回/.test(text))
+    return "later";
+  if (/过去|去找|去江边|马上来|等我|好呀|可以|咖啡厅|一起/.test(text))
+    return "meet";
   if (/为什么|说清楚|什么意思|你想说什么/.test(text)) return "ask";
   return "other";
 }
@@ -383,6 +424,11 @@ export function advance(
       const match = s.time.match(/^(\d{1,2}):(\d{2})$/);
       if (match) {
         const value = (Number(match[1]) * 60 + Number(match[2]) + 1) % 1440;
+        if (value === 0 && s.date) {
+          const date = new Date(`${s.date}T00:00:00Z`);
+          date.setUTCDate(date.getUTCDate() + 1);
+          s.date = date.toISOString().slice(0, 10);
+        }
         s.time =
           String(Math.floor(value / 60)).padStart(2, "0") +
           ":" +
