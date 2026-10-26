@@ -76,7 +76,7 @@ import {
   classifySceneIntent,
   classifyChatIntent,
 } from "./engine";
-import { db } from "./persistence";
+import { db, readRuntimeMirror, writeRuntimeMirror } from "./persistence";
 export function AppIcon({
   id,
   name,
@@ -207,6 +207,7 @@ function PhoneRuntime({
   runtimeRef.current = s;
   const update = (next: Runtime) => {
     runtimeRef.current = next;
+    if (!creator && !external && ready) writeRuntimeMirror(work.id, next);
     setOwn(next);
     onRuntime?.(next);
   };
@@ -217,25 +218,43 @@ function PhoneRuntime({
       .get(work.id)
       .then((saved) => {
         if (!active) return;
-        if (saved) {
-          const migrated = migrateRuntime(work, saved.state);
-          setOwn(
-            saved.state.revision === work.updatedAt
+        const mirror = readRuntimeMirror(work.id);
+        const source =
+          mirror && (!saved || mirror.savedAt >= (saved.savedAt ?? 0))
+            ? mirror.state
+            : saved?.state;
+        if (source) {
+          const migrated = migrateRuntime(work, source);
+          const restored =
+            source.revision === work.updatedAt
               ? migrated
               : dispatch(
                   work,
                   migrated,
                   "start",
-                  String(saved.state.revision),
-                ),
-          );
-          if (saved.state.revision !== work.updatedAt)
+                  String(source.revision),
+                );
+          setOwn(restored);
+          writeRuntimeMirror(work.id, restored);
+          if (source.revision !== work.updatedAt)
             setLoadError("作品已更新，原有进度已兼容保留。");
-        } else setOwn(dispatch(work, initialRuntime(work), "start"));
+        } else {
+          const started = dispatch(work, initialRuntime(work), "start");
+          setOwn(started);
+          writeRuntimeMirror(work.id, started);
+        }
         setReady(true);
       })
       .catch(() => {
-        setOwn(dispatch(work, initialRuntime(work), "start"));
+        const mirror = readRuntimeMirror(work.id);
+        const state = mirror
+          ? migrateRuntime(work, mirror.state)
+          : initialRuntime(work);
+        setOwn(
+          mirror?.state.revision === work.updatedAt
+            ? state
+            : dispatch(work, state, "start"),
+        );
         setLoadError("无法读取本地存档。本次仍可游玩。");
         setReady(true);
       });
@@ -244,10 +263,12 @@ function PhoneRuntime({
     };
   }, [work.id, work.updatedAt, creator, external]);
   useEffect(() => {
-    if (!creator && !external && ready)
+    if (!creator && !external && ready && runtimeRef.current === own) {
+      const savedAt = writeRuntimeMirror(work.id, own);
       void db.saves
-        .put({ id: work.id, state: own })
+        .put({ id: work.id, state: own, savedAt })
         .catch(() => setLoadError("存档失败，请检查浏览器存储权限。"));
+    }
   }, [own, creator, work.id, external, ready]);
   useEffect(() => {
     if (creator || !ready) return;
