@@ -19,3 +19,8 @@ jobs:
       - run: npx playwright install --with-deps chrome webkit
       - run: npm run test:e2e -- tests/life-sim.spec.ts
       - run: npm run test:e2e -- --config playwright.webkit.config.ts
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: life-sim-browser-failure
+          path: test-results/

@@ -2,8 +2,14 @@ import { test, expect, type Page } from "@playwright/test";
 
 async function unlock(page: Page) {
   await page.getByRole("button", { name: "轻触解锁" }).click();
-  for (const digit of ["1", "1", "2", "5"])
+  for (const [index, digit] of ["1", "1", "2", "5"].entries()) {
     await page.getByRole("button", { name: `密码键${digit}` }).click();
+    if (index < 3)
+      await expect(page.locator(".passcode-dots")).toHaveAttribute(
+        "aria-label",
+        `已输入${index + 1}位密码`,
+      );
+  }
   await expect(page.locator(".lock-screen")).toHaveCount(0);
 }
 
