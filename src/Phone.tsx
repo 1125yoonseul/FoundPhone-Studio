@@ -52,18 +52,31 @@ import {
   ArrowUp,
   Folder,
   Phone as PhoneIcon,
+  MapPin,
+  Clock3,
+  Footprints,
 } from "lucide-react";
 import { getApp, type AppPlugin } from "./registry";
 import {
   initialRuntime,
+  migrateRuntime,
   safeMedia,
   type Work,
   type Item,
   type Runtime,
   type UiValue,
 } from "./schema";
-import { dispatch, choose, visible, advance } from "./engine";
-import { db } from "./persistence";
+import {
+  dispatch,
+  choose,
+  visible,
+  advance,
+  availableActivities,
+  performActivity,
+  classifySceneIntent,
+  classifyChatIntent,
+} from "./engine";
+import { db, readRuntimeMirror, writeRuntimeMirror } from "./persistence";
 export function AppIcon({
   id,
   name,
@@ -164,6 +177,7 @@ function PhoneRuntime({
   const [own, setOwn] = useState(() => initialRuntime(work));
   const [ready, setReady] = useState(creator || !!external);
   const [loadError, setLoadError] = useState("");
+  const [sceneDraft, setSceneDraft] = useState("");
   useEffect(() => {
     const el = shell.current;
     if (!el) return;
@@ -193,6 +207,7 @@ function PhoneRuntime({
   runtimeRef.current = s;
   const update = (next: Runtime) => {
     runtimeRef.current = next;
+    if (!creator && !external && ready) writeRuntimeMirror(work.id, next);
     setOwn(next);
     onRuntime?.(next);
   };
@@ -203,16 +218,43 @@ function PhoneRuntime({
       .get(work.id)
       .then((saved) => {
         if (!active) return;
-        if (saved && saved.state.revision === work.updatedAt)
-          setOwn(saved.state);
-        else {
-          setOwn(dispatch(work, initialRuntime(work), "start"));
-          if (saved) setLoadError("作品已更新，已开始新的进度。");
+        const mirror = readRuntimeMirror(work.id);
+        const source =
+          mirror && (!saved || mirror.savedAt >= (saved.savedAt ?? 0))
+            ? mirror.state
+            : saved?.state;
+        if (source) {
+          const migrated = migrateRuntime(work, source);
+          const restored =
+            source.revision === work.updatedAt
+              ? migrated
+              : dispatch(
+                  work,
+                  migrated,
+                  "start",
+                  String(source.revision),
+                );
+          setOwn(restored);
+          writeRuntimeMirror(work.id, restored);
+          if (source.revision !== work.updatedAt)
+            setLoadError("作品已更新，原有进度已兼容保留。");
+        } else {
+          const started = dispatch(work, initialRuntime(work), "start");
+          setOwn(started);
+          writeRuntimeMirror(work.id, started);
         }
         setReady(true);
       })
       .catch(() => {
-        setOwn(dispatch(work, initialRuntime(work), "start"));
+        const mirror = readRuntimeMirror(work.id);
+        const state = mirror
+          ? migrateRuntime(work, mirror.state)
+          : initialRuntime(work);
+        setOwn(
+          mirror?.state.revision === work.updatedAt
+            ? state
+            : dispatch(work, state, "start"),
+        );
         setLoadError("无法读取本地存档。本次仍可游玩。");
         setReady(true);
       });
@@ -221,10 +263,12 @@ function PhoneRuntime({
     };
   }, [work.id, work.updatedAt, creator, external]);
   useEffect(() => {
-    if (!creator && !external && ready)
+    if (!creator && !external && ready && runtimeRef.current === own) {
+      const savedAt = writeRuntimeMirror(work.id, own);
       void db.saves
-        .put({ id: work.id, state: own })
+        .put({ id: work.id, state: own, savedAt })
         .catch(() => setLoadError("存档失败，请检查浏览器存储权限。"));
+    }
   }, [own, creator, work.id, external, ready]);
   useEffect(() => {
     if (creator || !ready) return;
@@ -277,6 +321,7 @@ function PhoneRuntime({
   };
   const installedApps = work.apps.filter((a) => a.installed);
   const apps = installedApps.filter((a) => a.visible);
+  const activities = availableActivities(work, s);
   const unlock = (pin = "") => {
     if (!work.phone.passcode || pin === work.phone.passcode) {
       setLocked(false);
@@ -474,6 +519,16 @@ function PhoneRuntime({
                       ),
                     );
                   }}
+                  onSend={(thread, text) =>
+                    update(
+                      dispatch(
+                        work,
+                        runtimeRef.current,
+                        "messageSent",
+                        `${app}|${thread}|${classifyChatIntent(text)}`,
+                      ),
+                    )
+                  }
                   work={work}
                 />
               </AppWindow>
@@ -517,6 +572,21 @@ function PhoneRuntime({
               />
             )}
           </AnimatePresence>
+          {!creator && !locked && !app && !panel && !folder && !s.scene && (
+            <button
+              className="life-action-entry"
+              aria-label="今天做什么"
+              onClick={() => setPanel("actions")}
+            >
+              <span>
+                <MapPin size={15} /> {s.location}
+              </span>
+              <b>今天做什么？</b>
+              <small>
+                {s.date || work.phone.date} · {s.time}
+              </small>
+            </button>
+          )}
           {folder && (
             <div className="folder-overlay" onClick={() => setFolder("")}>
               <h2>{folder}</h2>
@@ -567,6 +637,54 @@ function PhoneRuntime({
                     <p>没有新通知</p>
                   )}
                 </>
+              ) : panel === "actions" ? (
+                <>
+                  <div className="life-action-heading">
+                    <span className="eyebrow">自由行动</span>
+                    <h2>今天做什么？</h2>
+                    <p>
+                      <MapPin size={14} /> {s.location}
+                      <span>·</span>
+                      <Clock3 size={14} /> {s.date || work.phone.date} {s.time}
+                    </p>
+                  </div>
+                  <div className="life-action-list">
+                    {activities.map((activity) => (
+                      <button
+                        key={activity.id}
+                        className={`life-action-card ${activity.kind}`}
+                        onClick={() => {
+                          setPanel("");
+                          update(
+                            performActivity(work, runtimeRef.current, activity),
+                          );
+                        }}
+                      >
+                        <i>{activity.emoji}</i>
+                        <span>
+                          <b>{activity.label}</b>
+                          <small>{activity.description}</small>
+                        </span>
+                        <em>
+                          {activity.minutes
+                            ? `+${activity.minutes} 分钟`
+                            : "现在"}
+                        </em>
+                      </button>
+                    ))}
+                    {!activities.length && <p>现在没有必须处理的安排。</p>}
+                    <button
+                      className="life-action-card phone-only"
+                      onClick={() => setPanel("")}
+                    >
+                      <i>📱</i>
+                      <span>
+                        <b>继续使用手机</b>
+                        <small>不推进时间，继续自由探索</small>
+                      </span>
+                    </button>
+                  </div>
+                </>
               ) : panel === "search" ? (
                 <>
                   <h2>搜索 App</h2>
@@ -577,7 +695,67 @@ function PhoneRuntime({
               )}
             </div>
           )}
-          {!creator && s.choices.length > 0 && !locked && (
+          {!creator && s.scene && !locked && (
+            <section className="life-scene" aria-label="线下剧情">
+              <header>
+                <span>
+                  {s.date || work.phone.date} · {s.time}
+                </span>
+                <span>
+                  <MapPin size={14} /> {s.location}
+                </span>
+              </header>
+              <div className="life-scene-copy">
+                <span className="eyebrow">{s.activeEvent || "线下事件"}</span>
+                <h2>{s.scene.title}</h2>
+                {s.scene.body.split("\n").map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </div>
+              {s.choices.length > 0 && (
+                <div className="life-scene-choices">
+                  {s.choices.map((choice) => (
+                    <button
+                      key={choice.target}
+                      onClick={() => update(choose(work, s, choice.target))}
+                    >
+                      {choice.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {s.scene.allowInput && (
+                <form
+                  className="life-scene-input"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const intent = classifySceneIntent(sceneDraft);
+                    if (intent === "empty") return;
+                    update(
+                      dispatch(
+                        work,
+                        runtimeRef.current,
+                        "sceneInput",
+                        `${runtimeRef.current.scene?.id}:${intent}`,
+                      ),
+                    );
+                    setSceneDraft("");
+                  }}
+                >
+                  <input
+                    value={sceneDraft}
+                    onChange={(e) => setSceneDraft(e.target.value)}
+                    placeholder="输入其他行动（支持关键词识别）"
+                    maxLength={120}
+                  />
+                  <button aria-label="执行自由行动">
+                    <Footprints size={17} />
+                  </button>
+                </form>
+              )}
+            </section>
+          )}
+          {!creator && !s.scene && s.choices.length > 0 && !locked && (
             <div className="story-overlay">
               <span className="eyebrow">故事来到一个岔路口</span>
               <h3>你会如何选择？</h3>
@@ -866,6 +1044,7 @@ function AppContent({
   onBack,
   onSettings,
   onUi,
+  onSend,
   work,
 }: {
   app: AppPlugin;
@@ -879,6 +1058,7 @@ function AppContent({
   onBack: () => void;
   onSettings?: () => void;
   onUi?: (key: string, value: UiValue) => void;
+  onSend?: (thread: string, text: string) => void;
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
@@ -991,6 +1171,7 @@ function AppContent({
               virtualTime={state.time}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
+              onSend={creator ? undefined : onSend}
               name={name}
               items={shown}
               creator={creator}

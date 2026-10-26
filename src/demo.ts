@@ -56,6 +56,7 @@ export function createWork(title = "雨停之前"): Work {
     })),
     data: {},
     variables: { found: false },
+    life: { initialLocation: "城南旧书店", activities: [], npcs: [] },
     nodes: [],
     mode: "mixed",
   };

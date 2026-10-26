@@ -160,6 +160,7 @@ export function MymyKakao(p: SkinProps) {
             onSubmit={(e) => {
               e.preventDefault();
               if (draft.trim()) {
+                p.onSend?.(p.thread, draft.trim());
                 setSent([
                   ...sent,
                   JSON.stringify([

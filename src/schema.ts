@@ -42,6 +42,34 @@ export const conditionSchema = z.object({
   value: z.union([z.string(), z.number(), z.boolean()]),
 });
 export type Condition = z.infer<typeof conditionSchema>;
+export const activitySchema = z.object({
+  id: z.string(),
+  label: z.string().max(120),
+  description: z.string().max(500).default(""),
+  emoji: z.string().max(12).default("•"),
+  kind: z.enum(["ordinary", "daily", "important"]).default("ordinary"),
+  minutes: z.number().int().min(0).max(1440).default(0),
+  locations: z.array(z.string()).default([]),
+  conditions: z.array(conditionSchema).default([]),
+  initiallyAvailable: z.boolean().default(true),
+});
+export type Activity = z.infer<typeof activitySchema>;
+export const npcDefinitionSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  location: z.string().default(""),
+  status: z.string().default("空闲"),
+  availableAt: z.string().default(""),
+  known: z.array(z.string()).default([]),
+  closeness: z.number().default(0),
+  trust: z.number().default(0),
+  tension: z.number().default(0),
+});
+export const lifeSchema = z.object({
+  initialLocation: z.string().default("未知地点"),
+  activities: z.array(activitySchema).default([]),
+  npcs: z.array(npcDefinitionSchema).default([]),
+});
 export const actionSchema = z.object({
   type: z.enum([
     "date",
@@ -55,6 +83,19 @@ export const actionSchema = z.object({
     "choice",
     "clue",
     "call",
+    "location",
+    "scene",
+    "sceneClose",
+    "relationship",
+    "npcStatus",
+    "knowledge",
+    "activityUnlock",
+    "activityLock",
+    "eventStart",
+    "eventEnd",
+    "advanceDay",
+    "advanceMinutes",
+    "variableDelta",
   ]),
   key: z.string(),
   value: z.union([z.string(), z.number(), z.boolean()]),
@@ -126,6 +167,11 @@ export const workSchema = z.object({
     z.string(),
     z.union([z.string(), z.number(), z.boolean()]),
   ),
+  life: lifeSchema.default({
+    initialLocation: "未知地点",
+    activities: [],
+    npcs: [],
+  }),
   mode: z.enum(["explore", "story", "mixed"]),
 });
 export type Work = z.infer<typeof workSchema>;
@@ -156,6 +202,32 @@ export type Runtime = {
   messages: Record<string, Item[]>;
   time: string;
   trace: string[];
+  location: string;
+  activeEvent: string | null;
+  pendingEvents: string[];
+  unlockedActivities: string[];
+  history: {
+    id: string;
+    event: string;
+    target: string;
+    date: string;
+    time: string;
+    location: string;
+  }[];
+  relationships: Record<
+    string,
+    { closeness: number; trust: number; tension: number; tags: string[] }
+  >;
+  npcStates: Record<
+    string,
+    { location: string; status: string; availableAt: string; known: string[] }
+  >;
+  scene: {
+    id: string;
+    title: string;
+    body: string;
+    allowInput: boolean;
+  } | null;
 };
 export function initialRuntime(w: Work): Runtime {
   return {
@@ -180,6 +252,68 @@ export function initialRuntime(w: Work): Runtime {
     messages: {},
     time: w.phone.time,
     trace: [],
+    location: w.life.initialLocation,
+    activeEvent: null,
+    pendingEvents: [],
+    unlockedActivities: w.life.activities
+      .filter((a) => a.initiallyAvailable)
+      .map((a) => a.id),
+    history: [],
+    relationships: Object.fromEntries(
+      w.life.npcs.map((npc) => [
+        npc.id,
+        {
+          closeness: npc.closeness,
+          trust: npc.trust,
+          tension: npc.tension,
+          tags: [],
+        },
+      ]),
+    ),
+    npcStates: Object.fromEntries(
+      w.life.npcs.map((npc) => [
+        npc.id,
+        {
+          location: npc.location,
+          status: npc.status,
+          availableAt: npc.availableAt,
+          known: [...npc.known],
+        },
+      ]),
+    ),
+    scene: null,
+  };
+}
+export function migrateRuntime(w: Work, saved: Partial<Runtime>): Runtime {
+  const fresh = initialRuntime(w);
+  if (saved.workId !== w.id) return fresh;
+  const itemIds = new Set(
+    Object.values(w.data).flatMap((items) => items.map((i) => i.id)),
+  );
+  const nodeIds = new Set(w.nodes.map((node) => node.id));
+  const activityIds = new Set(w.life.activities.map((activity) => activity.id));
+  return {
+    ...fresh,
+    ...saved,
+    workId: w.id,
+    revision: w.updatedAt,
+    variables: { ...fresh.variables, ...(saved.variables ?? {}) },
+    unlocked: (saved.unlocked ?? []).filter((id) => itemIds.has(id)),
+    hidden: (saved.hidden ?? []).filter((id) => itemIds.has(id)),
+    completed: (saved.completed ?? []).filter((id) => nodeIds.has(id)),
+    choices: (saved.choices ?? []).filter((choice) =>
+      nodeIds.has(choice.target),
+    ),
+    scheduled: (saved.scheduled ?? []).filter((entry) =>
+      nodeIds.has(entry.nodeId),
+    ),
+    unlockedActivities: saved.unlockedActivities
+      ? saved.unlockedActivities.filter((id) => activityIds.has(id))
+      : fresh.unlockedActivities,
+    relationships: { ...fresh.relationships, ...(saved.relationships ?? {}) },
+    npcStates: { ...fresh.npcStates, ...(saved.npcStates ?? {}) },
+    history: (saved.history ?? []).slice(-200),
+    scene: saved.scene ?? null,
   };
 }
 export function makeItem(partial: Partial<Item> = {}): Item {
@@ -196,8 +330,9 @@ export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
 export function safeMedia(value: string) {
-  return /^(data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+|story-images\/[a-zA-Z0-9._/-]+\.(png|jpe?g|webp|gif))$/.test(value) &&
-    !value.includes("..")
+  return /^(data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+|story-images\/[a-zA-Z0-9._/-]+\.(png|jpe?g|webp|gif))$/.test(
+    value,
+  ) && !value.includes("..")
     ? value
     : "";
 }

@@ -43,11 +43,21 @@ export function testStory(story: Story, work: Work) {
         state = advance(work, state, step.advanceMs);
       if (step.event) state = dispatch(work, state, step.event, step.target);
     }
-    if (!state.endings.includes(t.ending))
+    if (t.ending && !state.endings.includes(t.ending))
       errors.push(t.name + ": 未到达结局 " + t.ending);
-    else reached.add(t.ending);
+    else if (t.ending) reached.add(t.ending);
     for (const id of t.expectUnlocked)
       if (!state.unlocked.includes(id)) errors.push(t.name + ": 未解锁 " + id);
+    for (const id of t.expectCompleted)
+      if (!state.completed.includes(id)) errors.push(t.name + ": 未完成 " + id);
+    if (t.expectLocation && state.location !== t.expectLocation)
+      errors.push(
+        `${t.name}: 地点应为 ${t.expectLocation}，实际为 ${state.location}`,
+      );
+    if (t.expectDate && state.date !== t.expectDate)
+      errors.push(`${t.name}: 日期应为 ${t.expectDate}，实际为 ${state.date}`);
+    if (t.expectTime && state.time !== t.expectTime)
+      errors.push(`${t.name}: 时间应为 ${t.expectTime}，实际为 ${state.time}`);
   }
   for (const n of work.nodes.filter((n) => n.type === "ending")) {
     const ending = String(

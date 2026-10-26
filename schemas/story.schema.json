@@ -432,6 +432,185 @@
         }
       }
     },
+    "life": {
+      "default": {
+        "initialLocation": "未知地点",
+        "activities": [],
+        "npcs": []
+      },
+      "type": "object",
+      "properties": {
+        "initialLocation": {
+          "default": "未知地点",
+          "type": "string"
+        },
+        "activities": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+              },
+              "label": {
+                "type": "string",
+                "maxLength": 120
+              },
+              "description": {
+                "default": "",
+                "type": "string",
+                "maxLength": 500
+              },
+              "emoji": {
+                "default": "•",
+                "type": "string",
+                "maxLength": 12
+              },
+              "kind": {
+                "default": "ordinary",
+                "type": "string",
+                "enum": [
+                  "ordinary",
+                  "daily",
+                  "important"
+                ]
+              },
+              "minutes": {
+                "default": 0,
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1440
+              },
+              "locations": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "conditions": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "eq",
+                        "neq",
+                        "gt",
+                        "lt",
+                        "includes"
+                      ]
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "op",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "initiallyAvailable": {
+                "default": true,
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "description",
+              "emoji",
+              "kind",
+              "minutes",
+              "locations",
+              "conditions",
+              "initiallyAvailable"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "npcs": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9_.-]*$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "location": {
+                "default": "",
+                "type": "string"
+              },
+              "status": {
+                "default": "空闲",
+                "type": "string"
+              },
+              "availableAt": {
+                "default": "",
+                "type": "string"
+              },
+              "known": {
+                "default": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "closeness": {
+                "default": 0,
+                "type": "number"
+              },
+              "trust": {
+                "default": 0,
+                "type": "number"
+              },
+              "tension": {
+                "default": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "location",
+              "status",
+              "availableAt",
+              "known",
+              "closeness",
+              "trust",
+              "tension"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "initialLocation",
+        "activities",
+        "npcs"
+      ],
+      "additionalProperties": false
+    },
     "variables": {
       "default": {},
       "type": "object",
@@ -545,7 +724,20 @@
                     "ending",
                     "choice",
                     "clue",
-                    "call"
+                    "call",
+                    "location",
+                    "scene",
+                    "sceneClose",
+                    "relationship",
+                    "npcStatus",
+                    "knowledge",
+                    "activityUnlock",
+                    "activityLock",
+                    "eventStart",
+                    "eventEnd",
+                    "advanceDay",
+                    "advanceMinutes",
+                    "variableDelta"
                   ]
                 },
                 "key": {
@@ -630,6 +822,7 @@
             }
           },
           "ending": {
+            "default": "",
             "type": "string"
           },
           "expectUnlocked": {
@@ -638,13 +831,30 @@
             "items": {
               "type": "string"
             }
+          },
+          "expectCompleted": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "expectLocation": {
+            "type": "string"
+          },
+          "expectDate": {
+            "type": "string"
+          },
+          "expectTime": {
+            "type": "string"
           }
         },
         "required": [
           "name",
           "steps",
           "ending",
-          "expectUnlocked"
+          "expectUnlocked",
+          "expectCompleted"
         ],
         "additionalProperties": false
       }
@@ -661,6 +871,7 @@
     "contacts",
     "chats",
     "content",
+    "life",
     "variables",
     "events",
     "tests"

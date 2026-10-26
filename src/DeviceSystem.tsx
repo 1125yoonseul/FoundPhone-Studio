@@ -4,7 +4,7 @@ import {
   SliderModule,
 } from "./vendor/ios-web/ControlModules";
 import { UnlockHandle } from "./vendor/ios-web/UnlockHandle";
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect, useRef, createContext, useContext } from "react";
 import {
   LockKeyhole,
   Flashlight,
@@ -82,31 +82,35 @@ export function DeviceLock({
   onLight: () => void;
 }) {
   const [code, setCode] = useState("");
+  const codeRef = useRef("");
+  const changeCode = (value: string) => {
+    codeRef.current = value;
+    setCode(value);
+  };
   useEffect(() => {
-    if (error) setCode("");
+    if (error) changeCode("");
   }, [error]);
   useEffect(() => {
-    if (!pinOpen) setCode("");
+    if (!pinOpen) changeCode("");
   }, [pinOpen]);
   const digit = (key: string) => {
-    const value = key === "⌫" ? code.slice(0, -1) : (code + key).slice(0, 12);
-    setCode(value);
+    const value =
+      key === "⌫"
+        ? codeRef.current.slice(0, -1)
+        : (codeRef.current + key).slice(0, 12);
+    changeCode(value);
     if (
       /^\d+$/.test(work.phone.passcode) &&
       value.length === work.phone.passcode.length
     ) {
       onUnlock(value);
-      setCode("");
+      changeCode("");
     }
   };
   const open = () => (work.phone.passcode ? setPinOpen(true) : onUnlock(""));
   return (
-    <motion.div
+    <div
       className={"lock-screen device-lock " + (pinOpen ? "pin-open" : "")}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ y: -852, opacity: 0 }}
-      transition={{ duration: 0.48, ease: [0.32, 0.72, 0, 1] }}
     >
       {!pinOpen ? (
         <>
@@ -175,8 +179,8 @@ export function DeviceLock({
             inputMode="numeric"
             type="password"
             value={code}
-            onChange={(e) => setCode(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && onUnlock(code)}
+            onChange={(e) => changeCode(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && onUnlock(codeRef.current)}
           />
           <div className="pin-keypad">
             {["1", "2", "3", "4", "5", "6", "7", "8", "9", "", "0", ""].map(
@@ -227,7 +231,7 @@ export function DeviceLock({
           </div>
         </div>
       )}
-    </motion.div>
+    </div>
   );
 }
 export function ControlCenter({

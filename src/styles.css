@@ -752,8 +752,8 @@ svg {
   );
 }
 .wallpaper-yoonseul-photo {
-  background: #1564d8 url("./assets/yoonseul-shotaro-wallpaper.jpeg") center/cover
-    no-repeat;
+  background: #1564d8 url("./assets/yoonseul-shotaro-wallpaper.jpeg")
+    center/cover no-repeat;
 }
 .wallpaper-yoonseul-photo .wallpaper-orb {
   display: none;
@@ -1739,6 +1739,173 @@ svg {
   padding: 22px 17px;
   border-radius: 20px;
   box-shadow: 0 -10px 40px #21351f1a;
+}
+
+.life-action-entry {
+  position: absolute;
+  z-index: 34;
+  left: 18px;
+  right: 18px;
+  bottom: 102px;
+  min-height: 72px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 20px;
+  background: rgba(28, 29, 34, 0.62);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(22px) saturate(1.3);
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 12px;
+}
+.life-action-entry span {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  opacity: 0.82;
+}
+.life-action-entry b {
+  font-size: 17px;
+}
+.life-action-entry small {
+  align-self: center;
+  opacity: 0.72;
+}
+.life-action-heading {
+  padding: 14px 8px 10px;
+}
+.life-action-heading h2 {
+  margin: 5px 0 7px;
+}
+.life-action-heading p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  opacity: 0.72;
+  font-size: 12px;
+}
+.life-action-list {
+  display: grid;
+  gap: 9px;
+  padding: 4px 0 28px;
+}
+.life-action-card {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #17181c;
+  display: grid;
+  grid-template-columns: 34px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+.life-action-card.important {
+  background: #22252b;
+  color: #fff;
+}
+.life-action-card.daily {
+  background: #f2eadf;
+}
+.life-action-card i {
+  font-size: 23px;
+  font-style: normal;
+  text-align: center;
+}
+.life-action-card span {
+  display: grid;
+  gap: 3px;
+}
+.life-action-card small {
+  opacity: 0.65;
+  line-height: 1.25;
+}
+.life-action-card em {
+  font-size: 10px;
+  font-style: normal;
+  opacity: 0.62;
+}
+.life-action-card.phone-only {
+  margin-top: 3px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.life-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 78;
+  padding: 56px 20px 30px;
+  background:
+    linear-gradient(180deg, rgba(11, 20, 31, 0.42), rgba(15, 16, 20, 0.96)),
+    radial-gradient(circle at 75% 18%, #49667a, #171a20 55%);
+  color: #fff;
+  overflow-y: auto;
+}
+.life-scene > header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  opacity: 0.75;
+}
+.life-scene > header span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.life-scene-copy {
+  padding: 48px 2px 24px;
+}
+.life-scene-copy h2 {
+  margin: 8px 0 26px;
+  font-size: 28px;
+}
+.life-scene-copy p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.72;
+}
+.life-scene-choices {
+  display: grid;
+  gap: 9px;
+}
+.life-scene-choices button {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 15px;
+  padding: 13px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: left;
+  backdrop-filter: blur(12px);
+}
+.life-scene-input {
+  display: grid;
+  grid-template-columns: 1fr 42px;
+  gap: 8px;
+  margin-top: 14px;
+}
+.life-scene-input input {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.life-scene-input button {
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  color: #111;
+  display: grid;
+  place-items: center;
 }
 .story-overlay h3 {
   font-size: 18px;
