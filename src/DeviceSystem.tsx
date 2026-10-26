@@ -109,12 +109,8 @@ export function DeviceLock({
   };
   const open = () => (work.phone.passcode ? setPinOpen(true) : onUnlock(""));
   return (
-    <motion.div
+    <div
       className={"lock-screen device-lock " + (pinOpen ? "pin-open" : "")}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ y: -852, opacity: 0 }}
-      transition={{ duration: 0.48, ease: [0.32, 0.72, 0, 1] }}
     >
       {!pinOpen ? (
         <>
@@ -235,7 +231,7 @@ export function DeviceLock({
           </div>
         </div>
       )}
-    </motion.div>
+    </div>
   );
 }
 export function ControlCenter({
