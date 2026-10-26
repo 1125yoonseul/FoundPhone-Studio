@@ -1867,6 +1867,7 @@
         },
         { "type": "eventEnd", "key": "riverside-meeting", "value": "" },
         { "type": "npcStatus", "key": "shotaro.status", "value": "准备回家" },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
@@ -1937,13 +1938,13 @@
         {
           "type": "npcStatus",
           "key": "shotaro.status",
-          "value": "陪尹瑟继续散步"
+          "value": "送尹瑟到路口"
         },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
           "key": "kakao|哥哥|incoming",
-          "value": "我到家了。你也早点睡。"
+          "value": "我送你到路口了。你也早点睡。"
         }
       ]
     },
@@ -1964,6 +1965,8 @@
           "key": "riverside-meeting",
           "value": "next-day-routine"
         },
+        { "type": "npcStatus", "key": "shotaro.status", "value": "从江边离开" },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
@@ -1985,6 +1988,12 @@
           "key": "riverside-meeting",
           "value": "next-day-routine"
         },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "从便利店离开"
+        },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
@@ -2006,6 +2015,12 @@
           "key": "riverside-meeting",
           "value": "next-day-routine"
         },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "从便利店离开"
+        },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
@@ -2026,6 +2041,12 @@
           "key": "riverside-meeting",
           "value": "next-day-routine"
         },
+        {
+          "type": "npcStatus",
+          "key": "shotaro.status",
+          "value": "从便利店离开"
+        },
+        { "type": "npcStatus", "key": "shotaro.location", "value": "回家路上" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "message",
@@ -2263,6 +2284,12 @@
       "type": "event",
       "actions": [
         { "type": "relationship", "key": "yujin.closeness", "value": 1 },
+        {
+          "type": "npcStatus",
+          "key": "yujin.status",
+          "value": "去参加小组作业"
+        },
+        { "type": "npcStatus", "key": "yujin.location", "value": "汉阳大学" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "notification",
@@ -2276,6 +2303,12 @@
       "label": "问她甜点好不好吃",
       "type": "event",
       "actions": [
+        {
+          "type": "npcStatus",
+          "key": "yujin.status",
+          "value": "去参加小组作业"
+        },
+        { "type": "npcStatus", "key": "yujin.location", "value": "汉阳大学" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "notification",
@@ -2295,6 +2328,12 @@
           "value": "尹瑟昨晚去过江边，但不知道同行者和谈话内容"
         },
         { "type": "relationship", "key": "yujin.trust", "value": 1 },
+        {
+          "type": "npcStatus",
+          "key": "yujin.status",
+          "value": "去参加小组作业"
+        },
+        { "type": "npcStatus", "key": "yujin.location", "value": "汉阳大学" },
         { "type": "sceneClose", "key": "", "value": true },
         {
           "type": "notification",
